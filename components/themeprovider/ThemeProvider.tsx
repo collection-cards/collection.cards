@@ -7,7 +7,9 @@ const ThemeProvider = ({
   children,
   ...props
 }: React.ComponentProps<typeof NextThemesProvider>) => (
-  <NextThemesProvider {...props}>{children}</NextThemesProvider>
+  <NextThemesProvider {...props} scriptProps={{type: 'application/json'}}>
+    {children}
+  </NextThemesProvider>
 )
 
 export default ThemeProvider
