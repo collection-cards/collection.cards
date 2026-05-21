@@ -5,6 +5,8 @@ import {Pattern as PatternIcon} from '@/icons/Pattern'
 import {Entry} from 'alinea/core'
 import {ImageResponse} from 'next/og'
 import {type NextRequest, NextResponse} from 'next/server'
+import {readFile} from 'node:fs/promises'
+import path from 'node:path'
 const {renderToString} = await import('react-dom/server')
 
 const logoWidthPercentage = 60
@@ -38,6 +40,19 @@ const PATTERN_HEIGHT = Math.round(PATTERN_WIDTH * (440 / 200.22))
 const CACHE_HEADERS = {
   'Cache-Control':
     'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
+}
+
+const TRANSPARENT_PIXEL =
+  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/at2Qm0AAAAASUVORK5CYII='
+
+function getMimeType(filePath: string): string {
+  const extension = path.extname(filePath).toLowerCase()
+  if (extension === '.png') return 'image/png'
+  if (extension === '.jpg' || extension === '.jpeg') return 'image/jpeg'
+  if (extension === '.webp') return 'image/webp'
+  if (extension === '.gif') return 'image/gif'
+  if (extension === '.svg') return 'image/svg+xml'
+  return 'application/octet-stream'
 }
 
 export async function generateStaticParams() {
@@ -83,18 +98,44 @@ export async function GET(
 
   const {width, height} = PAPER_SIZES[normalized]
 
-  const logoUrl = `${process.env.PUBLIC_SITE_URL}/media${logo.src}`
-  let logoSrc: string = logoUrl
+  const logoUrl = process.env.PUBLIC_SITE_URL
+    ? `${process.env.PUBLIC_SITE_URL}/media${logo.src}`
+    : null
+  let logoSrc: string = TRANSPARENT_PIXEL
+
+  // Use local asset files during build/export so static prerender does not depend on network access.
   try {
-    const res = await fetch(logoUrl, {cache: 'no-store'})
-    if (res.ok) {
-      const buf = Buffer.from(await res.arrayBuffer())
-      const mime = res.headers.get('content-type') || 'image/png'
+    const localLogoPath = path.join(
+      process.cwd(),
+      'public',
+      'media',
+      logo.src.replace(/^\//, '')
+    )
+    const buf = await readFile(localLogoPath)
+    const mime = getMimeType(localLogoPath)
+    if (mime.startsWith('image/')) {
       logoSrc = `data:${mime};base64,${buf.toString('base64')}`
     }
   } catch {
-    // fall back to remote URL
+    // Fall back to remote URL for non-build/runtime environments.
+    if (logoUrl) {
+      try {
+        const res = await fetch(logoUrl, {cache: 'no-store'})
+        const mime = res.headers.get('content-type')
+        if (res.ok && mime?.startsWith('image/')) {
+          const buf = Buffer.from(await res.arrayBuffer())
+          logoSrc = `data:${mime};base64,${buf.toString('base64')}`
+        }
+      } catch {
+        // Keep transparent fallback image to avoid breaking prerender.
+      }
+    }
   }
+
+  const sourceWidth = logo.width ?? 1
+  const sourceHeight = logo.height ?? 1
+  const targetLogoWidth = (width / 100) * logoWidthPercentage
+  const targetLogoHeight = (sourceHeight * targetLogoWidth) / sourceWidth
 
   return new ImageResponse(
     <div
@@ -141,10 +182,8 @@ export async function GET(
         src={logoSrc}
         alt={logo.title || data.title}
         style={{
-          width: `${(width / 100) * logoWidthPercentage}px`,
-          height: `${
-            (logo.height! * ((width / 100) * logoWidthPercentage)) / logo.width!
-          }px`,
+          width: `${targetLogoWidth}px`,
+          height: `${targetLogoHeight}px`,
           position: 'relative'
         }}
       />
