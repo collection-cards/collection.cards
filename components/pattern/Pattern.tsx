@@ -9,9 +9,9 @@ const Pattern: React.FC<PropsWithChildren<PatternProps>> = ({
   className,
   children
 }) => {
-  const maskImage = `url(\'data:image/svg+xml;utf8,${renderToString(
-    <PatternIcon />
-  )}\')`
+  const maskImage = `url('data:image/svg+xml;charset=utf-8,${encodeURIComponent(
+    renderToString(<PatternIcon />)
+  )}')`
 
   return (
     <div className="relative w-full py-24 mt-24">

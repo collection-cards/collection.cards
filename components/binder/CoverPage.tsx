@@ -6,9 +6,9 @@ const {renderToString} = await import('react-dom/server')
 
 type CoverPageProps = {image?: ImageLink<undefined> | JSX.Element}
 
-const maskImage = `url(\'data:image/svg+xml;utf8,${renderToString(
-  <Pattern />
-)}\')`
+const maskImage = `url('data:image/svg+xml;charset=utf-8,${encodeURIComponent(
+  renderToString(<Pattern />)
+)}')`
 
 const CoverPage: React.FC<CoverPageProps> = ({image}) => (
   <div className="w-full h-full bg-foreground/3">

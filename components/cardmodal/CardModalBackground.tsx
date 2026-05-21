@@ -18,9 +18,9 @@ const CardModalBackground: React.FC<CardModalBackgroundProps> = ({onClose}) => (
     <div
       className="absolute inset-0 bg-foreground/3 mask-size-[30px_auto] mask-center mask-repeat"
       style={{
-        maskImage: `url(\'data:image/svg+xml;utf8,${renderToString(
-          <PatternIcon />
-        )}\')`
+        maskImage: `url('data:image/svg+xml;charset=utf-8,${encodeURIComponent(
+          renderToString(<PatternIcon />)
+        )}')`
       }}
     ></div>
   </motion.div>

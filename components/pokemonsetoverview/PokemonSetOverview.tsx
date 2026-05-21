@@ -10,7 +10,8 @@ import {
 import {rarity, Rarity, rarityOrder} from '@/consts/rarity'
 import {variant, Variant, variantPattern} from '@/consts/variant'
 import {ImageLink} from 'alinea'
-import {BookOpen, GalleryHorizontal, Grid, Layers} from 'lucide-react'
+import {BookOpen, Download, GalleryHorizontal, Grid, Layers} from 'lucide-react'
+import Link from 'next/link'
 import {
   parseAsBoolean,
   parseAsInteger,
@@ -24,6 +25,13 @@ import {CardProps} from '../card/Card'
 import CardGrid from '../cardgrid/CardGrid'
 import {PokemonCardDetailsProps} from '../pokemoncarddetails/PokemonCardDetails'
 import Tooltip from '../tooltip/Tooltip'
+import {Button} from '../ui/button'
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger
+} from '../ui/dropdown-menu'
 import {ToggleGroup, ToggleGroupItem} from '../ui/toggle-group'
 import EnergyFilter from './filters/EnergyFilter'
 import HitPointsFilter from './filters/HitPointsFilter'
@@ -32,11 +40,22 @@ import RarityFilter from './filters/RarityFilter'
 import TypeFilter from './filters/TypeFilter'
 import VariantFilter from './filters/VariantFilter'
 
+const pocketSizes = ['4', '9', '12', '16'] as const
+const viewModes = ['grid', 'binder'] as const
+const coverSizes = [
+  {value: 'a4', label: 'A4'},
+  {value: 'letter', label: 'Letter'}
+] as const
+
+type PocketSize = (typeof pocketSizes)[number]
+type ViewMode = (typeof viewModes)[number]
+
 type Card = PokemonCardDetailsProps & Omit<CardProps, 'onClick' | 'sizes'>
 
 type PokemonSetOverviewProps = {
   cards: Card[]
   logo?: ImageLink<undefined> | JSX.Element
+  setId?: string
 }
 
 const stackCards = (
@@ -47,22 +66,26 @@ const stackCards = (
 
   const cardMap: Record<string, Card & {variants: Card[]}> = {}
 
-  return cards.reduce((acc, card) => {
-    const existingCard = cardMap[card.number]
-    if (existingCard) {
-      if (!existingCard.variants) existingCard.variants = []
-      existingCard.variants.push({...card})
-    } else {
-      cardMap[card.number] = {...card, variants: []}
-      acc.push(cardMap[card.number])
-    }
-    return acc
-  }, [] as (Card & {variants: Card[]})[])
+  return cards.reduce(
+    (acc, card) => {
+      const existingCard = cardMap[card.number]
+      if (existingCard) {
+        if (!existingCard.variants) existingCard.variants = []
+        existingCard.variants.push({...card})
+      } else {
+        cardMap[card.number] = {...card, variants: []}
+        acc.push(cardMap[card.number])
+      }
+      return acc
+    },
+    [] as (Card & {variants: Card[]})[]
+  )
 }
 
 const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
   cards,
-  logo
+  logo,
+  setId
 }) => {
   const energyParser = parseAsStringEnum<Energy>(
     Object.keys(energy) as Energy[]
@@ -91,11 +114,11 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
   })
   const [viewMode, setViewMode] = useQueryState(
     'view',
-    parseAsStringEnum(['grid', 'binder']).withDefault('grid')
+    parseAsStringEnum([...viewModes]).withDefault('grid' as ViewMode)
   )
   const [pockets, setPockets] = useQueryState(
     'pockets',
-    parseAsStringEnum(['4', '9', '12', '16']).withDefault('9')
+    parseAsStringEnum([...pocketSizes]).withDefault('9' as PocketSize)
   )
   const [stack, setStack] = useQueryState(
     'stack',
@@ -308,7 +331,7 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                 variant="outline"
                 style={{'--radius': '8px'} as React.CSSProperties}
               >
-                {(['4', '9', '12', '16'] as (typeof pockets)[]).map(p => (
+                {pocketSizes.map(p => (
                   <Tooltip text={`${p}-pocket`} key={p}>
                     <ToggleGroupItem
                       aria-checked={pockets === p ? 'true' : 'false'}
@@ -348,6 +371,46 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
               </ToggleGroupItem>
             </Tooltip>
           </ToggleGroup>
+          {setId && (
+            <DropdownMenu>
+              <Tooltip text="Download binder cover">
+                <DropdownMenuTrigger asChild>
+                  <Button
+                    aria-label="Download binder cover"
+                    className="px-1.75 cursor-pointer bg-transparent"
+                    size="sm"
+                    style={{'--radius': '8px'} as React.CSSProperties}
+                    variant="outline"
+                  >
+                    <Download />
+                  </Button>
+                </DropdownMenuTrigger>
+              </Tooltip>
+              <DropdownMenuContent
+                align="end"
+                side="bottom"
+                style={{'--radius': '8px'} as React.CSSProperties}
+              >
+                <div
+                  data-slot="select-label"
+                  className="text-muted-foreground px-2 py-1.5 text-xs"
+                >
+                  Cover size
+                </div>
+                {coverSizes.map(({value, label}) => (
+                  <DropdownMenuItem key={value} asChild>
+                    <Link
+                      href={`/api/download/${setId}/binder/front/${value}`}
+                      rel="noopener noreferrer"
+                      className="cursor-pointer"
+                    >
+                      {label}
+                    </Link>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
+          )}
         </div>
       </div>
       {viewMode === 'binder' ? (

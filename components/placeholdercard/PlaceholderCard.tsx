@@ -1,9 +1,9 @@
 import {Pattern as PatternIcon} from '@/icons/Pattern'
 const {renderToString} = await import('react-dom/server')
 
-const maskImage = `url(\'data:image/svg+xml;utf8,${renderToString(
-  <PatternIcon />
-)}\')`
+const maskImage = `url('data:image/svg+xml;charset=utf-8,${encodeURIComponent(
+  renderToString(<PatternIcon />)
+)}')`
 
 const PlaceholderCard: React.FC = () => {
   return (

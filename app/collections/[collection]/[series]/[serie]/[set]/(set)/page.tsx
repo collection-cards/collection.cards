@@ -20,6 +20,7 @@ const fetchSetData = async (url: string) => {
     type: PokemonSet,
     select: {
       ...PokemonSet,
+      _id: Query.id,
       cards: Query.children({
         type: PokemonCard,
         select: {id: Query.id},
@@ -130,7 +131,11 @@ export default async function Set({
         />
       ) : collection === 'pokemon' ? (
         <Suspense>
-          <PokemonSetOverview cards={setData.cards} logo={setData.logo} />
+          <PokemonSetOverview
+            cards={setData.cards}
+            logo={setData.logo}
+            setId={setData._id}
+          />
         </Suspense>
       ) : (
         <CardGrid cards={setData.cards} />
