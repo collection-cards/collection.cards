@@ -9,18 +9,58 @@ const {renderToString} = await import('react-dom/server')
 
 const logoWidthPercentage = 60
 
-const PAPER_SIZES = {
-  A4: {width: 2480, height: 3508},
+const SIZES = ['a4', 'letter'] as const
+
+const PAPER_SIZES: Record<
+  (typeof SIZES)[number],
+  {width: number; height: number}
+> = {
+  a4: {width: 2480, height: 3508},
   letter: {width: 2550, height: 3300}
 } as const
 
 export const contentType = 'image/png'
+
+// Prerender at build time and cache forever (content-addressed by params).
+// New sets added after build are generated on-demand and then cached via ISR.
+export const dynamic = 'force-static'
+export const revalidate = false
+export const dynamicParams = true
+
+// Hoisted: these never change, so do them once per process, not per request.
+const PATTERN_SVG = renderToString(<PatternIcon style={{color: '#030718'}} />)
+const PATTERN_DATA_URL = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(
+  PATTERN_SVG
+)}`
+const PATTERN_WIDTH = 120
+const PATTERN_HEIGHT = Math.round(PATTERN_WIDTH * (440 / 200.22))
+
+const CACHE_HEADERS = {
+  'Cache-Control':
+    'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
+}
+
+export async function generateStaticParams() {
+  const sets = await cms.find({
+    type: PokemonSet,
+    select: {id: Entry.id}
+  })
+  return sets.flatMap(({id}) => SIZES.map(size => ({set: id, size})))
+}
 
 export async function GET(
   request: NextRequest,
   {params}: {params: Promise<{set: string; size: string}>}
 ) {
   const {set, size} = await params
+
+  const normalized = size.toLowerCase() as (typeof SIZES)[number]
+  if (normalized !== 'a4' && normalized !== 'letter') {
+    return NextResponse.json(
+      {error: "Invalid size. Must be 'a4' or 'letter'"},
+      {status: 400}
+    )
+  }
 
   const data = await cms.first({
     type: PokemonSet,
@@ -41,21 +81,20 @@ export async function GET(
 
   const logo = data.logo
 
-  const normalized = size.toLowerCase()
-  if (normalized !== 'a4' && normalized !== 'letter') {
-    return NextResponse.json(
-      {error: "Invalid size. Must be 'a4' or 'letter'"},
-      {status: 400}
-    )
+  const {width, height} = PAPER_SIZES[normalized]
+
+  const logoUrl = `${process.env.PUBLIC_SITE_URL}/media${logo.src}`
+  let logoSrc: string = logoUrl
+  try {
+    const res = await fetch(logoUrl, {cache: 'no-store'})
+    if (res.ok) {
+      const buf = Buffer.from(await res.arrayBuffer())
+      const mime = res.headers.get('content-type') || 'image/png'
+      logoSrc = `data:${mime};base64,${buf.toString('base64')}`
+    }
+  } catch {
+    // fall back to remote URL
   }
-
-  const {width, height} =
-    normalized === 'letter' ? PAPER_SIZES.letter : PAPER_SIZES.A4
-
-  const svg = renderToString(<PatternIcon style={{color: '#030718'}} />)
-  const encoded = encodeURIComponent(svg)
-  const patternWidth = 120
-  const patternHeight = Math.round(patternWidth * (440 / 200.22))
 
   return new ImageResponse(
     <div
@@ -78,14 +117,14 @@ export async function GET(
         <defs>
           <pattern
             id="p"
-            width={patternWidth}
-            height={patternHeight}
+            width={PATTERN_WIDTH}
+            height={PATTERN_HEIGHT}
             patternUnits="userSpaceOnUse"
           >
             <image
-              href={`data:image/svg+xml;charset=utf-8,${encoded}`}
-              width={patternWidth}
-              height={patternHeight}
+              href={PATTERN_DATA_URL}
+              width={PATTERN_WIDTH}
+              height={PATTERN_HEIGHT}
             />
           </pattern>
         </defs>
@@ -99,7 +138,7 @@ export async function GET(
         />
       </svg>
       <img
-        src={`${process.env.PUBLIC_SITE_URL}/media${logo.src}`}
+        src={logoSrc}
         alt={logo.title || data.title}
         style={{
           width: `${(width / 100) * logoWidthPercentage}px`,
@@ -114,6 +153,7 @@ export async function GET(
       width,
       height,
       headers: {
+        ...CACHE_HEADERS,
         'Content-Disposition': `attachment; filename="collection-cards-binder-front-${size.toLowerCase()}-${
           data.path
         }.png"`
