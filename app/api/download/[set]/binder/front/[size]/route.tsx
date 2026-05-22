@@ -23,7 +23,8 @@ export const contentType = 'image/png'
 export const dynamic = 'force-static'
 export const revalidate = false
 export const dynamicParams = false
-export const fetchCache = 'force-cache'
+
+const DEFAULT_SITE_URL = 'https://collection.cards'
 
 type SetFile = {
   _id?: string
@@ -224,21 +225,11 @@ export async function GET(
 
   const {width, height} = PAPER_SIZES[normalized]
 
-  const logoUrl = `${process.env.PUBLIC_SITE_URL}/media${logo.src}`
-  let logoSrc: string = isOgSafeDataImage(logo.preview)
+  const baseUrl = process.env.PUBLIC_SITE_URL || DEFAULT_SITE_URL
+  const logoUrl = `${baseUrl}/media${logo.src}`
+  const logoSrc: string = isOgSafeDataImage(logo.preview)
     ? logo.preview
-    : TRANSPARENT_PIXEL
-
-  try {
-    const res = await fetch(logoUrl, {cache: 'force-cache'})
-    const mime = res.headers.get('content-type')
-    if (res.ok && mime?.startsWith('image/')) {
-      const buf = Buffer.from(await res.arrayBuffer())
-      logoSrc = `data:${mime};base64,${buf.toString('base64')}`
-    }
-  } catch {
-    // Keep fallback image to avoid breaking prerender.
-  }
+    : logoUrl || TRANSPARENT_PIXEL
 
   const sourceWidth = logo.width ?? 1
   const sourceHeight = logo.height ?? 1
