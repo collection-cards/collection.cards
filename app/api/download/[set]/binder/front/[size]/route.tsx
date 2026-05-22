@@ -24,8 +24,6 @@ export const dynamic = 'force-static'
 export const revalidate = false
 export const dynamicParams = false
 
-const DEFAULT_SITE_URL = 'https://collection.cards'
-
 type SetFile = {
   _id?: string
   _type?: string
@@ -90,9 +88,6 @@ const CACHE_HEADERS = {
   'Cache-Control':
     'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
 }
-
-const TRANSPARENT_PIXEL =
-  'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMB/at2Qm0AAAAASUVORK5CYII='
 
 let setIndexPromise: Promise<SetIndex> | null = null
 
@@ -175,17 +170,6 @@ async function loadSetIndex(): Promise<SetIndex> {
   }
 
   return setIndexPromise
-}
-
-function isOgSafeDataImage(dataUrl?: string): dataUrl is string {
-  if (!dataUrl?.startsWith('data:image/')) return false
-  return (
-    dataUrl.startsWith('data:image/png') ||
-    dataUrl.startsWith('data:image/jpeg') ||
-    dataUrl.startsWith('data:image/jpg') ||
-    dataUrl.startsWith('data:image/gif') ||
-    dataUrl.startsWith('data:image/svg+xml')
-  )
 }
 
 export async function generateStaticParams() {
