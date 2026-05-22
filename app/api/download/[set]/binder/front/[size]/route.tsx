@@ -40,7 +40,6 @@ type MediaFile = {
   _type?: string
   title?: string
   location?: string
-  preview?: string
   width?: number
   height?: number
 }
@@ -55,7 +54,6 @@ type SetRecord = {
 type LogoRecord = {
   title?: string
   src: string
-  preview?: string
   width: number
   height: number
 }
@@ -167,7 +165,6 @@ async function loadSetIndex(): Promise<SetIndex> {
         logos.set(parsed._id, {
           title: parsed.title,
           src: parsed.location,
-          preview: parsed.preview,
           width: parsed.width,
           height: parsed.height
         })
@@ -225,12 +222,6 @@ export async function GET(
 
   const {width, height} = PAPER_SIZES[normalized]
 
-  const baseUrl = process.env.PUBLIC_SITE_URL || DEFAULT_SITE_URL
-  const logoUrl = `${baseUrl}/media${logo.src}`
-  const logoSrc: string = isOgSafeDataImage(logo.preview)
-    ? logo.preview
-    : logoUrl || TRANSPARENT_PIXEL
-
   const sourceWidth = logo.width ?? 1
   const sourceHeight = logo.height ?? 1
   const targetLogoWidth = (width / 100) * logoWidthPercentage
@@ -278,7 +269,7 @@ export async function GET(
         />
       </svg>
       <img
-        src={logoSrc}
+        src={`${process.env.PUBLIC_SITE_URL}/media${logo.src}`}
         alt={logo.title || setData.title}
         style={{
           width: `${targetLogoWidth}px`,
