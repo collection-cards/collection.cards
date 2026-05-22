@@ -24,11 +24,29 @@
   },
   "include": [
     "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "alinea/**/*.ts",
+    "alinea/**/*.tsx",
+    "alinea/**/*.mts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "app/**/*.mts",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "components/**/*.mts",
+    "consts/**/*.ts",
+    "consts/**/*.tsx",
+    "consts/**/*.mts",
+    "icons/**/*.ts",
+    "icons/**/*.tsx",
+    "icons/**/*.mts",
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+    "lib/**/*.mts",
+    "server/**/*.ts",
+    "server/**/*.tsx",
+    "server/**/*.mts",
     ".next/types/**/*.ts",
-    ".next/dev/types/**/*.ts",
-    "**/*.mts"
+    ".next/dev/types/**/*.ts"
   ],
   "exclude": ["node_modules"]
 }
