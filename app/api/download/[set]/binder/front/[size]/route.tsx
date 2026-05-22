@@ -7,6 +7,7 @@ import sharp from 'sharp'
 
 const logoWidthPercentage = 60
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const SIZES = ['a4', 'letter'] as const
 
 const PAPER_SIZES: Record<
@@ -207,13 +208,6 @@ async function loadSetIndex(): Promise<SetIndex> {
   return setIndexPromise
 }
 
-export async function generateStaticParams() {
-  const {sets} = await loadSetIndex()
-  return Array.from(sets.values()).flatMap(({id}) =>
-    SIZES.map(size => ({set: id, size}))
-  )
-}
-
 export async function GET(
   request: Request,
   {params}: {params: Promise<{set: string; size: string}>}
@@ -332,9 +326,8 @@ export async function GET(
       height,
       headers: {
         ...CACHE_HEADERS,
-        'Content-Disposition': `attachment; filename="collection-cards-binder-front-${size.toLowerCase()}-${
-          setData.slug
-        }.png"`
+        'Cache-Control':
+          'public, max-age=31536000, s-maxage=31536000, stale-while-revalidate=86400, immutable'
       }
     }
   )
