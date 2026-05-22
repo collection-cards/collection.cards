@@ -19,7 +19,7 @@ const PAPER_SIZES: Record<
 export const contentType = 'image/png'
 
 // Prerender at build time and cache forever (content-addressed by params).
-// New sets added after build are generated on-demand and then cached via ISR.
+// Only params from generateStaticParams are valid.
 export const dynamic = 'force-static'
 export const revalidate = false
 export const dynamicParams = false
@@ -39,6 +39,7 @@ type MediaFile = {
   _type?: string
   title?: string
   location?: string
+  preview?: string
   width?: number
   height?: number
 }
@@ -53,6 +54,7 @@ type SetRecord = {
 type LogoRecord = {
   title?: string
   src: string
+  preview?: string
   width: number
   height: number
 }
@@ -164,6 +166,7 @@ async function loadSetIndex(): Promise<SetIndex> {
         logos.set(parsed._id, {
           title: parsed.title,
           src: parsed.location,
+          preview: parsed.preview,
           width: parsed.width,
           height: parsed.height
         })
@@ -176,6 +179,17 @@ async function loadSetIndex(): Promise<SetIndex> {
   return setIndexPromise
 }
 
+function isOgSafeDataImage(dataUrl?: string): dataUrl is string {
+  if (!dataUrl?.startsWith('data:image/')) return false
+  return (
+    dataUrl.startsWith('data:image/png') ||
+    dataUrl.startsWith('data:image/jpeg') ||
+    dataUrl.startsWith('data:image/jpg') ||
+    dataUrl.startsWith('data:image/gif') ||
+    dataUrl.startsWith('data:image/svg+xml')
+  )
+}
+
 export async function generateStaticParams() {
   const {sets} = await loadSetIndex()
   return Array.from(sets.values()).flatMap(({id}) =>
@@ -184,7 +198,7 @@ export async function generateStaticParams() {
 }
 
 export async function GET(
-  _request: Request,
+  request: Request,
   {params}: {params: Promise<{set: string; size: string}>}
 ) {
   const {set, size} = await params
@@ -210,22 +224,20 @@ export async function GET(
 
   const {width, height} = PAPER_SIZES[normalized]
 
-  const logoUrl = process.env.PUBLIC_SITE_URL
-    ? `${process.env.PUBLIC_SITE_URL}/media${logo.src}`
-    : null
-  let logoSrc: string = TRANSPARENT_PIXEL
+  const logoUrl = `${process.env.PUBLIC_SITE_URL}/media${logo.src}`
+  let logoSrc: string = isOgSafeDataImage(logo.preview)
+    ? logo.preview
+    : TRANSPARENT_PIXEL
 
-  if (logoUrl) {
-    try {
-      const res = await fetch(logoUrl, {cache: 'force-cache'})
-      const mime = res.headers.get('content-type')
-      if (res.ok && mime?.startsWith('image/')) {
-        const buf = Buffer.from(await res.arrayBuffer())
-        logoSrc = `data:${mime};base64,${buf.toString('base64')}`
-      }
-    } catch {
-      // Keep transparent fallback image to avoid breaking prerender.
+  try {
+    const res = await fetch(logoUrl, {cache: 'force-cache'})
+    const mime = res.headers.get('content-type')
+    if (res.ok && mime?.startsWith('image/')) {
+      const buf = Buffer.from(await res.arrayBuffer())
+      logoSrc = `data:${mime};base64,${buf.toString('base64')}`
     }
+  } catch {
+    // Keep fallback image to avoid breaking prerender.
   }
 
   const sourceWidth = logo.width ?? 1
