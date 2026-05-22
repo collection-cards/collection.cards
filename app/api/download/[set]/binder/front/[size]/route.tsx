@@ -202,7 +202,10 @@ export async function GET(
   const sourceHeight = logo.height ?? 1
   const targetLogoWidth = (width / 100) * logoWidthPercentage
   const targetLogoHeight = (sourceHeight * targetLogoWidth) / sourceWidth
-  const logoUrl = new URL(`/media${logo.src}`, request.url).toString()
+  const logoUrl = new URL(
+    `${process.env.PUBLIC_SITE_URL}/media${logo.src}`,
+    request.url
+  ).toString()
 
   return new ImageResponse(
     <div
