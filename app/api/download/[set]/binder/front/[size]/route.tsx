@@ -3,6 +3,7 @@ import {ImageResponse} from 'next/og'
 import {NextResponse} from 'next/server'
 import {readdir, readFile} from 'node:fs/promises'
 import path from 'node:path'
+import sharp from 'sharp'
 
 const logoWidthPercentage = 60
 
@@ -75,6 +76,40 @@ const CONTENT_LOGOS_DIR = path.join(
   'pokémon',
   'logos'
 )
+const PUBLIC_MEDIA_DIR = path.join(process.cwd(), 'public', 'media')
+const MAX_IMAGE_SIZE_BYTES = 2 * 1024 * 1024 // 2MB
+
+async function loadLogoDataUrlScaled(
+  src: string,
+  targetWidth: number,
+  targetHeight: number
+): Promise<string | null> {
+  const relativePath = src.replace(/^\/+/, '')
+  const localPath = path.join(PUBLIC_MEDIA_DIR, relativePath)
+  let file: Buffer
+  try {
+    file = await readFile(localPath)
+  } catch {
+    return null // file does not exist
+  }
+  // Use sharp to resize to target width, keeping aspect ratio
+  let resized: Buffer
+  try {
+    resized = await sharp(file)
+      .resize({
+        width: Math.round(targetWidth),
+        height: Math.round(targetHeight),
+        fit: 'contain'
+      })
+      .png()
+      .toBuffer()
+  } catch {
+    return null
+  }
+  // If still too big, fallback to text
+  if (resized.length > MAX_IMAGE_SIZE_BYTES) return null
+  return `data:image/png;base64,${resized.toString('base64')}`
+}
 
 const PATTERN_SVG =
   '<svg version="1.1" viewBox="0 0 200.22 440" xmlns="http://www.w3.org/2000/svg"><path fill="#030718" d="M90.11,195.84c0,4.16-1.41,7.62-4.05,10.22-2.7,2.65-6.16,3.95-10.38,3.95H24.16c-4.16,0-7.62-1.3-10.22-3.95-2.65-2.65-3.95-6.05-3.95-10.22V24.16c0-4.16,1.3-7.62,3.95-10.22,2.65-2.59,6.05-3.95,10.22-3.95h51.51c4.16,0,7.62,1.3,10.38,3.95,2.76,2.65,4.05,6.05,4.05,10.22v46.54h-17.89V25.68H27.73v168.65h44.49v-49.24h17.89v50.76h0Z"/><path fill="#030718" d="M190.22,305.84c0,4.16-1.41,7.62-4.05,10.22-2.7,2.65-6.16,3.95-10.38,3.95h-51.51c-4.16,0-7.62-1.3-10.22-3.95-2.65-2.65-3.95-6.05-3.95-10.22v-171.68c0-4.16,1.3-7.62,3.95-10.22,2.65-2.59,6.05-3.95,10.22-3.95h51.51c4.16,0,7.62,1.3,10.38,3.95,2.76,2.65,4.05,6.05,4.05,10.22v46.54h-17.89v-45.03h-44.49v168.65h44.49v-49.24h17.89v50.76h0Z"/><path fill="#030718" d="M90.11,415.84c0,4.16-1.41,7.62-4.05,10.22-2.7,2.65-6.16,3.95-10.38,3.95H24.16c-4.16,0-7.62-1.3-10.22-3.95-2.65-2.65-3.95-6.05-3.95-10.22v-171.68c0-4.16,1.3-7.62,3.95-10.22,2.65-2.59,6.05-3.95,10.22-3.95h51.51c4.16,0,7.62,1.3,10.38,3.95,2.76,2.65,4.05,6.05,4.05,10.22v46.54h-17.89v-45.03H27.73v168.65h44.49v-49.24h17.89v50.76h0Z"/><path fill="#030718" d="M190.22,85.84c0,4.16-1.41,7.62-4.05,10.22-2.7,2.65-6.16,3.95-10.38,3.95h-51.51c-4.16,0-7.62-1.3-10.22-3.95-2.65-2.65-3.95-6.05-3.95-10.22V-85.84c0-4.16,1.3-7.62,3.95-10.22,2.65-2.59,6.05-3.95,10.22-3.95h51.51c4.16,0,7.62,1.3,10.38,3.95,2.76,2.65,4.05,6.05,4.05,10.22v46.54h-17.89v-45.03h-44.49V84.32h44.49v-49.24h17.89v50.76h0Z"/><path fill="#030718" d="M190.22,525.84c0,4.16-1.41,7.62-4.05,10.22-2.7,2.65-6.16,3.95-10.38,3.95h-51.51c-4.16,0-7.62-1.3-10.22-3.95-2.65-2.65-3.95-6.05-3.95-10.22v-171.68c0-4.16,1.3-7.62,3.95-10.22,2.65-2.59,6.05-3.95,10.22-3.95h51.51c4.16,0,7.62,1.3,10.38,3.95,2.76,2.65,4.05,6.05,4.05,10.22v46.54h-17.89v-45.03h-44.49v168.65h44.49v-49.24h17.89v50.76h0Z"/></svg>'
@@ -211,6 +246,17 @@ export async function GET(
   const targetLogoWidth = (width / 100) * logoWidthPercentage
   const targetLogoHeight = (sourceHeight * targetLogoWidth) / sourceWidth
 
+  let logoDataUrl: string | null = null
+  try {
+    logoDataUrl = await loadLogoDataUrlScaled(
+      logo.src,
+      targetLogoWidth,
+      targetLogoHeight
+    )
+  } catch {
+    logoDataUrl = null
+  }
+
   return new ImageResponse(
     <div
       style={{
@@ -252,15 +298,34 @@ export async function GET(
           opacity="0.15"
         />
       </svg>
-      <img
-        src={`${process.env.PUBLIC_SITE_URL}/media${logo.src}`}
-        alt={logo.title || setData.title}
-        style={{
-          width: `${targetLogoWidth}px`,
-          height: `${targetLogoHeight}px`,
-          position: 'relative'
-        }}
-      />
+      {logoDataUrl ? (
+        <img
+          src={logoDataUrl}
+          alt={logo.title || setData.title}
+          width={targetLogoWidth}
+          height={targetLogoHeight}
+          style={{
+            width: `${targetLogoWidth}px`,
+            height: `${targetLogoHeight}px`,
+            position: 'relative'
+          }}
+        />
+      ) : (
+        <div
+          style={{
+            maxWidth: '80%',
+            fontSize: Math.round(width * 0.045),
+            fontWeight: 700,
+            letterSpacing: '0.02em',
+            color: '#0f172a',
+            textAlign: 'center',
+            textTransform: 'uppercase',
+            position: 'relative'
+          }}
+        >
+          {logo.title || setData.title}
+        </div>
+      )}
     </div>,
     {
       width,
