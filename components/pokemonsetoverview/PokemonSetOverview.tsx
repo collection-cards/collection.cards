@@ -399,9 +399,10 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                 {coverSizes.map(({value, label}) => (
                   <DropdownMenuItem key={value} asChild>
                     <a
+                      className="cursor-pointer"
                       href={`/api/download/${setId}/binder/front/${value}`}
                       rel="noopener noreferrer"
-                      className="cursor-pointer"
+                      target="_blank"
                     >
                       {label}
                     </a>
