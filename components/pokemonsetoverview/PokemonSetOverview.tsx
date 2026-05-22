@@ -11,7 +11,6 @@ import {rarity, Rarity, rarityOrder} from '@/consts/rarity'
 import {variant, Variant, variantPattern} from '@/consts/variant'
 import {ImageLink} from 'alinea'
 import {BookOpen, Download, GalleryHorizontal, Grid, Layers} from 'lucide-react'
-import Link from 'next/link'
 import {
   parseAsBoolean,
   parseAsInteger,
@@ -399,13 +398,13 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                 </div>
                 {coverSizes.map(({value, label}) => (
                   <DropdownMenuItem key={value} asChild>
-                    <Link
+                    <a
                       href={`/api/download/${setId}/binder/front/${value}`}
                       rel="noopener noreferrer"
                       className="cursor-pointer"
                     >
                       {label}
-                    </Link>
+                    </a>
                   </DropdownMenuItem>
                 ))}
               </DropdownMenuContent>
