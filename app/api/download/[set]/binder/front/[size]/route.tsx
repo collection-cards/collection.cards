@@ -197,6 +197,7 @@ export async function GET(
   }
 
   const {width, height} = PAPER_SIZES[normalized]
+  const filename = `${setData.slug}-binder-front-${normalized}-collection-cards.png`
 
   const sourceWidth = logo.width ?? 1
   const sourceHeight = logo.height ?? 1
@@ -263,7 +264,10 @@ export async function GET(
     {
       width,
       height,
-      headers: CACHE_HEADERS
+      headers: {
+        ...CACHE_HEADERS,
+        'Content-Disposition': `attachment; filename="${filename}"`
+      }
     }
   )
 }

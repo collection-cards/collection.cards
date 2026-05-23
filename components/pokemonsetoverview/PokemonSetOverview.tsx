@@ -402,7 +402,6 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                       className="cursor-pointer"
                       href={`/api/download/${setId}/binder/front/${value}`}
                       rel="noopener noreferrer"
-                      target="_blank"
                     >
                       {label}
                     </a>
