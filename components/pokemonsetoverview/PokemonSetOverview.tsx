@@ -1,5 +1,6 @@
 'use client'
 
+import {spineSizes} from '@/app/api/download/[set]/binder/sizes'
 import {cardType, CardType} from '@/consts/cardtype'
 import {energy, Energy} from '@/consts/energy'
 import {
@@ -394,7 +395,7 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                   data-slot="select-label"
                   className="text-muted-foreground px-2 py-1.5 text-xs"
                 >
-                  Cover size
+                  Front
                 </div>
                 {coverSizes.map(({value, label}) => (
                   <DropdownMenuItem key={value} asChild>
@@ -407,6 +408,27 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                     </a>
                   </DropdownMenuItem>
                 ))}
+                <div
+                  data-slot="select-label"
+                  className="text-muted-foreground px-2 py-1.5 text-xs"
+                >
+                  Spine
+                </div>
+                {Object.keys(spineSizes).map(key => {
+                  const {width, height} =
+                    spineSizes[key as keyof typeof spineSizes]
+                  return (
+                    <DropdownMenuItem key={key} asChild>
+                      <a
+                        className="cursor-pointer"
+                        href={`/api/download/${setId}/binder/spine/${key}`}
+                        rel="noopener noreferrer"
+                      >
+                        {width}x{height} px
+                      </a>
+                    </DropdownMenuItem>
+                  )
+                })}
               </DropdownMenuContent>
             </DropdownMenu>
           )}
