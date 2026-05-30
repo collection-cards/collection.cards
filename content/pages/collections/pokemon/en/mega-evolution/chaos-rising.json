@@ -1,0 +1,23 @@
+{
+  "_id": "3ESCs1lP4pWEy0yfs16XApiBPp8",
+  "_type": "PokemonSet",
+  "_index": "aP",
+  "title": "Chaos Rising",
+  "ptcgoCode": "CRI",
+  "releaseDate": "2026-05-22",
+  "symbol": [
+    {
+      "_id": "3ESFDPYLj1XxU23wChjoGoQoNlI",
+      "_index": "a0",
+      "_type": "image",
+      "_entry": "3ESEo9gED0WtUra7fkncIoodotR"
+    }
+  ],
+  "logo": {
+    "_id": "3ESEVOgrCoGXiemL6e4syD22ZFg",
+    "_type": "image",
+    "_entry": "3ESETf45LcB4EauW66USq1BM0tX"
+  },
+  "heroImage": {},
+  "cta_description": []
+}

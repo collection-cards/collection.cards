@@ -1,0 +1,25 @@
+{
+  "_id": "3EJsgTsRQPbMdpzLV7WzspO9A3c",
+  "_type": "PokemonSet",
+  "_index": "aM",
+  "title": "Phantasmal Flames",
+  "number": 107,
+  "ptcgoCode": "PFL",
+  "releaseDate": "2025-11-14",
+  "generation": "IX",
+  "symbol": [
+    {
+      "_id": "3EJtY1iGB7yhYac0KrLV1Olq6jK",
+      "_index": "a0",
+      "_type": "image",
+      "_entry": "3EJtUp4oIRQBoG8qbgNamAyrCVI"
+    }
+  ],
+  "logo": {
+    "_id": "3EJuBpZ5O3oORGBtlLwg2wpknho",
+    "_type": "image",
+    "_entry": "3EJu7RoJM9XRlJWufnbAxaR7ZAh"
+  },
+  "heroImage": {},
+  "cta_description": []
+}

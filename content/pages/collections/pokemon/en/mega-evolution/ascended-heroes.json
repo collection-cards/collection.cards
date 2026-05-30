@@ -1,0 +1,23 @@
+{
+  "_id": "3ESCgC9BfXCIBoZgpI969IQc8Ft",
+  "_type": "PokemonSet",
+  "_index": "aN",
+  "title": "Ascended Heroes",
+  "ptcgoCode": "ASC",
+  "releaseDate": "2026-01-30",
+  "symbol": [
+    {
+      "_id": "3ESDSciGk4V0Gc0h4q52qX3SeVj",
+      "_index": "a0",
+      "_type": "image",
+      "_entry": "3ESDQ1lQNMuoUSqs9sTOc7jPSAE"
+    }
+  ],
+  "logo": {
+    "_id": "3ESDdcxf3leDeIKd1CAgIjplBG3",
+    "_type": "image",
+    "_entry": "3ESDbP7KfcplZLZnfFgPRbO1FAe"
+  },
+  "heroImage": {},
+  "cta_description": []
+}
