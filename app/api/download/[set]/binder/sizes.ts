@@ -13,5 +13,5 @@ export const spineSizes: Record<
   (typeof SPINE_SIZES)[number],
   {width: number; height: number}
 > = {
-  a4_16: {width: 272, height: 3508}
+  a4_16: {width: 224, height: 3508}
 } as const
