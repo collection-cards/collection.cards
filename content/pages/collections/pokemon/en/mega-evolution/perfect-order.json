@@ -19,5 +19,15 @@
     "_entry": "3ESDwGlYBxfshjiFqmcNQJTjuNy"
   },
   "heroImage": {},
-  "cta_description": []
+  "cta_description": [
+    {
+      "_type": "paragraph",
+      "content": [
+        {
+          "_type": "text",
+          "text": "Perfect Order is a Pokémon Legends: Z-A-themed expansion centered around Mega Zygarde ex. Set against the world of Lumiose City, it introduces new Mega Evolution Pokémon ex and cards connected to the people and Pokémon of the city."
+        }
+      ]
+    }
+  ]
 }
