@@ -19,5 +19,15 @@
     "_entry": "3ESETf45LcB4EauW66USq1BM0tX"
   },
   "heroImage": {},
-  "cta_description": []
+  "cta_description": [
+    {
+      "_type": "paragraph",
+      "content": [
+        {
+          "_type": "text",
+          "text": "Chaos Rising continues the Pokémon Legends: Z-A theme with new Mega Evolution Pokémon ex, including Mega Greninja ex and Mega Floette ex. The expansion returns to Lumiose City with powerful new cards, illustrated Pokémon and Trainers, and the rising conflict of the Mega Evolution era."
+        }
+      ]
+    }
+  ]
 }

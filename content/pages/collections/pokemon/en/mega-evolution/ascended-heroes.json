@@ -19,5 +19,15 @@
     "_entry": "3ESDbP7KfcplZLZnfFgPRbO1FAe"
   },
   "heroImage": {},
-  "cta_description": []
+  "cta_description": [
+    {
+      "_type": "paragraph",
+      "content": [
+        {
+          "_type": "text",
+          "text": "Ascended Heroes brings a new wave of Mega Evolution Pokémon ex to the Pokémon Trading Card Game, led by Mega Dragonite ex. The expansion features first partner Pokémon from Pokémon Legends: Z-A as Mega Evolution Pokémon, more Trainer’s Pokémon, and the debut of Mega attack rare cards."
+        }
+      ]
+    }
+  ]
 }

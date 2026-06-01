@@ -21,5 +21,15 @@
     "_entry": "3EJu7RoJM9XRlJWufnbAxaR7ZAh"
   },
   "heroImage": {},
-  "cta_description": []
+  "cta_description": [
+    {
+      "_type": "paragraph",
+      "content": [
+        {
+          "_type": "text",
+          "text": "Phantasmal Flames continues the Mega Evolution series with Mega Charizard X ex at the center of the expansion. Focused on Fire-type and Darkness-type Pokémon, the set introduces more Mega Evolution Pokémon ex, including Mega Gengar ex, alongside new Pokémon ex cards and striking collectible artwork."
+        }
+      ]
+    }
+  ]
 }
