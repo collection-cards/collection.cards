@@ -1,0 +1,37 @@
+{
+  "_id": "3EgY7C6EFbHe0OSBDuy3WB9wCRQ",
+  "_type": "PokemonSet",
+  "_index": "aR",
+  "title": "30th Celebration",
+  "ptcgoCode": "",
+  "releaseDate": "2026-09-16",
+  "symbol": [
+    {
+      "_id": "3EgbTvVVJnuEwkyNyVXyiP6cTK3",
+      "_index": "a0",
+      "_type": "image",
+      "_entry": "3EgbRqDeM46rZKKKKAtiY8BVBo0"
+    }
+  ],
+  "logo": {
+    "_id": "3EgYFT7hVOJ2T7wgTgq9iW6MLuU",
+    "_type": "image",
+    "_entry": "3EgYDAqjSfBpPy5FLXkJQ9f1XpZ"
+  },
+  "heroImage": {
+    "_id": "3EgfqAZfz4WaggtYpCpfPFp0fe6",
+    "_type": "image",
+    "_entry": "3EgfoIT3q6dLlQN3PLbC1hwHlOF"
+  },
+  "cta_description": [
+    {
+      "_type": "paragraph",
+      "content": [
+        {
+          "_type": "text",
+          "text": "30th Celebration commemorates 30 years of the Pokémon Trading Card Game with a special anniversary expansion filled with nostalgia. The set features 30 classic reprinted cards, 30 unique Pikachu cards, and the debut of the new Futuristic rare rarity. With every card appearing as a foil card, this expansion celebrates the history and future of the Pokémon TCG."
+        }
+      ]
+    }
+  ]
+}
