@@ -6,7 +6,11 @@
   "ptcgoCode": "",
   "releaseDate": "2026-07-17",
   "symbol": [],
-  "logo": {},
+  "logo": {
+    "_id": "3EgezF1ft4Tqg8peZzjaH0H8QCZ",
+    "_type": "image",
+    "_entry": "3Egex7DeT6FKbghUZa5Z6vhV8Dq"
+  },
   "heroImage": {},
   "cta_description": []
 }
