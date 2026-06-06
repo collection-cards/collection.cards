@@ -16,5 +16,15 @@
     "_type": "image",
     "_entry": "3Egix6ZOZQLtxdmDuOyl5XpaDQh"
   },
-  "cta_description": []
+  "cta_description": [
+    {
+      "_type": "paragraph",
+      "content": [
+        {
+          "_type": "text",
+          "text": "Pitch Black brings the Mega Evolution series into darker territory with Mega Darkrai ex and Mega Zeraora ex leading the expansion. Inspired by the Mega Dimension storyline of Pokémon Legends: Z-A, the set introduces new Mega Evolution Pokémon ex, powerful Pokémon ex, and a collection of collectible cards featuring Pokémon and Trainers from this mysterious new chapter."
+        }
+      ]
+    }
+  ]
 }
