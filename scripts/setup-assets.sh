@@ -62,6 +62,10 @@ find ./assets -mindepth 1 -type d | while read -r src; do
   ln -s "$src_abs" "$dst" 2>/dev/null || true
 done
 
+# Remove the old ./proxy.ts symlink if it exists and points to a non-existing location
+if [ -L "./proxy.ts" ] && [ ! -e "./proxy.ts" ]; then
+  rm "./proxy.ts"
+fi
 # Create symlink for proxy.ts if avaiable in assets
 if [ -f "./$ASSETS_DIR/proxy.ts" ]; then
   dst="./proxy.ts"
