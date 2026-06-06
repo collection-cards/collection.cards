@@ -8,7 +8,7 @@ import {Switch} from '@/components/ui/switch'
 import {useTheme} from 'next-themes'
 
 const ThemeToggle = () => {
-  const {theme, setTheme} = useTheme()
+  const {resolvedTheme, setTheme} = useTheme()
   const [mounted, setMounted] = useState(false)
   const id = useId()
 
@@ -25,7 +25,7 @@ const ThemeToggle = () => {
         {mounted && (
           <Switch
             id={id}
-            checked={theme === 'light'}
+            checked={resolvedTheme === 'light'}
             onCheckedChange={checked => setTheme(checked ? 'light' : 'dark')}
             aria-label="Theme switch"
             className="peer absolute inset-0 h-[inherit] cursor-pointer w-auto data-[state=checked]:bg-primary data-[state=unchecked]:bg-primary hover:data-[state=checked]:bg-primary/90 hover:data-[state=unchecked]:bg-primary/90 [&_span]:h-full [&_span]:w-full md:[&_span]:w-1/2 [&_span]:transition-transform [&_span]:duration-300 [&_span]:ease-[cubic-bezier(0.16,1,0.3,1)] [&_span]:data-[state=checked]:translate-x-0 [&_span]:data-[state=checked]:rtl:-translate-x-0 md:[&_span]:data-[state=checked]:translate-x-full md:[&_span]:data-[state=checked]:rtl:-translate-x-full"
