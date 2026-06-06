@@ -42,7 +42,6 @@ const SetCard: React.FC<SetCardProps> = ({
     <Card className="py-0 gap-0 overflow-hidden xl:flex-row shadow-none transition-shadow duration-300 h-full group-hover:shadow-md">
       {image?.src && (
         <CardContent className="relative min-h-55 max-xl:max-h-55 xl:w-66 overflow-hidden">
-          (
           <Image
             className="group-hover:scale-120 transition-transform duration-300 ease-in-out"
             alt={title}
@@ -67,7 +66,6 @@ const SetCard: React.FC<SetCardProps> = ({
                 : undefined
             }}
           />
-          )
         </CardContent>
       )}
       <div className="flex grow-1 flex-col justify-between">
