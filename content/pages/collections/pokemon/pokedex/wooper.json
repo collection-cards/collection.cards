@@ -4,6 +4,14 @@
   "_index": "a0",
   "title": "Wooper",
   "number": 194,
+  "aliases": [
+    {
+      "_id": "3EmK6YIxYCD6D3UKO5La7mfcRYm",
+      "_index": "a0",
+      "_type": "Alias",
+      "name": "Paldean Wooper"
+    }
+  ],
   "evolvesFrom": {},
   "evolvesTo": [
     {

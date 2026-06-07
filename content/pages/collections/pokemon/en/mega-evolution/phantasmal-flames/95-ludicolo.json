@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQvAVR8kPIKY46rMCGP3l66Od",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Ludicolo",
+  "number": "95",
+  "edgeColor": "#97999b",
+  "rarity": "illustration-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vXqGCgzVMiaM4Y3FQRJ8n7xiD",
+    "_id": "3EmQupOHoUz1HkXKHBzv4kqJ2vV"
+  },
+  "hp": 160,
+  "stage": "stage2",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGUpIbKqNajorLelexd5d1jL",
+    "_id": "3EmQuhxLxfZCIlZGw17VOe2dLte"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQv2LGAgMhaonWZaVvZ5XREXA",
+    "_id": "3EmQv973PLXpb405A091Bf6TEu0"
+  },
+  "variants": [
+    {
+      "_id": "3EmQuyZ6eXja2H6kr7yOzmK4KpK",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQv7wBaSBMRwBb1CamBE4o0w2",
+        "_id": "3EmQvA7wYhtwpS5j9yZzsUHFwF9"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQv9NclpeGBe3b6VSIBvo5Rab",
+        "_id": "3EmQv5gbcWopFMlWki2GohymYJ8"
+      }
+    }
+  ]
+}

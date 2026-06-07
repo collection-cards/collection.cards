@@ -1,0 +1,68 @@
+{
+  "_id": "3EmQe64Q9IUs2WlPiT7ecLTH6Cz",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Pawmot",
+  "number": "34",
+  "edgeColor": "#97999b",
+  "rarity": "rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "349tWftyxx6WEzzYt8kfs8dWWPv",
+    "_id": "3EmQdoqDPxEmubDoBe99nAduZ2Z"
+  },
+  "hp": 140,
+  "stage": "stage2",
+  "energy": "lightning",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGSgO6FiG81sFTDBaR77oXuo",
+    "_id": "3EmQdqrlhX8tSiXukoNrLddvVg8"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQdvwPuAy7LTf8U0TgU0zSkK6",
+    "_id": "3EmQe7R8bEIZciclp6OwmzOYZBZ"
+  },
+  "variants": [
+    {
+      "_id": "3EmQdxpUHobYV4erpO6MyQnPf0K",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQe3pbEzsYEdTjQOwdL0AQQQZ",
+        "_id": "3EmQe0DOE5qxrxr932D52TDUjUC"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQe2OBqxKrebMOtJzEodTaom1",
+        "_id": "3EmQe4rIRvLtL9MS06MJjV9wvph"
+      }
+    },
+    {
+      "_id": "3EmQe0axVCrd8bKNdM9tirYIscV",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQe1epjUPQ10Cu9jpJHRdugn1",
+        "_id": "3EmQe69VdOGeR4MNTxWiwmhFvNs"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQe2aWjg7LjWTUqbqJ0ysZoT8",
+        "_id": "3EmQe2w1KfHwNgCEcLl6mD8BEtP"
+      }
+    }
+  ]
+}

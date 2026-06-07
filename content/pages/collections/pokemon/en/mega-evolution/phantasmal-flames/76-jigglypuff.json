@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQq7j2JjRxPnsEU5gDqFmdSD2",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Jigglypuff",
+  "number": "76",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34BWeUH6PYdBa9vtvFGiuAwlozR",
+    "_id": "3EmQprowiwgxLi0xHt6XBtvHbOp"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVdFAUMDiVhBWXG5WXt23pc",
+    "_id": "3EmQprekyXzbZyuDMWxu9NyJYs8"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQq990TDZl8FB2dfZ3dMWpWG6",
+    "_id": "3EmQq7ssqUJJzK0m5Vaf3ASoXOt"
+  },
+  "variants": [
+    {
+      "_id": "3EmQq5BGxlhu5pzb1ckzMgvtGW8",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQq8SjRO0B3MX4l1bH1aXKPfl",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQq57R7R1bd02BnoKOx1boQlz",
+        "_id": "3EmQq7V9Mp3kwrDtCO7fLaQWTrd"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQq4K0PgXQWhbKJT0NDrqcSeY",
+        "_id": "3EmQq8bwLx50QuSBGyowwcx61SF"
+      }
+    }
+  ]
+}

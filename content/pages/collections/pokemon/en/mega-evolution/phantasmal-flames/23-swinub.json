@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQavvXEH79ifXVQflxIyZOPnQ",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Swinub",
+  "number": "23",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "37iiIVuruS2edLxvn0YBvDtp3Qw",
+    "_id": "3EmQafcnpg9YmqleMo7J9vEOvMF"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "water",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGWNBOUQpihfoX4dj6rCoYZt",
+    "_id": "3EmQahfNj6WgverZgfqObOyyp9c"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQayBWZPUwCkPtr9ZiQHE6st5",
+    "_id": "3EmQawNirQBPtmGrfQ5ix2i2b7S"
+  },
+  "variants": [
+    {
+      "_id": "3EmQasLxpQeZtRoWkD1htdQhjNr",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQaswGITaew9OWLmE15g4yRT9",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQavFfiRF7w7nlW9bd4B20mLJ",
+        "_id": "3EmQavwmtKxzjF5p4CiaVOxD2Fr"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQat9Nd1FX1shVjItaIDstx8P",
+        "_id": "3EmQavhDi002KdcWcGDsXP1BGJ2"
+      }
+    }
+  ]
+}

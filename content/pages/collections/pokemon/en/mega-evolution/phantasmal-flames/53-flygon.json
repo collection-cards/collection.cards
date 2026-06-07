@@ -1,0 +1,68 @@
+{
+  "_id": "3EmQjVUQiCX8YAnSyXba09vxsut",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Flygon",
+  "number": "53",
+  "edgeColor": "#97999b",
+  "rarity": "rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vXqGCgzVMiaM4Y3FQRJ8n7xiD",
+    "_id": "3EmQj1gkyeqyYxsJzLO0Tgc78En"
+  },
+  "hp": 150,
+  "stage": "stage2",
+  "energy": "fighting",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGWBsMOCyaTLAaPmhxoitoF9",
+    "_id": "3EmQj6I9DwNN4k2LPOlhDpvz32J"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQjO0aGBXcLgNIYuoyaiMvb5t",
+    "_id": "3EmQjOxRvk2mInCnJydpF8HZNwM"
+  },
+  "variants": [
+    {
+      "_id": "3EmQjMg7NmwCTG8NWoluHu4bwGQ",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQjW1nPDHZhXNca5LRVueeW0k",
+        "_id": "3EmQjVlLOthu5sV8j6yapDOzgXZ"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQjW4O4psZpYLTTw7NSPHSSRn",
+        "_id": "3EmQjQ1IcppBXHkgTxk90bv2Gmf"
+      }
+    },
+    {
+      "_id": "3EmQjPCEsID3wUFqUz8dzpEtQ09",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQjRetETBm4HFr0URaS9D3tjs",
+        "_id": "3EmQjVXM9ghaJWhbWwCH61SXJu5"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQjPfoA71cZbjZWrmpXIhWoZd",
+        "_id": "3EmQjPBgFB5YDPudaIOkvFOId5K"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQxYPcwUdO3JgoQ728zPfIBv5",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Paldean Wooper",
+  "number": "102",
+  "edgeColor": "#97999b",
+  "rarity": "illustration-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vY7s09PEgcYcePJCFGqslTjsT",
+    "_id": "3EmQxApLqqHosKTgCc8eassFx83"
+  },
+  "hp": 60,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGQcYomLBxprtbBKN5f1cZZ7",
+    "_id": "3EmQx6anLMugDkvQaZYBnOKGBwl"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQxQKJ9hX7QJGatA1rneuOivU",
+    "_id": "3EmQxW5jmFTJoRvzqaFPdhWJkvX"
+  },
+  "variants": [
+    {
+      "_id": "3EmQxOzbkDqIe4QBbnSXWBNhC8i",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQxV3P4TsIgnN0CQhAMAMxD3D",
+        "_id": "3EmQxUcGTPocpjbtMP1XkdZwgOB"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQxZ9kuIHW6g7PZ9QZ6SJgxp1",
+        "_id": "3EmQxY0vHIJVahFUzX5hPJmNwtm"
+      }
+    }
+  ]
+}

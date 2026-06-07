@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQqZl0UH4U8oElSXQxAoX6S9G",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Aipom",
+  "number": "78",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vtSoFZ0bvONM8edNtxXPsYYMG",
+    "_id": "3EmQqPuOvEbqVQ1PYMCioSOgGne"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGU4w4BtQbJhr3sQeS4uvOck",
+    "_id": "3EmQqLtZRoXKlHqI9jXoNtk9BOW"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQqd8TGANSy0vHjdsiXxfotdv",
+    "_id": "3EmQqcSNrk64rSKDyPEkz9hR7eX"
+  },
+  "variants": [
+    {
+      "_id": "3EmQqcLKugCj5OqKJzNmmhFmG0b",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQqbelvwFmFc4uYDDsDMZwiHC",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQqdaCeq6oyXB4B0vsZZBwe0W",
+        "_id": "3EmQqfi1pFTKqeDwmABmdwy1bXE"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQqbIy7S1DXpOIhodqx8HW7Fz",
+        "_id": "3EmQqcZrPOntWPeXQaltfXpmY1i"
+      }
+    }
+  ]
+}

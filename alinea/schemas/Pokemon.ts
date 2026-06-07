@@ -8,6 +8,15 @@ export const Pokemon = Config.type('Pokémon', {
     number: Field.number('Number', {width: 0.2, required: true}),
     title: Field.text('Title', {width: 0.8, required: true}),
     path: Field.path('Path', {hidden: true}),
+    aliases: Field.list('Aliases', {
+      schema: {
+        Alias: Config.type('Alias', {
+          fields: {
+            name: Field.text('Name', {required: true})
+          }
+        })
+      }
+    }),
     evolvesFrom: Field.entry('Evolves from', {
       location: {
         workspace: 'main',

@@ -1,0 +1,43 @@
+{
+  "_id": "3EmR4CgDFZyi5E6u1hNZLE1vctI",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Punk Helmet",
+  "number": "121",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZAqyuU8Gja4OXFzcQJArULvr",
+    "_id": "3EmR3oeukNmug2TzJqnUePZEeu3"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR3zg5qyxOYaDiqHhydsfHW8E",
+    "_id": "3EmR4F2liETxtJe9aMTgcybfdmC"
+  },
+  "variants": [
+    {
+      "_id": "3EmR3yFGEcbeXDgXXkBf2GbMSjZ",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR4C5llLgiBeKuxUZYuw8Yp2e",
+        "_id": "3EmR4EnMo2kCJWCmn2EVhc7tkpn"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR4C1LkeJvBsaFk5vIMY7W7Dj",
+        "_id": "3EmR497DRITsVf3ObESvmjRbuVX"
+      }
+    }
+  ]
+}

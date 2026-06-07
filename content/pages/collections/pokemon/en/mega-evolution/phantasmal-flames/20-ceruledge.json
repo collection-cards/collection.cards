@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQa0dH2y7gIi1mFEJfgZVcRRW",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Ceruledge",
+  "number": "20",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vXZdai5YlKTpVz9murSbKzPZg",
+    "_id": "3EmQZpff4P201HfOAC6razIb5tN"
+  },
+  "hp": 140,
+  "stage": "stage1",
+  "energy": "fire",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGSDjeOdzNfSLyKPvuKkgOFY",
+    "_id": "3EmQZjNFgfid0kaxMuFU5TJMU5D"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQa1wC45SmtGlbk9AWL20T6zJ",
+    "_id": "3EmQa27jSxsHzqkidApS0xbEoPN"
+  },
+  "variants": [
+    {
+      "_id": "3EmQa24IiNacgFWoSSq4mTVNBfi",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQa4FleUd6c9VxePa49hW4Eir",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQZyPH34PxBq2wDMudTNHz4hM",
+        "_id": "3EmQa55h5hjm4heYKWunAbQ9NRR"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQZyOzoZcCRfm7LF5Gbhu7HOS",
+        "_id": "3EmQa15oWVhUAOKrxVip2hKUsNt"
+      }
+    }
+  ]
+}

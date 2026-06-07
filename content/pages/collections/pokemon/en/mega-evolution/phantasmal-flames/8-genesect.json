@@ -1,0 +1,68 @@
+{
+  "_id": "3EmQWoxdndQqbHLyckTkHPTDAmT",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Genesect",
+  "number": "8",
+  "edgeColor": "#97999b",
+  "rarity": "rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vd0EFyE3CZbH8IolNutTd5AQJ",
+    "_id": "3EmQWKbN5SFTK1ldp5QgmRFDo5W"
+  },
+  "hp": 120,
+  "stage": "basic",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGTkARNjEGuVgoJdgepyuWu1",
+    "_id": "3EmQWN9OyJA9gIFBL7OaFzbZyRx"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQWXE0kaOpB3UGj6GDJjoP8c4",
+    "_id": "3EmQWmXNyPWWdKeBcLXsnLIkuqC"
+  },
+  "variants": [
+    {
+      "_id": "3EmQWUfHkY35CJ1plaPbdExMBJN",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQWa3leD9p7IBS4lhyO1JwWlr",
+        "_id": "3EmQWg88AobFPkh8GIp3eARG6rY"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQWa2CFN7olg91Fl2cMxfvvPy",
+        "_id": "3EmQWftDPFejSWNOusmvMhZethh"
+      }
+    },
+    {
+      "_id": "3EmQWeTvJqlEsnk4fOzDVJdSWrx",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQWjpY6EcYyuSEp7szFuhFmdW",
+        "_id": "3EmQWnSJ8EHyz3x8gbQ9E2zkl2a"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQWnx0GWdVYwA1BI1ewObE873",
+        "_id": "3EmQWoe3Ej1qhtQohZpyQkd8TRS"
+      }
+    }
+  ]
+}

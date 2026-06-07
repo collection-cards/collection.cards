@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQg4BBhTc94c24ijGwmaTMHVJ",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Mega Diancie ex",
+  "number": "41",
+  "edgeColor": "#97999b",
+  "rarity": "double-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "37iiM3uXbhT8aPAWXVCsILHsX1R",
+    "_id": "3EmQfpIrxHFu0GRpKzD5YZ7YTLc"
+  },
+  "hp": 270,
+  "stage": "basic",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGSOdlKzUCPEmzOzZGx8co2Q",
+    "_id": "3EmQfpgJA0imvfiT4SrbmUCZ7Yh"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQfzwyhQWOFLC0zns8CIXUEbe",
+    "_id": "3EmQg7jQ2lg0MwAO8WkOM7IGxYr"
+  },
+  "variants": [
+    {
+      "_id": "3EmQfxYtZZQYV8GJW7M6lz3pUlD",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQg7YjGQQstUemaXWhgAiEs0h",
+        "_id": "3EmQg5w3RcwLlZmv55nykJUNi4B"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQg84m5sD2jD7SkBlf6iRvAai",
+        "_id": "3EmQg0jxx1CqrjF94vHvaQL0xFo"
+      }
+    }
+  ]
+}

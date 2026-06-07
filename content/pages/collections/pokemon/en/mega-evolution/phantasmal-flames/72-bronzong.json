@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQp6OEXc86GslbEPgWvTkFRCu",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Bronzong",
+  "number": "72",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vb2hLfd9f4qupMabCkgPuLvgJ",
+    "_id": "3EmQot36b6bBpw1rNUxCyxXxR7Q"
+  },
+  "hp": 140,
+  "stage": "stage1",
+  "energy": "metal",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGWkzURDRJkku7XNTlDinvxF",
+    "_id": "3EmQopyA7G48ayBK3yy5M7ZNf8x"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQp3pVFjwJ2jcS0PhsUdMEe85",
+    "_id": "3EmQpAYgzGYkAz4qhCymURIFW8U"
+  },
+  "variants": [
+    {
+      "_id": "3EmQpAspp7MDM9ShV0SLQs70KRP",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQpA52vaxjn2TymHs4LjEpBPI",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQp3avurWMpd2YNyZtE4yPTcz",
+        "_id": "3EmQp4moof074ka8xRuRWwMTwzt"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQp9n1igxlz7sXYfcfrgK1IGj",
+        "_id": "3EmQpA1GdveuZZoV8GQfBOIz9nJ"
+      }
+    }
+  ]
+}

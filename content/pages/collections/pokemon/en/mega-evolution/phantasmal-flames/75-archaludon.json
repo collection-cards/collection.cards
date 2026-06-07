@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQptqQzobLH9HUVKBW2o5j3eP",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Archaludon",
+  "number": "75",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vc8fUQ3cLQQniMEPW2AF0lrxG",
+    "_id": "3EmQpaSKRIEiawqVPZ3yJgSXZOr"
+  },
+  "hp": 180,
+  "stage": "stage1",
+  "energy": "metal",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGW3ss9cLKtk5hM0Ilc8yeGv",
+    "_id": "3EmQpagBztRgaDe92WcYyv0wmmG"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQppR7HgtswZeUtZCHxCz9jXt",
+    "_id": "3EmQpsYiYDRbzbTSPN9WA4ZYj9C"
+  },
+  "variants": [
+    {
+      "_id": "3EmQpsMYwve9jiVQNz4axZhJH06",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQpuAWNM9zx8q6C2tVC1uNjc1",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQpus7TRHn2cNaZfMNPhbbN9e",
+        "_id": "3EmQpooRbYQc0s3F1MgR1pmEnKl"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQpqLxAusSmo7xIHtdhnSFbkA",
+        "_id": "3EmQpusjKcdxW2mcVEFYkLBoJGx"
+      }
+    }
+  ]
+}

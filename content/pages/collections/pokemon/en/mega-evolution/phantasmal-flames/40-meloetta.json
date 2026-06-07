@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQfrBLg0tTk66kYsclLBFFjpu",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Meloetta",
+  "number": "40",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vbaXWmah81VwcWXFqjGR62dew",
+    "_id": "3EmQfNjo9zud0hzV6jBM9nCY6Aj"
+  },
+  "hp": 90,
+  "stage": "basic",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGS8OCKjsPDo318tFm6YpR5W",
+    "_id": "3EmQfUlajDuQhPiKyb1hGV01CSP"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQfeUCZAwbjqdsGSFvPI7oYQe",
+    "_id": "3EmQfp6kBfNys4p1f23QYyR9dD2"
+  },
+  "variants": [
+    {
+      "_id": "3EmQfiIo8aDvrh7LiJWJSgkl6na",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQfcy7EMx2IYWaJrVfFPoH68X",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQfoVhWHAENqJ0y9uMytSi55X",
+        "_id": "3EmQfsWXxEnliIdODHwAOSqlARh"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQfnkGhiQ6TkamXZPnRexjeff",
+        "_id": "3EmQfrBCo9nsAxn9RqhthVSZb4I"
+      }
+    }
+  ]
+}

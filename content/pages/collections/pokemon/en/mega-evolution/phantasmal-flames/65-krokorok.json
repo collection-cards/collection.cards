@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQn9uM1bTjyuGaHL08b3Th9RB",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Krokorok",
+  "number": "65",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vbs4hrhVWRVWppzfM3LlXgFNI",
+    "_id": "3EmQmfNGNtK4WMcHc7sIbu0yQSI"
+  },
+  "hp": 100,
+  "stage": "stage1",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGR0N4j7Y66ZiAU8HMPvofmH",
+    "_id": "3EmQmku0fCWaSdpvzslZoZ4gEGx"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQmvttYuINxcLqUNNZ8ZcyhM3",
+    "_id": "3EmQn478bXXC9uK1yUnIihsQ2Ne"
+  },
+  "variants": [
+    {
+      "_id": "3EmQn1qQrzSPlvgdrIMOJMbj9Pq",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQn1CllVtFun4LcI797YDVzTt",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQn4mbjvSZMjB8o3TsJCHib5G",
+        "_id": "3EmQn7zjvtCjby3pbQC7yNA4luM"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQn7nkBmVfFWULgOpnyFxWcaa",
+        "_id": "3EmQn8maKAe72VvEt7O8CU8qxHv"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQYceC6PjT2QHVhhBW8KgT0fa",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Darumaka",
+  "number": "15",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34BWJakp0lJ5SlKP0q7En4NFXK4",
+    "_id": "3EmQYPUy5PGvk7nC2WXnF1IwB98"
+  },
+  "hp": 80,
+  "stage": "basic",
+  "energy": "fire",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGRbLkVtD0VkDJIJO7RVRURS",
+    "_id": "3EmQYQ3YS0A3e5CSebCJgB4NGPd"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQYfLOo8bGDeshRVUu3b7f6Mm",
+    "_id": "3EmQYedFIZsJKzAOsZPlAsDvw8s"
+  },
+  "variants": [
+    {
+      "_id": "3EmQYeSHlsdoEmDO07YNYZzVQ88",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQYdIt4sv2Yqm3MoGK4yTpkMY",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQYcb0jqxob4r1tc1Hhvvfeyo",
+        "_id": "3EmQYhbIaEPGN9e7aMCrgNm8deZ"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQYi9FPCAigJhPILhQ5KYuX0Z",
+        "_id": "3EmQYfnyL8mgrjerPoBlKQmviix"
+      }
+    }
+  ]
+}

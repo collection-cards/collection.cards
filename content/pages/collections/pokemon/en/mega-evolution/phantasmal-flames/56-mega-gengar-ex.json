@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQkMzCiMw4znlrnfKmIBE5LqR",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Mega Gengar ex",
+  "number": "56",
+  "edgeColor": "#97999b",
+  "rarity": "double-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vWmw98oNnKQtVa4Sd9tUkwdMW",
+    "_id": "3EmQk53jciTZi7MLOvEsq1zPgRJ"
+  },
+  "hp": 350,
+  "stage": "stage2",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGWFatxKSEStaMSyue8X3Wk9",
+    "_id": "3EmQk7toPsZhfzdT4cbCoyUnt2s"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQk9qwADyYvD68r3Zr4hpY5NW",
+    "_id": "3EmQkIvZnGJwoIdlqufI5TSOmfm"
+  },
+  "variants": [
+    {
+      "_id": "3EmQkFduLixxNlaOpOUPWndvpxx",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQkHP9Nbla8GVZbMaONmb7N70",
+        "_id": "3EmQkIYWzJ8eUhC7K4HArbOkSz7"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQkLNiBHPzsvbJSC4jf72SvHR",
+        "_id": "3EmQkHSdQCg86BlVijAZfi0HD2D"
+      }
+    }
+  ]
+}

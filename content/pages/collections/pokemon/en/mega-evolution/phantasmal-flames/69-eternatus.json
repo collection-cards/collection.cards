@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQoNcvdGiU0Xy05cOszHssBlS",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Eternatus",
+  "number": "69",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vcGVqgTM5CbQwSHRZZIA3rttd",
+    "_id": "3EmQnzlnnOkpSBIgevXQh2YQR3E"
+  },
+  "hp": 150,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVTnT8rGL6HNwMBAjZ4anzM",
+    "_id": "3EmQnvyFtWeep08uyqu9sy7eZ6E"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQoEefdlnnZdMlAtKXn6luje8",
+    "_id": "3EmQoOzRKcvy2mV8Y99awbodl9v"
+  },
+  "variants": [
+    {
+      "_id": "3EmQoDlfZZblDuGLTqyJqfFacc5",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQoBTLVGg7wRqrjENRCYolYiL",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQoJzM12tXdTilrDq5hvrD21S",
+        "_id": "3EmQoKCBaTk5kTdE1FgPWN4aYIB"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQoPxkpuxjGfflGXf90Qke0O1",
+        "_id": "3EmQoOYAfDlntYU3dJn1sWLdTuH"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQeRWO9HWWEx2KBlCqu5RfgfL",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Misdreavus",
+  "number": "35",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34A0cD790SHRPbh2bKn6bfTcDeC",
+    "_id": "3EmQe63LjnInWOqyLpd4dNp54AL"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGT2fzJQ120NtcqIWgyagofe",
+    "_id": "3EmQe0ZYQ1yJygWcvCSzGip9i4c"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQeIlyLbWmSEFmQ93tStOC7Yl",
+    "_id": "3EmQeUgG91TPKHkpp4cYn7aV5su"
+  },
+  "variants": [
+    {
+      "_id": "3EmQeJyLZobEVO70BQs8QCdkQR4",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQeHkXRiGYsXagjuL18vx2mbI",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQeOYMDd4YILbEVm7WjU5mcZQ",
+        "_id": "3EmQeTQqt3uiwlncHDSYyZ1Vd5o"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQeOFEFyEq1NokELMRnJH8mAQ",
+        "_id": "3EmQeTQkqZjzhpQsw6hXcejplgH"
+      }
+    }
+  ]
+}

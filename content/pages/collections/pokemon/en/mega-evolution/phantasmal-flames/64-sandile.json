@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQmfLvqRUjmG749jvmFcDhgp3",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Sandile",
+  "number": "64",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vYlZFevQisL14GcNtrhc5zmus",
+    "_id": "3EmQmWEKHM6LidDmXGputvgXjPF"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGXiBnJoqDLSpTT0nbTFLgZf",
+    "_id": "3EmQmQGKCxfyRGA1WbOzUjRrWV0"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQmi0Ucn0TlQPcX6ADUViUMML",
+    "_id": "3EmQmi0107UikkClU1d6GZuBndJ"
+  },
+  "variants": [
+    {
+      "_id": "3EmQmkruMQGZPw5BF4bVEamEPOy",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQmko8sGThPamzvGtU3CEMlVf",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQmipJkuFyTrNWRkAp9vXYdRm",
+        "_id": "3EmQmlhPds5e3eDQzGpdtuNFYzB"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQmm7Zm0VHuDY8b2gm81la1tZ",
+        "_id": "3EmQmjYb6cX6VjRc2WgkgfIxexk"
+      }
+    }
+  ]
+}

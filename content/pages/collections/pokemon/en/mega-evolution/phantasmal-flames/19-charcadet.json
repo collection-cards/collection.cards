@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQZk4c3Fjy61AMOhT6jf5fXJV",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Charcadet",
+  "number": "19",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZu8JRiESEdhPrb9W3jIB05Cv",
+    "_id": "3EmQZU4NriUmTXXZWFbUsC3qRNd"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "fire",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGT8Lpp4XWOVBw6w3ZZgXzGH",
+    "_id": "3EmQZXqZBNDqivG2fmt4ut5G4Vi"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQZlJMcr3EEDZm3ytlOpXlQz7",
+    "_id": "3EmQZkvFBWOibcex5dafiq8LIwG"
+  },
+  "variants": [
+    {
+      "_id": "3EmQZlzqh7XEbONeRIQqxiahBUa",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQZp3W9b0ILFN6Ak2roehPsDz",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQZkmGW0zwuM2g8XXoL28yKTv",
+        "_id": "3EmQZkEWYyOzu8NagLHigIoFmkW"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQZo4O0rEdwfFVIFKXSaLrTuR",
+        "_id": "3EmQZoCjLz9ZjM3FaclKVv4tRCK"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQdVDUmqLr0PApKOrUKXjK1a2",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Pawmi",
+  "number": "32",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vbVWnveXI5Hh425yZnDzGTufd",
+    "_id": "3EmQdFYalQL0bU87SgmmxF9aZsX"
+  },
+  "hp": 60,
+  "stage": "basic",
+  "energy": "lightning",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGSRxIUeSDGybOMDr9c4NLaT",
+    "_id": "3EmQdLlAe9eoCxzJTwtxLVKlrJK"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQdPWIyUmswB3iED5MF0fOdg2",
+    "_id": "3EmQdWIJVYPmGotiCS9KcoilgrO"
+  },
+  "variants": [
+    {
+      "_id": "3EmQdR8RNJy3O7jstPFNsfBE7Sb",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQdNex8ehyM2mgHPkxspbsLfi",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQdY7shCjMzmDurWgSKumFCqY",
+        "_id": "3EmQdUlx8bPuOd5wpOl0XVo2HBW"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQdYbg4Mc9GgJribIXE9rVXum",
+        "_id": "3EmQdUybwBBVZLBtpdFPM0s6l7L"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQcxtZi0nz5nkj8rbJBG70yk8",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Yamper",
+  "number": "30",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vYxF4SaXgVk2ZpQSzursungBo",
+    "_id": "3EmQcc8CeZQAn5kx8JgCvyD9htN"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "lightning",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGUB6Z9tt3hVTbW6L2ewYlfi",
+    "_id": "3EmQcj4q2zCkZq0C5tOHlyYMFlq"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQcrLd2JrtMu4z3mnSvzJubPR",
+    "_id": "3EmQcyZFGj5uGHwKze8PzjEebyh"
+  },
+  "variants": [
+    {
+      "_id": "3EmQco6ef4c51ty0fVECBbwlbVS",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQcqKPk0Ub4gSnYMvZ1Alknmp",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQctW1UDwh6NdEgzao82S5y8f",
+        "_id": "3EmQcvvSVblkWfU5JEE02rDNyDe"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQctrt7pm9cROA6iX5GR3OtCq",
+        "_id": "3EmQcxTx62QCqnBtBDa2bNA79a0"
+      }
+    }
+  ]
+}

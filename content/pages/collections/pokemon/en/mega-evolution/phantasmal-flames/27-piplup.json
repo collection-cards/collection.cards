@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQc0xFHyN637MK4Bq0DGxXyLg",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Piplup",
+  "number": "27",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "37iiRmNkw5ELGql7eeVeVjnnvhX",
+    "_id": "3EmQboL0n5xkCkbN8UlnmmJFYIo"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "water",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVnI4lNmHkgdR7YIFpBUorD",
+    "_id": "3EmQbmTcuCDHZHugOSayKI7qx6J"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQc0y1YtGSk6myxKtKJb0iv04",
+    "_id": "3EmQbzeVlWVxbnDPw8OOOBbxTO5"
+  },
+  "variants": [
+    {
+      "_id": "3EmQc4SASt6YZ3HuguLRMT9phnL",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQc05fG4YfEf9k4BiqZxNm7Zh",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQc4QkcemuL5vZkBK16UL4s73",
+        "_id": "3EmQc4TuUycRfwV48Mave6vsgU9"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQbzuZWZxaXno7g2l5gVD3iqm",
+        "_id": "3EmQc66Z5Hz6jSeMW1dwRHIwFUB"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "_id": "3EmR37l4S6RSJMFch4CRyOYHK7P",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Dawn",
+  "number": "118",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZJOti7WXEFhja1ECral3WpcT",
+    "_id": "3EmR2ifuvkLl01L4RGKtuclCjTV"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR2r0vLFcPazu9z1pPTY87sx2",
+    "_id": "3EmR37pZoPxjjH6SYnXp3xRepjx"
+  },
+  "variants": [
+    {
+      "_id": "3EmR2m7AMlVqA51DCVGDO7OFj0H",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR36JIrCjTSrLxtObFOYnTIQw",
+        "_id": "3EmR33saUJABcoRfohRX7dI6ExG"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR31BIMF5nc4MFGyOUk4mLamx",
+        "_id": "3EmR33jdA9nUJ5oCxUVRmwCJRKN"
+      }
+    }
+  ]
+}

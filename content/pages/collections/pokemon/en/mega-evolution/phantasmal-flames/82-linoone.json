@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQs2F25Kj34qB67IVAIgtJTjE",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Linoone",
+  "number": "82",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34ECVa1E1x8rycoIbDfVA36UfP2",
+    "_id": "3EmQrZWTUoHCyusobiGdIuWj0Ev"
+  },
+  "hp": 100,
+  "stage": "stage1",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVCN819BIyw8YWCxwlvuVLp",
+    "_id": "3EmQrfnTMLAblNcJBcRpoTP0Glx"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQrvNzn0XZw15GsuSEVlCn7DB",
+    "_id": "3EmQs0syRwkX11mDktrtwBjGewA"
+  },
+  "variants": [
+    {
+      "_id": "3EmQruaRRPzkTxSvhGX17ntmnED",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQrroHXUU9lUaGzMdxnUFqGVo",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQs1irfy9qxe3wbZYmbRuknD3",
+        "_id": "3EmQrwYcKBPLunwpLCquA2yfE9e"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQryWB7vrLrlC2NLFgQ15Hc5s",
+        "_id": "3EmQrxqgWUvStfZJygQJtsEVYLM"
+      }
+    }
+  ]
+}

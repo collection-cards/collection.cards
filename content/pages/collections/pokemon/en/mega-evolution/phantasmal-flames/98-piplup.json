@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQw0CSG3cn7xbjjGcExizL5U3",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Piplup",
+  "number": "98",
+  "edgeColor": "#97999b",
+  "rarity": "illustration-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZdJbDdd4rJZqm2Jo5GtNn7IL",
+    "_id": "3EmQvoqAx2ZY51G7zRcJnTKQdDO"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "water",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVnI4lNmHkgdR7YIFpBUorD",
+    "_id": "3EmQvoVsK4VkjgcxdTtJp8hF8BQ"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQvr3JBF21ZTwNqbO6lCXajO5",
+    "_id": "3EmQw0EulDaE5f8kf5KjkcHRM0V"
+  },
+  "variants": [
+    {
+      "_id": "3EmQvtxQ6u0QesElaPrixfgkHwq",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQw0OWg7ltzEavN0fsSsRupwd",
+        "_id": "3EmQvyEnP5f5p4dKgn6ViWwFduT"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQvzev0N7NthwZoaHLE56eu19",
+        "_id": "3EmQvyIw3YoSTmIQrBwYQnIcExQ"
+      }
+    }
+  ]
+}

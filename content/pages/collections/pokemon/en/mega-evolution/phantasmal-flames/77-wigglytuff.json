@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQqNfBbA9So9gKhsmZQGuUoFI",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Wigglytuff",
+  "number": "77",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZnt4vvcDqiflRwLJGDAnzW0P",
+    "_id": "3EmQq4jOfEEw6Skp0VU6QRXHdC8"
+  },
+  "hp": 120,
+  "stage": "stage1",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGU8p8IzEILVtIzhFnb5FvLw",
+    "_id": "3EmQq5SQY26wUVfmow3GFv0ItTD"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQqQAY7HxH1esAgkCsXOmJCxn",
+    "_id": "3EmQqOYr6dGZjwPCTTQynjkB27l"
+  },
+  "variants": [
+    {
+      "_id": "3EmQqQH41ZQi3bV3tdLjgYzCc0Q",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQqN6eUfYaGmGJHPyqhPMTPDL",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQqLAvZIAKKzLm2CbdHbzIx5h",
+        "_id": "3EmQqR0PgWuBdUmRx6nmG2hyVW9"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQqNi8xtcIIJgYkPGdVBQherS",
+        "_id": "3EmQqLvmsZSWuzBHYVZkFe1NgIe"
+      }
+    }
+  ]
+}

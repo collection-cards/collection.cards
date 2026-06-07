@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQVoLTMpl0EKJTvIVKYShWCLW",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Lotad",
+  "number": "5",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "349zDtOmQUBu3BRb8igKhhizPWJ",
+    "_id": "3EmQVZJTBTF6ckPb9j1ZcCrfCbF"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGUnt61PkGDYqOWijQFqBHCR",
+    "_id": "3EmQVW5gqiae89GLa4bXE48ZvdX"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQVf8KtFNvC9fl50Ww7YS2Z0p",
+    "_id": "3EmQVn4KVgt79KMNQVLgEbGoLbr"
+  },
+  "variants": [
+    {
+      "_id": "3EmQVfdXntEA0cIAOXzNHvmF06E",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQVdo7cbtKpj32Me0isH0JyXn",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQVoZEIwyw7Ct49XNiLvN9mQj",
+        "_id": "3EmQVktQVlddT1cX5pdBDsw9fbO"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQVkptAwcGjH2qpEp6NECl87m",
+        "_id": "3EmQVm3sqkT2TF2AdMyPXn9Q8NI"
+      }
+    }
+  ]
+}

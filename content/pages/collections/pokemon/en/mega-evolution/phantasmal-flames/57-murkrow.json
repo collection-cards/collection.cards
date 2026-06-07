@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQkefySCNYWBU08Vi3rSHdaEo",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Murkrow",
+  "number": "57",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZu8JRiESEdhPrb9W3jIB05Cv",
+    "_id": "3EmQkNVtwGpYFJ0go0shsvbvblt"
+  },
+  "hp": 60,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVKGmPYIlMdGwE2EcMGOupt",
+    "_id": "3EmQkLOKgkKPuY7WKj2tZpC6Cbu"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQke7v8VOTFld0VWd0SoHsOia",
+    "_id": "3EmQkfwvuvdxmtv7c05pDV6XISu"
+  },
+  "variants": [
+    {
+      "_id": "3EmQkbRKIKxKSE04dI5RjzRyjir",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQkdMMWQ1tJFbFqtk5R255t0M",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQklMwjeUd1iUgcgmkRY6K6ND",
+        "_id": "3EmQkmAiQcgvbN6jztpp6VP4Xd8"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQkmK6GUDnN5DqXz9APnTB566",
+        "_id": "3EmQkfe2TYS1P8UYCTPT9rzID6U"
+      }
+    }
+  ]
+}

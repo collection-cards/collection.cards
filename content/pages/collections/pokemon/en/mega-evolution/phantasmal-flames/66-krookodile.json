@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQnJMJ1f0PtWdE2OSu4xRFdn6",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Krookodile",
+  "number": "66",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "3EmMpUj7Z9rAC3AXm4zETp4WOtZ",
+    "_id": "3EmQnA5q5pyWOiczzbBurY2ogaM"
+  },
+  "hp": 170,
+  "stage": "stage2",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGSglZJx8GGfHqKngOrpm3D2",
+    "_id": "3EmQn4BnTwJn8Y4rX2pOHFXa8Fh"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQnON4bKs23AMRWVTUPhVztPf",
+    "_id": "3EmQnK6so0lko61X03fcaPvk8Nc"
+  },
+  "variants": [
+    {
+      "_id": "3EmQnIkOm6NvTIa50mgsQkXTlAl",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQnOEeIDx9ixzOmPdsAZzXVvY",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQnPrunuZa7t4vRZoU014Fksk",
+        "_id": "3EmQnK8rK2Kt9HUNmpx9UrE5ZPR"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQnNuFERUOKePlkaMtEWxzUDz",
+        "_id": "3EmQnKKOcly1MW12t96Sk44FrL3"
+      }
+    }
+  ]
+}

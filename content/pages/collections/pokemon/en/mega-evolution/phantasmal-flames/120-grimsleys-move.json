@@ -1,0 +1,43 @@
+{
+  "_id": "3EmR3pzpLqQODfImbqzNdntvWpU",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Grimsley's Move",
+  "number": "120",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vdB15Dd9uB2wt8to7YduIXBVi",
+    "_id": "3EmR3SNClvpb046rkQPzIJux7ye"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR3YNasX6qF0SwFvOLLj36RVk",
+    "_id": "3EmR3oyGAbSj55M5kplBSNCD5p3"
+  },
+  "variants": [
+    {
+      "_id": "3EmR3ZTMzlr2G7un8rxl9myyLup",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR3mErmgJRfl7GWMqrkkQsZDm",
+        "_id": "3EmR3mE0sCHpqyUqg5lOzxUT4zP"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR3qWW7q0j3bfLQfKivhFejJP",
+        "_id": "3EmR3oMd4S5bN5L6wESCCcz3gYQ"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQhy6N9kfzJX5GqOvLe5y2QZb",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Paldean Tauros",
+  "number": "48",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vbMkl0gD4fnXIBc3I0FMkA7rX",
+    "_id": "3EmQhgbga1qJw2D6ZtYGHrrdZ2y"
+  },
+  "hp": 130,
+  "stage": "basic",
+  "energy": "fighting",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGUXZVIn0TgxkXdJlkB60zqt",
+    "_id": "3EmQhhIPQ6qKSAyXIwE1uiSVMfj"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQhuTZabkduke4BtIyW9Vp7PU",
+    "_id": "3EmQhzp4mSG0h4Ols7hR4lAtqyk"
+  },
+  "variants": [
+    {
+      "_id": "3EmQhvGJfyS1GnKNiDcQ2bBQAfw",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQhtYd8sF1Jk4L9cVvZJNMed7",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQhycWW9Pzsd7t5qhJR6cLdVp",
+        "_id": "3EmQhtdVCbdQjvv5Qxv7mqu1X5L"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQhx5twGc97JQQQapEOeH7cY5",
+        "_id": "3EmQhyx3Mi1BxqYqtrNAYbIRmCr"
+      }
+    }
+  ]
+}

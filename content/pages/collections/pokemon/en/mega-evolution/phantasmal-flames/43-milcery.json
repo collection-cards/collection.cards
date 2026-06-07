@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQgTbU0cUIIO6WSZlQEGKNPEq",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Milcery",
+  "number": "43",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "3EmMo4uWopahd2uaQlPDj89GpuF",
+    "_id": "3EmQgKkBoXThIS6ejJqYMDcJ74r"
+  },
+  "hp": 50,
+  "stage": "basic",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGXNur1p2F6ZiO98WNkKqVII",
+    "_id": "3EmQgGrt5AS5qqHBKKGyGITdoXE"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQgTgdgIZB4Mg9ZpEFUMQhHnj",
+    "_id": "3EmQgTstd21dTXYIaegf9IA64Me"
+  },
+  "variants": [
+    {
+      "_id": "3EmQgRwtbuzJV0yKaMvrqs9PEEq",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQgUSvkDLBd8ybv4Nkk6EumU8",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQgTyoU7ETijDQqhVRHLixbBi",
+        "_id": "3EmQgRiA1a7hQz9fE9aLHMdHntH"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQgRbpnd20HRIboJ0C9vgljqV",
+        "_id": "3EmQgSiBmuDIulOVnsgoi7z0Vhn"
+      }
+    }
+  ]
+}

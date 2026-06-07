@@ -42,6 +42,7 @@
     "lib/**/*.ts",
     "lib/**/*.tsx",
     "lib/**/*.mts",
+    "scripts/**/*.mts",
     "server/**/*.ts",
     "server/**/*.tsx",
     "server/**/*.mts",

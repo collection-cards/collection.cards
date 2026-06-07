@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQrLNth4w4ztz0MXxyCx3dZ6s",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Smeargle",
+  "number": "80",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vd4vNTmVSC9GXxdxdvrQctNaq",
+    "_id": "3EmQr85ABG8AznU9dTrAzkl6QXQ"
+  },
+  "hp": 80,
+  "stage": "basic",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGXUgG4fcc2mm0K0NXBZagQM",
+    "_id": "3EmQrAPLsosM0VEXV8TsFk3vrQS"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQrOLevJJJxdAVSvbjyduKnpQ",
+    "_id": "3EmQrLUNXF4yft0EsqLl65jF5sP"
+  },
+  "variants": [
+    {
+      "_id": "3EmQrQZDYN3OS4sfRzHOd45hM4I",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQrPF7yDUZTF1bYZzW4yS8F5K",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQrP5jOmV4Dfs4OWYb0bUEagM",
+        "_id": "3EmQrLyRK14Yk3LYtpaplNolvuq"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQrMgLUvhI5D4iQkZD69K86RF",
+        "_id": "3EmQrKE2j03DTkEMZoNAapcyFhI"
+      }
+    }
+  ]
+}

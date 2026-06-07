@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQVzmm34ATEGK3nr6hahtZ1mZ",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Lombre",
+  "number": "6",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vbJ2aLiV2htj2JmYUMNXwz11l",
+    "_id": "3EmQViuiJwe8sDLBuIbqxi6KB1p"
+  },
+  "hp": 90,
+  "stage": "stage1",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGQCxUMrYtAPEep4zWkd5qv3",
+    "_id": "3EmQVjVDJ7mCPfvWwdh2rsuTnFh"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQVusGHA5Sf1H0zsuudxuPuhl",
+    "_id": "3EmQVyAjdFq90yn2ByJWD3wEDFz"
+  },
+  "variants": [
+    {
+      "_id": "3EmQVumT8Sra7kKF6MffahPEMBN",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQVsh8ppsKNNP9oBUTJrINCVV",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQVymYlKCfHgxIstoByVaKp7T",
+        "_id": "3EmQVzHake3uEhuhVbQu6iT5X8E"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQW1JIbdOvCZxqHhmquyTiI97",
+        "_id": "3EmQVym4W8DlG27mWwVh27kOsai"
+      }
+    }
+  ]
+}

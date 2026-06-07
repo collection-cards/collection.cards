@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQyDaJIasvGpIwdkBuEAqKYHr",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Togedemaru",
+  "number": "104",
+  "edgeColor": "#97999b",
+  "rarity": "illustration-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34BW2OGxEgbF0eqisrfxHfuTewe",
+    "_id": "3EmQxqODjjw1FwCNeYLWVYQxlKD"
+  },
+  "hp": 80,
+  "stage": "basic",
+  "energy": "metal",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGS6mdOyjp5ttnACI18YoD71",
+    "_id": "3EmQxkDrX5KrVP1CByyxvTkNhxu"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQy3mYz1on9d23AjKS8GtHlRh",
+    "_id": "3EmQy9uHaJYnIKe17aThasiEJRI"
+  },
+  "variants": [
+    {
+      "_id": "3EmQy4SqeOjJMxeN2rt8LrJ0Aek",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQyBEq24Sp2JFtlo6cANrNH9u",
+        "_id": "3EmQy6VKwwz5dAGdiZJ0nkEWsCu"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQy7bCWIMP0npa7XYcv6IK3fb",
+        "_id": "3EmQyAhdq7srACaBzxOZB2V9LcJ"
+      }
+    }
+  ]
+}

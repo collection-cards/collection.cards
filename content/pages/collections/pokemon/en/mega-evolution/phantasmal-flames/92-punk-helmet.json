@@ -1,0 +1,50 @@
+{
+  "_id": "3EmQuMLFqTUjBocs8u7hC9DPnXK",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Punk Helmet",
+  "number": "92",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZAqyuU8Gja4OXFzcQJArULvr",
+    "_id": "3EmQuAPm0YPf0dcGy70M9Amwsz7"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQuE1CgH5qXYwY3OQBjhUJq6G",
+    "_id": "3EmQuRO8VujZnonl0sW7oukrF7q"
+  },
+  "variants": [
+    {
+      "_id": "3EmQuH0QsUtqElDDhONUlGAoPYA",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQuEOCXSNEGsAS4XBiCH4mBmr",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQuQ8FNemRs0lVO2RWWdLya4e",
+        "_id": "3EmQuQhxVdpb2KbdiBfyCiuSrRv"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQuQOtVI0mW1hTFLStg4NZNq5",
+        "_id": "3EmQuKyvCsyUo9thaYSCKLec1v9"
+      }
+    }
+  ]
+}

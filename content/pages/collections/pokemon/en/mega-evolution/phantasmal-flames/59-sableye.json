@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQlLKPZaJaC010YW2VexswjHl",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Sableye",
+  "number": "59",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vabllU8Ul1mQxWJnYO2UvxZiq",
+    "_id": "3EmQl3skpxPyELNwlRc3VELdQ6t"
+  },
+  "hp": 80,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGUfpWrv82nm8K8fbyAhA0yu",
+    "_id": "3EmQl7JDTRVVhyVY3tWCvqR5pKt"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQlGdsOEpnRW5UDFHBxfUxFJu",
+    "_id": "3EmQlHmnZ34sOc2Bp3IZqyGnG0E"
+  },
+  "variants": [
+    {
+      "_id": "3EmQlDBFbJporGk4r9S8RNF8WQI",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQlC55GfTluSThZl8Eno7q0WJ",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQlHyNfjF0KcYiSgJcuH2dPSx",
+        "_id": "3EmQlKAIEHdaDEzfBSB2pqC3OTQ"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQlLlNpQqPIjbcw8YP73UwwaZ",
+        "_id": "3EmQlMlqmosr3hL4rfIdTsbEYnV"
+      }
+    }
+  ]
+}

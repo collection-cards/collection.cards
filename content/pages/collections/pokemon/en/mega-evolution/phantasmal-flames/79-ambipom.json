@@ -1,0 +1,68 @@
+{
+  "_id": "3EmQrBZD096pWWseZK2TamGsgMv",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Ambipom",
+  "number": "79",
+  "edgeColor": "#97999b",
+  "rarity": "rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vXtFEOiWjAFERRvhwRAMXm9Eq",
+    "_id": "3EmQqZCerqUUMPtd9skv6CzFpaK"
+  },
+  "hp": 110,
+  "stage": "stage1",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGXiEJx3b6SdOOMgGP2lZCHv",
+    "_id": "3EmQqe2oXViw66IyYSEhbagjqbL"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQqogvQkD687hNa0pH98vRF1H",
+    "_id": "3EmQr7cS4aVO5HcH3MOgAr28JUo"
+  },
+  "variants": [
+    {
+      "_id": "3EmQqpQUDXKxHmO5YALbfuXu48E",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQr3kV4BREfreDDgy9VwFwOWB",
+        "_id": "3EmQqz30SxJZXCejHkZh97tew9X"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQr2aZN9uHXJt65OJiZbg4MTu",
+        "_id": "3EmQr3hZLPTgXKQusaGXcrsX6ug"
+      }
+    },
+    {
+      "_id": "3EmQr2QRRaje19YlE36KeR2cNWn",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQr5MSlDaHcOmsJcLNewVMR2d",
+        "_id": "3EmQr689JI84F6vcqX7kd2i0v2P"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQr626IAF8DsUTt1GB7PF0mCs",
+        "_id": "3EmQr5yZ9pLIuRWKgpkyWq0GytX"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQUQ9fBpea4V0FtyzUsWdwuUa",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Oddish",
+  "number": "1",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vbaXWmah81VwcWXFqjGR62dew",
+    "_id": "3EmQUATr8vJaGDYJGiDyazKlHQv"
+  },
+  "hp": 50,
+  "stage": "basic",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGR3H9EWN9os8c2eaFoHRTFa",
+    "_id": "3EmQUBog6h0kAezzLpclK6TTw1w"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQUFgo2eacGyFfNUQP39uDwWI",
+    "_id": "3EmQUL4A36Jp8YLlr0LpNlLduIv"
+  },
+  "variants": [
+    {
+      "_id": "3EmQUEuuhgLl4LzYjx0hesgzXNY",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQUCYI5ZPhaxR1hoyGUiuyFIt",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQUR5IzSM8Cg1bQKZbA5lVtOa",
+        "_id": "3EmQUQ7vvCxBNpwEPRUaiebUene"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQUKLeDlXOITbLiPRoPRxEKaF",
+        "_id": "3EmQUQlbRxxvzVDB5dmYKHcubpJ"
+      }
+    }
+  ]
+}

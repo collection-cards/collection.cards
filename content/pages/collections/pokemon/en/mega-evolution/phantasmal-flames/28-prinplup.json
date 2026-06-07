@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQcMA604kc5YTjtqb9GAc8bza",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Prinplup",
+  "number": "28",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34ECrt78YBOcacabhigsFpRWtmX",
+    "_id": "3EmQc511L3QWz1BLcaIsLdYEgI2"
+  },
+  "hp": 100,
+  "stage": "stage1",
+  "energy": "water",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGWBXQtv82zB3j6JoPzS371f",
+    "_id": "3EmQbzO762T11IZGxh4xkZezy50"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQcJaaZVn5JQs1Rx7CzZXixCf",
+    "_id": "3EmQcH1Lo5IwEPEuM0VXyRYFOp2"
+  },
+  "variants": [
+    {
+      "_id": "3EmQcK3FsBd2BRadzmZJDG43C5i",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQcJyBUtU5esyvTpfmNlHbF9v",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQcHhpUSjR1J4BDeOwq9M3wfo",
+        "_id": "3EmQcEq915S59jGxHKXinxk8arR"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQcGLJXv7JZyq59brqHXR6fL8",
+        "_id": "3EmQcHSjYz8dwZFTNE22SNw1xIW"
+      }
+    }
+  ]
+}

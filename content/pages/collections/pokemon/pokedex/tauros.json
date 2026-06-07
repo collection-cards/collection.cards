@@ -3,5 +3,16 @@
   "_type": "Pokemon",
   "_index": "a0",
   "title": "Tauros",
-  "number": 128
+  "number": 128,
+  "aliases": [
+    {
+      "_id": "3EmKHk30PAsUNpq2MyPiRj4a9lO",
+      "_index": "a0",
+      "_type": "Alias",
+      "name": "Paldean Tauros"
+    }
+  ],
+  "evolvesFrom": {},
+  "evolvesTo": [],
+  "blocks": []
 }

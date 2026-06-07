@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQaiyGoCMmp9LbJh3vXLfCZ5e",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Dewgong",
+  "number": "22",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZQuoIjQCFfMFbFLd1dJzcIQf",
+    "_id": "3EmQaI7xjjXi6T3q4zIKvuBre6F"
+  },
+  "hp": 130,
+  "stage": "stage1",
+  "energy": "water",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGQSHQrV2kEOWkNE2dTwwdxW",
+    "_id": "3EmQaFLGQ5qs1RCm1o9w1393rvx"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQaelJqzvXGy3c1OLs4WWcewQ",
+    "_id": "3EmQafPKikehnR3Rpia0pPrhHt5"
+  },
+  "variants": [
+    {
+      "_id": "3EmQagXAu56fa205xRUydknA1RB",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQaf9RWJgOxRYfmMzmlUguKlK",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQac2sbywBsNGpbLi8PuGzyuN",
+        "_id": "3EmQabrCcxC3rKvSeowC57LcU4a"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQafHcZEy5ADtGy69PrOqvDR4",
+        "_id": "3EmQaghCsYfYggvqyliOzhxAGWO"
+      }
+    }
+  ]
+}

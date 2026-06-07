@@ -1,0 +1,43 @@
+{
+  "_id": "3EmR2L45r5OKykUcxWGgXvZjA1X",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Battle Cage",
+  "number": "116",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34A2Hi5a66y87PkLOft3qkqumbT",
+    "_id": "3EmR20vh7uI3anzcpOKubCKuc26"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR2DgnllYEeCRWbny4u4cerTH",
+    "_id": "3EmR2ITnql2qEeTxXTKIPA0NJnV"
+  },
+  "variants": [
+    {
+      "_id": "3EmR29AtEiBcEz5F5c751gh95tF",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR2GpNIkCRlJKDuXDVsrILuEK",
+        "_id": "3EmR2KMlo5BRuhhw7JQ3oSst7cx"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR2JWCx5ycYJvFA61wNeKs0jY",
+        "_id": "3EmR2L638sLGRpDrb2uZnOrwOMd"
+      }
+    }
+  ]
+}
