@@ -4,11 +4,19 @@
   "_index": "a0",
   "title": "Charizard",
   "number": 6,
+  "aliases": [
+    {
+      "_id": "3EmJw1cj1T3RR6je0rGSzkedjA7",
+      "_index": "a0",
+      "_type": "Alias",
+      "name": "Charizard X"
+    }
+  ],
   "evolvesFrom": {
     "_id": "36dmsx0qnOG4QznN1nzUV7xSbns",
     "_type": "entry",
     "_entry": "36dmGTrspOMj4c0Rd6TrcfWmpKK"
   },
-  "evolvesTo": {},
+  "evolvesTo": [],
   "blocks": []
 }
