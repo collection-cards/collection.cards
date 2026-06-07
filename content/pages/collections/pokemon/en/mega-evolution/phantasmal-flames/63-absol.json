@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQmRJqBtZ08Fla2syTlrLvni4",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Absol",
+  "number": "63",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34EFiAZdMm4XDsd246uuoiOs4GQ",
+    "_id": "3EmQmAjDfxjqZ4XZrjkQcrpCHBZ"
+  },
+  "hp": 110,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGPy9pRbGTkGre95eiXPsanL",
+    "_id": "3EmQmEOutxiYlzSSzr2nFkILTkM"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQmLJoDS2JHx8pAQGcdoTzquu",
+    "_id": "3EmQmUohNbaCg2cF7lU5GvGtzvc"
+  },
+  "variants": [
+    {
+      "_id": "3EmQmICMXHzXyiR5j17KzQfnReK",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQmM7wz89lAhhLCMj3QgqGCO2",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQmSAUGEhxHpUp7WYJueQgZ9t",
+        "_id": "3EmQmS0BQm2wC07OCqt6a5WgbaP"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQmT5TUDFF8oridAxV1OuihC8",
+        "_id": "3EmQmUyJ9CwR6q7ns0zIY0jbyJq"
+      }
+    }
+  ]
+}

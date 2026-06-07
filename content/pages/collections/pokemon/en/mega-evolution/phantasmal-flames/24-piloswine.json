@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQbA1cFrXv9PEg6lynjwTHCZJ",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Piloswine",
+  "number": "24",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34EC8XgH9Zxp1twqreTlLl2say3",
+    "_id": "3EmQaxfnSTFTUoS6meRwQXSNdtv"
+  },
+  "hp": 100,
+  "stage": "stage1",
+  "energy": "water",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGT2nsW9fwlbeqzWOOvmUb1v",
+    "_id": "3EmQas9kCKd2mYzRY2XMGw54PwY"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQb1N2V4QgTrKtL7dwTt7ziDZ",
+    "_id": "3EmQbA0hr1aSZ0GmJkFnO9qkZbl"
+  },
+  "variants": [
+    {
+      "_id": "3EmQb3BmZWee26dwFBYq7qPMXjB",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQb1KRfdRXyubDNKNGVKQRcX6",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQb6oDj6hCgIg9F3ITfGfKID0",
+        "_id": "3EmQbBhHtp9sSWOBVipBWggoMxS"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQbBIZ1JBTS5MkpXyzrpGQ07D",
+        "_id": "3EmQbACMqwblIhT9erF4HV4c0B5"
+      }
+    }
+  ]
+}

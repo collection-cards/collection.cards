@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQfRCij8bCj74mWc6qHXHKQll",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Cresselia",
+  "number": "39",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "37iihTDyXkr4NT1F5agOCO322gW",
+    "_id": "3EmQfCYb5wdGB7qU0lxUVy8bTDW"
+  },
+  "hp": 120,
+  "stage": "basic",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGTIuiVORqdUdk1nhRoB8UYB",
+    "_id": "3EmQf85pm0fKjjwFHNiBKyhNvsp"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQfRtwoDQH1XYhcwNHM1AcGQV",
+    "_id": "3EmQfUgGnG4yPEjjXuzMK9hBshm"
+  },
+  "variants": [
+    {
+      "_id": "3EmQfPsNmp39dZbHVuTGwah6lTr",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQfO9Kp8BsWiSJCGTPiTwq0Uh",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQfQDMfQqz8OHzzF5CDepcKBb",
+        "_id": "3EmQfPt6yqpzi8U9pLKotIy0TP8"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQfQNmc7Pb6jqm9HUZYSFAFb9",
+        "_id": "3EmQfQlDF7Qul1vh5730SD2h3Ay"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQpfYTAlBV6iEKpfFpWi8RWsW",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Duraludon",
+  "number": "74",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vaOzQ9KIBF4vjVbhIc4zsKVCl",
+    "_id": "3EmQpKNJ4NefU15jfMTfRXXtceJ"
+  },
+  "hp": 130,
+  "stage": "basic",
+  "energy": "metal",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGRqwxV9MdpTxd8GNZjMd42D",
+    "_id": "3EmQpMAKQGNB0LXjxtn1REvmZRd"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQpZxbScc6VeYvmAd7EnTdP8U",
+    "_id": "3EmQpeq3yGd97rrIqcmbLaDgyYL"
+  },
+  "variants": [
+    {
+      "_id": "3EmQpfPQExLEG3y9rNN9Ttq33UY",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQpbnvWvADOGC1yzF9UfRwEGw",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQpaTGRwinAgRUtfNSDZVTclc",
+        "_id": "3EmQpfhgw0GqEiQm5IdnNMTma4Q"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQpejdc6TmGaWedeUWayDhHWj",
+        "_id": "3EmQpauTxtxQ9HATP3WfAdVAu5A"
+      }
+    }
+  ]
+}

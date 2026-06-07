@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQmG064dKx0kbWBeDgUZy7Ijf",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Seviper",
+  "number": "62",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vXtFEOiWjAFERRvhwRAMXm9Eq",
+    "_id": "3EmQlzWs9YQQ9MhHNW9IDWzNLTG"
+  },
+  "hp": 120,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVPdrP1IRMGnYSzVtQIckH9",
+    "_id": "3EmQlxwc2Rq7crxmZnbqL0wTZEY"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQm8qBog37av9owrTOxUJSCsU",
+    "_id": "3EmQmBna67zYcGUPrQvvSW2pfWD"
+  },
+  "variants": [
+    {
+      "_id": "3EmQm6hpGxq2g2uJEgg42ab2bQd",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQm4Mp4QKXKSYjoBpsiPmZafz",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQmGixgYeioG1N9ttfjpZq0zp",
+        "_id": "3EmQmDduM696F534iDZ0AYhqPcY"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQmDpFAYvBjgyulGUnM2XqPJS",
+        "_id": "3EmQmGg7nn2ZRGEvLeu0XKf0llF"
+      }
+    }
+  ]
+}

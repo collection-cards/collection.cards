@@ -1,0 +1,68 @@
+{
+  "_id": "3EmQVBZFq7J9e8HSubdYM9piXHu",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Vileplume",
+  "number": "3",
+  "edgeColor": "#97999b",
+  "rarity": "rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34EBYgA9iyJ2RwC6yAfWZRZHL3C",
+    "_id": "3EmQUdhTWJnqGKHyx4BMYanOxlo"
+  },
+  "hp": 150,
+  "stage": "stage2",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGWRoxFCvceU8CXrfBkqnvGG",
+    "_id": "3EmQUdJiNIyzDPplNsTe2fPzcSs"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQUwMVmsopoMo2eEj51aXFBjc",
+    "_id": "3EmQV5mK14kiTXFRrTkXaQaw60n"
+  },
+  "variants": [
+    {
+      "_id": "3EmQUovG7vz9XKNKUJj8uFgFvZJ",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQUvByqBFMkuHJBkztTs4i7F6",
+        "_id": "3EmQUwE18AaaVcSd4AD7Jh17CbO"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQUrXW738Mf3Dn3jpeaDHlHEZ",
+        "_id": "3EmQUu91KSjSxFMxzoAUG8sxq0c"
+      }
+    },
+    {
+      "_id": "3EmQUv34q1HvwooRYBQxA1pQTPP",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQV9BGP2dvq5kLWxlxxih8efM",
+        "_id": "3EmQV9QGPNYKuxiMwWnPg9tkBYs"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQV4tPC6sH9jbJ3XTXhltcIk4",
+        "_id": "3EmQV5BX4K64G9Tn6hZ1F2u88pz"
+      }
+    }
+  ]
+}

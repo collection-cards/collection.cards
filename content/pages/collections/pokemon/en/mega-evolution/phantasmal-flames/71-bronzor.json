@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQouo5YWtAxyDtuAEPUQnwJZv",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Bronzor",
+  "number": "71",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZxSeSWkaSCUcDxgpVHj78xA8",
+    "_id": "3EmQodS0jkNkPuQOvWR90qJVufS"
+  },
+  "hp": 80,
+  "stage": "basic",
+  "energy": "metal",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVke4zt7UpSNbzkHZBAepKE",
+    "_id": "3EmQodh4ln3wCCCwUAFMZenURB7"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQoqsYJB6dH9Gp6GySfqz7Kku",
+    "_id": "3EmQouxlwVIEpV17uO8MxXgEGbl"
+  },
+  "variants": [
+    {
+      "_id": "3EmQosSnmEs9HdLo37OAAD45Hvu",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQoorjkMB04C8ZXINUEdfHeFS",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQorzzt4SUTPkCUnv40EQ62xt",
+        "_id": "3EmQotovBEG3h8okJmtKwNuyrh4"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQosYEWzKVBxR7MeEEhKnbBNo",
+        "_id": "3EmQooZ92wgv63bIaAsHTgFYPZE"
+      }
+    }
+  ]
+}

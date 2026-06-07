@@ -1,0 +1,68 @@
+{
+  "_id": "3EmQZHLzpUQ83UbtGDMkjMRBbQJ",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Reshiram",
+  "number": "17",
+  "edgeColor": "#97999b",
+  "rarity": "rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33va8V9OnMaME7h0IDzzOTZ7fBe",
+    "_id": "3EmQYuJK89sitoE7ptCxUttsKm1"
+  },
+  "hp": 130,
+  "stage": "basic",
+  "energy": "fire",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVXP2J1M9B7DMGuB5HJdhAr",
+    "_id": "3EmQYvbTulozMphJPcbUCfXVXQr"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQZ3uyA2vx5r1sUW5VWb2yAdE",
+    "_id": "3EmQZHn0B9lPKZK6EcCV949sXi8"
+  },
+  "variants": [
+    {
+      "_id": "3EmQZ4U9E0GmG8WRuvTLwxYpLLU",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQZAv1H5s0ZjhpNRzuvJUjUnA",
+        "_id": "3EmQZCXSe8KKoXjuOfXh30LHf7V"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQZ7kj9py0xNZQXglk4OWhkIH",
+        "_id": "3EmQZ68tXeDmqL4kgIov1AeBiRL"
+      }
+    },
+    {
+      "_id": "3EmQZDDjUZtRRHVJ2nIB1yUfXFv",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQZH9hlgUDKepEruBjXXeiIpk",
+        "_id": "3EmQZEz6JbyfMdoY0IQqd9knEpc"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQZI2ZzO6km7o93pYTZfJiDMl",
+        "_id": "3EmQZIgDlZsYnpglmhFXzIglsMZ"
+      }
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "_id": "3EmR4wXUmXUrbPPacfT2MxfkkGC",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Switch",
+  "number": "123",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZAqyuU8Gja4OXFzcQJArULvr",
+    "_id": "3EmR4XeJRaUenL5XryJQgfyOtgA"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR4l3GlSa3DV8mpNXa1vesvPg",
+    "_id": "3EmR4y8ihtCZMxTzogTxJyR9nd2"
+  },
+  "variants": [
+    {
+      "_id": "3EmR4io2CLR6zXvUTEMDjEOjPKs",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR4x79WZ3w1PHwKryoy5adizn",
+        "_id": "3EmR4xooE2CcQ5lp0dFcAKjMQvA"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR4wSGTtlERrLdBGjbZZGSUlL",
+        "_id": "3EmR4yA7C5q1bSBdqwDU8IvsQvj"
+      }
+    }
+  ]
+}

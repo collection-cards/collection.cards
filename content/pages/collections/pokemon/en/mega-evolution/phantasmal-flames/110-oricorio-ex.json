@@ -1,0 +1,51 @@
+{
+  "_id": "3EmR0DTQzqDqZauuXnn0pkmXWMw",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Oricorio ex",
+  "number": "110",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vWmw98oNnKQtVa4Sd9tUkwdMW",
+    "_id": "3EmQzky4Fy7MCBWVfkOMEUyhD6y"
+  },
+  "hp": 190,
+  "stage": "basic",
+  "energy": "fire",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGTRhoRbi0SL3YlASMtdO67T",
+    "_id": "3EmQzjbr5MClK34XgPYDBwF7Vju"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQztB3SsorFj66ZxDIyOd2LnK",
+    "_id": "3EmR07ld25OGtFAbWKwjdloQBGh"
+  },
+  "variants": [
+    {
+      "_id": "3EmQzwYCbEOHJuEyVeUewyKlSzX",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR0Bw2IO4waZSLifk3ia65tAF",
+        "_id": "3EmR0BJZAmK5o1uupRk0uqiI8XY"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR0EZvLxwLtuM2MpN28htwNGs",
+        "_id": "3EmR07G5jsavsiZzxQwBecjO4yh"
+      }
+    }
+  ]
+}

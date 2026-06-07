@@ -1,0 +1,68 @@
+{
+  "_id": "3EmQYSbXNCFVOTp9dYAemlBKcLi",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Moltres",
+  "number": "14",
+  "edgeColor": "#97999b",
+  "rarity": "rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vYMmWWk5NkFv59ifqpF8scdjV",
+    "_id": "3EmQY2NrV6JrrQugamSYaovKYK1"
+  },
+  "hp": 120,
+  "stage": "basic",
+  "energy": "fire",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGT6cqlcvNvszFQRzpQPPpvx",
+    "_id": "3EmQY4utqLdZB7CoRVrnwt1PMar"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQYGd0asqwT8LhLLcwq6ht9oy",
+    "_id": "3EmQYS14jK4nIpzwIeI4lmb1RIo"
+  },
+  "variants": [
+    {
+      "_id": "3EmQYJF3A60QatUHiZ9jBpUTuJY",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQYFbMo4VX0ywx3DRT4HzJhEh",
+        "_id": "3EmQYIf47nfZbPmC3LPubp6Ddav"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQYINrLkvRsEAAlXXyZxmGPHm",
+        "_id": "3EmQYGSQO9a33RyPshNhnDKn5Jd"
+      }
+    },
+    {
+      "_id": "3EmQYGGf7fwS9g8gOU6YyN8klnk",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQYP5kP5hwwtuDDaZSrni7CYJ",
+        "_id": "3EmQYNqf83hH4pJLCGF9jkGpvlU"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQYLoO5knYjaIGdW8r6nNNEDS",
+        "_id": "3EmQYLVNHnwayXzvTWwRRLO6lnP"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQrf0cgcHlV9Kw1k0NAKv1wH4",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Zigzagoon",
+  "number": "81",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vc4oQZtqyXs1uqpPWafLku8bk",
+    "_id": "3EmQrLAZx5VRgIPISxVQ54YELNo"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGU6tfyndy56B8euhry5lnGl",
+    "_id": "3EmQrJZ8kucc3dhjxNqK6w6XLYh"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQraUJ0KZq0TzanFVEuDepJ2L",
+    "_id": "3EmQrem6eokn81ykEsALRbYFYoF"
+  },
+  "variants": [
+    {
+      "_id": "3EmQreZ8NZPNiLZfohxTDb0EFtx",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQrcSdabwmqCEbQnuwMtok2rA",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQrcEHhVI3Df3GYjlCm3nDMTN",
+        "_id": "3EmQrcM33AmuRbcLKTY7Tz2eoMD"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQraxQJ4aEAcYVMEGmdOsOXOd",
+        "_id": "3EmQreNISCrWue54mncYbJW4Im2"
+      }
+    }
+  ]
+}

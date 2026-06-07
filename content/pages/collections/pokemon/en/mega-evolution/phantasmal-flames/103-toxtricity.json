@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQxph2rvP21rPlz55jVsqY5dm",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Toxtricity",
+  "number": "103",
+  "edgeColor": "#97999b",
+  "rarity": "illustration-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34EC260ZiVLHE8Q7gPMCpnquAYL",
+    "_id": "3EmQxUAwPrTXm17eY9DGTgXydeI"
+  },
+  "hp": 140,
+  "stage": "stage1",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGUkq81RsGq1R0sxhdn5rMwK",
+    "_id": "3EmQxWS41oT9l56fYGB9KtVdSFz"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQxfU4dRUMcwzHWrBGg6COzSY",
+    "_id": "3EmQxmZc6KDr3iSZLxQCXAQh5lt"
+  },
+  "variants": [
+    {
+      "_id": "3EmQxhrSeYWXDerLef5yBFxobqV",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQxqP39yuXpeYQIc1JKIquxz1",
+        "_id": "3EmQxmcm09uiQUF2l3L1rOmfmPU"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQxjnYyhHWdSz42v7eSfyF3H0",
+        "_id": "3EmQxjZwL23oGk3pRh4IxdDLIAW"
+      }
+    }
+  ]
+}

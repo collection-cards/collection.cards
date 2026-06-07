@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQoZ0kVznksErwroAl5zCa5yI",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Empoleon ex",
+  "number": "70",
+  "edgeColor": "#97999b",
+  "rarity": "double-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vWmw98oNnKQtVa4Sd9tUkwdMW",
+    "_id": "3EmQoMUTTJt1JwfIyPLhiNrZHAG"
+  },
+  "hp": 320,
+  "stage": "stage2",
+  "energy": "metal",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGULQe6noKR9E7WxEOHMCSKR",
+    "_id": "3EmQoLTmhrk5uScXkIXhPgtSZaN"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQoUJxsXt0TziKC1EZshBE831",
+    "_id": "3EmQoZhi250ZnwANkOu8PcdtVmy"
+  },
+  "variants": [
+    {
+      "_id": "3EmQoUm2LCxXkWQAktdfyWlpkkZ",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQoYEKrKftYhelI0EnRvzFKeS",
+        "_id": "3EmQoax4sO0HXvkmnNXzlUmN96i"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQoYAJpm1NweOkFwShwwRCZbL",
+        "_id": "3EmQob2qeNzIMXVRns4bKRm1tNO"
+      }
+    }
+  ]
+}

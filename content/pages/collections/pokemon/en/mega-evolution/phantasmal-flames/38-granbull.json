@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQfCe36yzdGsDzTuzxXdakbHc",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Granbull",
+  "number": "38",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "3EmMpUj7Z9rAC3AXm4zETp4WOtZ",
+    "_id": "3EmQeyT0iHVCqgDn6MlMONbDrzA"
+  },
+  "hp": 130,
+  "stage": "stage1",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGU3pGeeM4IT2iOjd5qg6rz7",
+    "_id": "3EmQeu0X3oe2NmXp3EPKGNqTdZZ"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQfAOBbJTKwTCcfYeIQz9qymD",
+    "_id": "3EmQfA7UB9BDDb2dv77Km9va5hU"
+  },
+  "variants": [
+    {
+      "_id": "3EmQfCw9kQUnOSsxbRBHBjK11om",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQf8vT2Uj0ejs0xirrkatGBIy",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQfCst3rc3KujV4O48oNRjz3r",
+        "_id": "3EmQf806ch040YYRJADmJi7oFID"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQf8I51aEm4vG7AM6o5TqBPn9",
+        "_id": "3EmQf8BZjmUw0tq4wkn1xH8XGBf"
+      }
+    }
+  ]
+}

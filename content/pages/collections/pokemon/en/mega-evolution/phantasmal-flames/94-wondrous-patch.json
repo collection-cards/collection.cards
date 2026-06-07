@@ -1,0 +1,50 @@
+{
+  "_id": "3EmQuhw6qzaA3e6vuLHq7jVUocN",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Wondrous Patch",
+  "number": "94",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZAqyuU8Gja4OXFzcQJArULvr",
+    "_id": "3EmQuSwOaCWC7lqtJbyCxg5ba7p"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQundFTPTLNVZkgGg4UM8tSdu",
+    "_id": "3EmQuk49Kf3NqIoNJEFoB1MYnIW"
+  },
+  "variants": [
+    {
+      "_id": "3EmQuiMQajEZuGOvEb2kZcnIgqj",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQuo0lRT5lM0Jl7v6Pbu00na1",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQuobeIPNWcmbD7fOcsZJ2kRe",
+        "_id": "3EmQulzvRkQYHJNXp9BrJ5AbNps"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQul5mqzqp9FYazYou57RrNq4",
+        "_id": "3EmQukXTpjphxyY9SoPYCdgTR5B"
+      }
+    }
+  ]
+}

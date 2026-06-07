@@ -1,0 +1,43 @@
+{
+  "_id": "3EmR2iHkEC3gALHXcSscZS0cfXs",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Blowtorch",
+  "number": "117",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZGqAhMVeaMz9R4gLoz8dBmSI",
+    "_id": "3EmR2SMzMeb1ZPzCmskYyTxjQqi"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR2V149UXYl42o1OVw4VroDkH",
+    "_id": "3EmR2gxijcwHXwZG4zZYW74imLM"
+  },
+  "variants": [
+    {
+      "_id": "3EmR2XwLxBd6YLmo4d0jrBThvL0",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR2j6B3aEYE29JMZtPlEDPii2",
+        "_id": "3EmR2iicAJe7tioOhKRklEckwT3"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR2hMvQwkPllHHdhWONJa0FaB",
+        "_id": "3EmR2eS27VWVEOUL3sY2M3s4qNo"
+      }
+    }
+  ]
+}

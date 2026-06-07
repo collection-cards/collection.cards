@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQezUOrMGtTJOXtK9E1SpvA2K",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Snubbull",
+  "number": "37",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vYWzmeeHJLoLa6oDJgmonBY5O",
+    "_id": "3EmQegy7yd18IgQWqnynMm87Wlg"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGUsMfcryv6dQ4fvI9JYTsJR",
+    "_id": "3EmQeff74FoDqNjB3sZZHh3j8eS"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQevNCsryGV0TCOKKtATBSQFZ",
+    "_id": "3EmQesnDroENHkxilMBhek0bslC"
+  },
+  "variants": [
+    {
+      "_id": "3EmQewcboOCDjWohF7UdZEvYpbv",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQevs5oEwN7zRDN4BwQ6EnS9j",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQesWNErspJgRR9uzJ8lKHZEw",
+        "_id": "3EmQeufi8pBBTZlu9XP6u01zaN2"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQet4uyvRUyYtnwhLcTrAQsOu",
+        "_id": "3EmQesgWVz4Jdmkcf551wkNv25B"
+      }
+    }
+  ]
+}

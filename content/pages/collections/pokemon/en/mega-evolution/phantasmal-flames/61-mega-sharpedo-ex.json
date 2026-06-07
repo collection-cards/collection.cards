@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQlygqP6d8HKfVBiskq4UNsuP",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Mega Sharpedo ex",
+  "number": "61",
+  "edgeColor": "#97999b",
+  "rarity": "double-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vWmw98oNnKQtVa4Sd9tUkwdMW",
+    "_id": "3EmQlbpzwZWOJd08zlupheHBuDU"
+  },
+  "hp": 330,
+  "stage": "stage1",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGPwPusf2qZfk0qv3zvz1CB6",
+    "_id": "3EmQlb92TXUMw7RBE7mUWVcpEQf"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQlhotCvQBhpCaKcZKmwQ34tC",
+    "_id": "3EmQlziI8rnXCKklP2moezstivr"
+  },
+  "variants": [
+    {
+      "_id": "3EmQllhjAG7xTPvJySrEFCf2LPW",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQlvAVZiS5dhcjeE8M5DOymTD",
+        "_id": "3EmQlud6IaiOMQDblrxrccUkEra"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQm0CbMDLviZqXANjFJIRqPqq",
+        "_id": "3EmQlv03hjSLmeCWed7kYlXtzSp"
+      }
+    }
+  ]
+}

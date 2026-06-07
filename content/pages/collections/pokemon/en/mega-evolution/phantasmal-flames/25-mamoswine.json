@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQbNqARxz9aKqpJSYThVjJWy5",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Mamoswine",
+  "number": "25",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34EFiAZdMm4XDsd246uuoiOs4GQ",
+    "_id": "3EmQb8ccL0Nc8kH0X45FkiQDj2m"
+  },
+  "hp": 180,
+  "stage": "stage2",
+  "energy": "water",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGTyA7m80X3oFw0rIym6QXOo",
+    "_id": "3EmQbCvaBpaSDptISBQpaQni2Xq"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQbPLGOCupKmUOf4RUMvDdieq",
+    "_id": "3EmQbMArtWb8MEC82klk9N0o7Zm"
+  },
+  "variants": [
+    {
+      "_id": "3EmQbQpxIxJy1n1MnUhmn04hJtH",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQbPElcr2QkTiSjjrusc3Q0IO",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQbNA5Sf8c47b3wWoS8tO46Oa",
+        "_id": "3EmQbSU02RIpH1rcB5ENbnnKKF8"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQbSpQCUeXwI1IGyv6i0AZw5E",
+        "_id": "3EmQbMlSpe9rkR9SS9e2BILmCBI"
+      }
+    }
+  ]
+}

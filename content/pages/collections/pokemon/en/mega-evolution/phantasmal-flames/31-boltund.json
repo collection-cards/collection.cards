@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQdEtyFhliL3q9WY7a6P9PCsi",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Boltund",
+  "number": "31",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34BW2OGxEgbF0eqisrfxHfuTewe",
+    "_id": "3EmQcwiGRdmpB9cDicBEvkKl6aN"
+  },
+  "hp": 130,
+  "stage": "stage1",
+  "energy": "lightning",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGUJI63oSDCcsAbYYd9FQHr7",
+    "_id": "3EmQcuhOaTtP7uzk4EMfW65YDXU"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQd8TkyglxJCVzO1xVgD0TqoK",
+    "_id": "3EmQd8lI0MQhZSJJsk0yhkToCKT"
+  },
+  "variants": [
+    {
+      "_id": "3EmQdEqm6KndxWIgeqAAmFRqYIs",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQdCqJMhImyUDphICLU21WAin",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQd7vth79Cx1etS4vYbfXZ1Lw",
+        "_id": "3EmQdA458xCfvuZ459x5Hr60103"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQdCNfC1vJZsgfL8cDUMDkssK",
+        "_id": "3EmQdCTzzOR8PoJusOb1eP4Cd85"
+      }
+    }
+  ]
+}

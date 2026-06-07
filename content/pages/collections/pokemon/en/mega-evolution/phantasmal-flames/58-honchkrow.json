@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQky8HsN05RQ8sAuUpI6WwFg5",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Honchkrow",
+  "number": "58",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vdnbkPf4vXYkE8OI8gnjIlV7Z",
+    "_id": "3EmQkkZg19I4ieqv3NLoD6VVNY2"
+  },
+  "hp": 130,
+  "stage": "stage1",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGWrHkCSgiCgXiAqXJNHuWWc",
+    "_id": "3EmQkfPj2nj8j1jXoqSgm13Hu5L"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQkvaQnvuarlV9ZafMNBOoBSB",
+    "_id": "3EmQl0pTaJFHpUIfamwHy4jolFz"
+  },
+  "variants": [
+    {
+      "_id": "3EmQkx8wtV4aE6G6ZHr3hZAm1R8",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQkve5NkGDPbu11ZhayKZL9Dx",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQkxVMNvYs4Wd1qpZhlfzmk1j",
+        "_id": "3EmQl0RvMBdCpX7FoJkcYddZigq"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQkwIDLWvPp0JXboBxQGcMm4B",
+        "_id": "3EmQl1w0MxZMX35h4s4F7X7PkL6"
+      }
+    }
+  ]
+}

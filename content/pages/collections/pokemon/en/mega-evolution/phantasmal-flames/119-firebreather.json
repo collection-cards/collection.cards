@@ -1,0 +1,43 @@
+{
+  "_id": "3EmR3O27Dk3ZfnX5FxtDxPRhmZg",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Firebreather",
+  "number": "119",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34EDaZ8p9i5yXxwsawTrUKdoVMm",
+    "_id": "3EmR31IiJzZUMDLgVw9dR92FVML"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR3BDuLae3xHyNCZTNyyhq0ub",
+    "_id": "3EmR3Rehb10p5TB8waoxJaUwLQX"
+  },
+  "variants": [
+    {
+      "_id": "3EmR3C7o7VPx1qX1jlD0lMaLoIE",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR3Rp5afAxFHvWsZSmWBiDihD",
+        "_id": "3EmR3SEt2iSQOBRkh552vF3fe4e"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR3NYgHRLaAPnSoB5WSRXaXLx",
+        "_id": "3EmR3TqVuWNxl2W9c38qwqUaIdR"
+      }
+    }
+  ]
+}

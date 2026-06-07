@@ -1,0 +1,50 @@
+{
+  "_id": "3EmQu5TKslB8guYNWvZpREkHEio",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Jumbo Ice Cream",
+  "number": "91",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZDiCauBlUuRJ1IRKwZaoYqp8",
+    "_id": "3EmQtrHfSMQMLeZdvETocHsuuNy"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQtxS8Fq3YyPrP7rlmsWUR4RA",
+    "_id": "3EmQu5WN9lfPlwbXIHDqPBnzdlR"
+  },
+  "variants": [
+    {
+      "_id": "3EmQtye687UfSMFC44pboi3k5l2",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQtzZEPlIUHBHkzVqDaBHfv14",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQu5wOHs6Y9Zm0gickFjslF2V",
+        "_id": "3EmQu6rsVQzrvOv0q1Ul8ZPvGlX"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQuA7GmysrPOeyp46h6CdyzGV",
+        "_id": "3EmQuCHMweOoRW9DXXVGQu54YpD"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQhO72I2CwDRKIMJbMsFdPGkV",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Bramblin",
+  "number": "46",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vaWnMgheZxFmcwQVMnWgjG5Rh",
+    "_id": "3EmQhDNhm4XHEntCYgxrdevlAMz"
+  },
+  "hp": 50,
+  "stage": "basic",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGWPI3eGXIK3KaLrZO7bz6Yq",
+    "_id": "3EmQhBRpQFLtRxaW0K5sYGTjsb1"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQhLIVfY6jCvit7R1mpJiVAAg",
+    "_id": "3EmQhP12z36duQO3LYK8zn4Pt9P"
+  },
+  "variants": [
+    {
+      "_id": "3EmQhMhyPNVvgyzRyWyDlgleruI",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQhHk6BUq1fhkEATCzDw7q1ej",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQhTllnGZv4PidoUi5pFwmVgJ",
+        "_id": "3EmQhRtAJySQQlBcJh0Z5ZA4Y1s"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQhVQBHSS4gVETSOhGrYgmdHh",
+        "_id": "3EmQhUT60TFJI6xvPsjRK7KFdLo"
+      }
+    }
+  ]
+}

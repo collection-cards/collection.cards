@@ -1,0 +1,39 @@
+{
+  "_id": "3EmR5Kes8tEFo4HJo1dWw8yUmoO",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Ignition Energy",
+  "number": "124",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "energy",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": null,
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR546fv4qkPzU6IzvZ7yuAal6",
+    "_id": "3EmR5IcQNVyagnFZyLpNfX5C1Q9"
+  },
+  "variants": [
+    {
+      "_id": "3EmR55W1AsHQsaCLFD9GZ9AUO8A",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR5MAHeGDz89irV42wDyhepsL",
+        "_id": "3EmR5I38eRqifavnmklvbIYy4ve"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR5L3OJfXdQhugvPauDI85KYa",
+        "_id": "3EmR5Hsb9Ynuh1NjxjcuoDm6DG6"
+      }
+    }
+  ]
+}

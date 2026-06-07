@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQiVSnFvfNerIRbWAUKxjl081",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Gliscor",
+  "number": "50",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vc4oQZtqyXs1uqpPWafLku8bk",
+    "_id": "3EmQiFBfX69KY4jELjGuTsFD2sp"
+  },
+  "hp": 120,
+  "stage": "stage1",
+  "energy": "fighting",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGUCYacSu0nK7VGbKOIoJGjK",
+    "_id": "3EmQiAnAfVfLIqbHHTtieQdboqZ"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQiRsl5zaEodZQEikfGL9ghby",
+    "_id": "3EmQiSw6mU1yfld15EoESBMkJ2L"
+  },
+  "variants": [
+    {
+      "_id": "3EmQiUpfBrIEN4LSNB6FEb0NXMQ",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQiRNahHSTWALvQKeGbg4oISu",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQiQzNgHF0ac0PnQ2j07EDMnw",
+        "_id": "3EmQiRYrp77Svsc7YMXNWAwLHpc"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQiVFkpOpFtfbgddiyQu5nUiG",
+        "_id": "3EmQiOUgep0ilYK9vumm8b7RBFD"
+      }
+    }
+  ]
+}

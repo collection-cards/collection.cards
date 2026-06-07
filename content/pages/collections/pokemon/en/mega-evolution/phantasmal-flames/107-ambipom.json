@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQz5XPWgzffUWjfz997LJvnCu",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Ambipom",
+  "number": "107",
+  "edgeColor": "#97999b",
+  "rarity": "illustration-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vbJ2aLiV2htj2JmYUMNXwz11l",
+    "_id": "3EmQydneO37RDMMmUY00gHGEAYq"
+  },
+  "hp": 110,
+  "stage": "stage1",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGXiEJx3b6SdOOMgGP2lZCHv",
+    "_id": "3EmQydi1ASHAyUMeLCHU41qQLBE"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQyuBLkSSJdiiLNIS1o5oEvyw",
+    "_id": "3EmQyyxYwR2JQpxMpxTQNmgYW68"
+  },
+  "variants": [
+    {
+      "_id": "3EmQyuxSXHpKbb1WREv6MG5YOvJ",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQz1U9DSnRGUbRWjRSHezDVlQ",
+        "_id": "3EmQz44F7Q2fbliq2rGSv1us3s1"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQyytsVC9tlhWK1UeEm3K2OAT",
+        "_id": "3EmQyzgvkNKpLvAHsdpSzNEDb4i"
+      }
+    }
+  ]
+}

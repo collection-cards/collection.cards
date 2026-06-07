@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQWzQr44il0VK9zCfCkObp23m",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Nymble",
+  "number": "9",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vc2NJGc9cPVWfDG1A2GplHfLI",
+    "_id": "3EmQWoa8F5HsDuUHXqLp6xPiXlq"
+  },
+  "hp": 50,
+  "stage": "basic",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGS4nbH6cMYwaVLZi1LYRGGl",
+    "_id": "3EmQWjHk25JzGpkw4etvvHRY7Mg"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQWucd5k7QKGmRL3J7vBspl2j",
+    "_id": "3EmQX4AnhmqLP0tIKtSdP9Bgdbs"
+  },
+  "variants": [
+    {
+      "_id": "3EmQWsVjX2TQFvieCzkwPPBqy6s",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQWqsgpw6BHktvwYaGxulBG21",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQWxth1QnppLo4sn1Vsm9mlkK",
+        "_id": "3EmQX3X9waJjZqkaltKq7P9ijMk"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQX3LRDXP22IKezjkU1BmBuoI",
+        "_id": "3EmQX1yauHhgRq6o7rRUnmVKeFL"
+      }
+    }
+  ]
+}

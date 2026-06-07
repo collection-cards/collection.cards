@@ -1,0 +1,51 @@
+{
+  "_id": "3EmR23srxEb7Xd7xpFkSQg2sd3A",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Mega Lopunny ex",
+  "number": "115",
+  "edgeColor": "#97999b",
+  "rarity": "ultra-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vWmw98oNnKQtVa4Sd9tUkwdMW",
+    "_id": "3EmR1hQBskB70vWOITIMD2RwcbP"
+  },
+  "hp": 330,
+  "stage": "stage1",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGT4Em1he98J1IpzMLJaGynp",
+    "_id": "3EmR1flIcJC7bSnq3BzYLetEE8w"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR1mFl3zAj3U21ctMnZ5ak3G4",
+    "_id": "3EmR26ZueWvUHJbNCgOdKnAWyR8"
+  },
+  "variants": [
+    {
+      "_id": "3EmR1lQ670Wn8Prw6ZwjRmTJtSj",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR26LXoWvezwwvcOTuyl0vq1L",
+        "_id": "3EmR26HrQIPkOKMPFfHZdOdWCli"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR27Oewzx2TvOA17MOus53FBd",
+        "_id": "3EmR26vXmAEUywox2Y3MNOP1WVF"
+      }
+    }
+  ]
+}

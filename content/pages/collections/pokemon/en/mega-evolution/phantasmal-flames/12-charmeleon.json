@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQXp7INou9BoWTZSDZdDxBl26",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Charmeleon",
+  "number": "12",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vbs4hrhVWRVWppzfM3LlXgFNI",
+    "_id": "3EmQXYYhes2O6ExIn5eAjKKkZ20"
+  },
+  "hp": 110,
+  "stage": "stage1",
+  "energy": "fire",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGTrspOMj4c0Rd6TrcfWmpKK",
+    "_id": "3EmQXXoDNz6kPpkzazzRmvuvHRX"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQXhNLWL5biYsKRxN81pI35eF",
+    "_id": "3EmQXkyf2306uz2WVVrhb1BdwlE"
+  },
+  "variants": [
+    {
+      "_id": "3EmQXep4mZJKarxjaAcCvyuA6s4",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQXcd0KUFtZAvsyvbDeZCH0Ae",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQXpUUsHPh1JPDO299lB3h2Nk",
+        "_id": "3EmQXpdGsGZaULTAZfQ3NkiaZfT"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQXjABQ2rltIFzDIyKa9vyFgY",
+        "_id": "3EmQXlCNkXl5rWa4pkwSjOjnC4o"
+      }
+    }
+  ]
+}

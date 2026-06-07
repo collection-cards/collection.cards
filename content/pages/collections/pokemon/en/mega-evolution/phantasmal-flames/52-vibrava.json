@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQj5sZB45hk0NdbnjVjbC5hHn",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Vibrava",
+  "number": "52",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vcdHQQUHB3yg0bj1aLbrrUfM7",
+    "_id": "3EmQirOQD1VhNqcDTJBledgQQdK"
+  },
+  "hp": 90,
+  "stage": "stage1",
+  "energy": "fighting",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGRXOsHvHjmjwXzaWNIUoVZr",
+    "_id": "3EmQimUlzIg2RYYi1llA0iZ7xh8"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQj8yfCwem2PTgJIm4ReTWFlF",
+    "_id": "3EmQj2QqbZH8EHL2hGXNditluWk"
+  },
+  "variants": [
+    {
+      "_id": "3EmQj2XhQWQCFqFFkMZ4zW8nXKy",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQj6LQWPQ9zVIPw2nWV5fRjFb",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQj3DHQZlg7Q3EmFnuXEoL7MO",
+        "_id": "3EmQj8ZPvDybEIGxz7qMlw9XhNR"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQj2dvFKGmnFwkLgMiMEel8vX",
+        "_id": "3EmQj7jBZvMcMtzIHyQlCFPIeSn"
+      }
+    }
+  ]
+}

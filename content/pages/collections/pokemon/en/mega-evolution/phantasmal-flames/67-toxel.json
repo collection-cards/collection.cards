@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQnYAKy8QKOcWgenjf1K5dQU0",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Toxel",
+  "number": "67",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vY7s09PEgcYcePJCFGqslTjsT",
+    "_id": "3EmQnJinehbunlHI3YbGoeduA66"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGXXfFUSrt5ceM7K1LvuKmOj",
+    "_id": "3EmQnOeDe0mFmoEDcuPjndVoMRW"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQnaFm50efwP6hru1FH89coNu",
+    "_id": "3EmQndgRYWs327Glge1FzH96lqv"
+  },
+  "variants": [
+    {
+      "_id": "3EmQnfNKN6Wn6BhS9NwBYQo7nPm",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQnZA9wH67IuOuPNHEWEtJJqC",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQnbmGmrQnr0DXzWVzhGCy4vJ",
+        "_id": "3EmQnYj4xuLqxvFrONefoam8UlH"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQneTNrqkSuyAxd8d4RSNUZdx",
+        "_id": "3EmQnZvU6yW7gpbyokouK6JMgJV"
+      }
+    }
+  ]
+}

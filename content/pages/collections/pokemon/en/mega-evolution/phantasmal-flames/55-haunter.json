@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQk5vfCFLo7rYZmamYnjqMjFa",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Haunter",
+  "number": "55",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vdS54pArzwx4jjtxfhKv8oP8u",
+    "_id": "3EmQjkaEqKMgBDM38ia5VTqS9JM"
+  },
+  "hp": 100,
+  "stage": "stage1",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGWJyQsyMmmKH8jMpGkueBIm",
+    "_id": "3EmQjkryTy76CgH4XpTn24Jf7cv"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQjxVtRmZVMaoXeib6KO53Yl2",
+    "_id": "3EmQk3J3qQlcBtqqmpQH7dep8uc"
+  },
+  "variants": [
+    {
+      "_id": "3EmQjy1mk7xQerACfjOPN55QHGM",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQk0Vnj8W47oH5Lozi28EL0CS",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQk2LO3XiUeYZV8OMSNIUo58Y",
+        "_id": "3EmQk5l4TaSEV0J5qNKOS0uqrO5"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQk63DrvlgQW3ETMI39HVbBuu",
+        "_id": "3EmQk79UNG16e9xUPSW6AbQkqqz"
+      }
+    }
+  ]
+}

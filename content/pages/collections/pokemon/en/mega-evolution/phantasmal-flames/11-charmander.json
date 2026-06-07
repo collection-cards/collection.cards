@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQXVyA01JrCqGjANQ5DVFPNmG",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Charmander",
+  "number": "11",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34EB6dYg46TmqKy3T1qB5F9EJ1Z",
+    "_id": "3EmQXG60i8AUy2v8vYb9ZwKoMtc"
+  },
+  "hp": 80,
+  "stage": "basic",
+  "energy": "fire",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGTk0jy6djNXF2sh4C1SMjx5",
+    "_id": "3EmQXH2OOpic6Dv4dzjTRXpJkdb"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQXNh3ApcWxWaygt5bYjzNSZY",
+    "_id": "3EmQXVM6oKsV9nHP1hr4WBlyw3c"
+  },
+  "variants": [
+    {
+      "_id": "3EmQXPRxn6F181QFN5Hy3eyfWPt",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQXNdnb3RQqU4DuiKU3Qaw3cl",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQXSsViGz3063ZOtAP6aSdd5A",
+        "_id": "3EmQXUd5FIQLZGS256EdcWipqQo"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQXYKG0pV9askc11sewlReD9m",
+        "_id": "3EmQXTa80FczVQAu0vVldG1g0FV"
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQY15unSAxG9ulEUI5eJFuHf0",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Mega Charizard X ex",
+  "number": "13",
+  "edgeColor": "#97999b",
+  "rarity": "double-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vV7Az7hYGpLDq7N0F87wVc5wX",
+    "_id": "3EmQXph9QUFvYaG9WJAiSpdllTQ"
+  },
+  "hp": 360,
+  "stage": "stage2",
+  "energy": "fire",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGQx3jiE96hbvAi5wIsyck5G",
+    "_id": "3EmQXnGoweYjoBbZYq65Gzx9Ta2"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQXxbsaycNeZhw6ctFRMicLay",
+    "_id": "3EmQY2dyZGH3WBTwQiONBuA5Mqf"
+  },
+  "variants": [
+    {
+      "_id": "3EmQXxA3v0DCajUGfZLr635ktDw",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQXyFmLmjkKrorKHYyU5d0HDe",
+        "_id": "3EmQY55h5aK6SypLanx5GZcXpM0"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQY1fJW3cqN3oUJuCNmSvb1fq",
+        "_id": "3EmQY4MBYbRK11LuPJta8dK2Ias"
+      }
+    }
+  ]
+}

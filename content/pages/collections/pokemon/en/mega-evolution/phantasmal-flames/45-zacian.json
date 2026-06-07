@@ -1,0 +1,68 @@
+{
+  "_id": "3EmQhBgvvHas3QEV0bDpLKGsDB9",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Zacian",
+  "number": "45",
+  "edgeColor": "#97999b",
+  "rarity": "rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34EFTakY2ESip6eCw3eFkDttra7",
+    "_id": "3EmQgeJzC605RBnXtcjcwJupUIL"
+  },
+  "hp": 130,
+  "stage": "basic",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGS1rM0tCDUxirm5Qovp7pty",
+    "_id": "3EmQggB4WhLigy3eWhfMwXQKn7B"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQgxy3MxDpvmzrMNSnHnqpW3m",
+    "_id": "3EmQh9mKA0jbWWuPUo6g2nzUj3d"
+  },
+  "variants": [
+    {
+      "_id": "3EmQgw4MEWdMWC2QEmKzqrEnCEY",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQh6ecxvL4oqm10zOA6SXyd2o",
+        "_id": "3EmQh2YB0O2F0bEmS37MwBEWQFB"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQh4Q9SvQgoJbbfNuAVC96utn",
+        "_id": "3EmQh6ONsbhL3X8emFLrS3e3Joq"
+      }
+    },
+    {
+      "_id": "3EmQh1bnUVmMeng1n97RdIYxEzb",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQhElNiw2Jy8I2nyxphDi0UU3",
+        "_id": "3EmQh8aEU0De2I46gTylwYjVPNF"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQhDdMyBMx8SKYwlTmjCpFQXF",
+        "_id": "3EmQh9gRXKIdA7cRue19MZPcnzZ"
+      }
+    }
+  ]
+}

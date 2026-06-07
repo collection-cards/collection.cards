@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQUdN2EvgYM5EkSYN747qI50G",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Gloom",
+  "number": "2",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vaFX2EJxdunv9ohPSi2lAOkNV",
+    "_id": "3EmQULfdg7SJjkHCn0HbnhEalMM"
+  },
+  "hp": 70,
+  "stage": "stage1",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGTLOZRmGHWFR2foDopjVCyy",
+    "_id": "3EmQUJq1nHlZfyHN1bKqdULMweR"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQUaq2OofiaSAwnK16o3zSSCw",
+    "_id": "3EmQUdTlQc5snb7yGZCoki1S3r0"
+  },
+  "variants": [
+    {
+      "_id": "3EmQUgley9tgHdOOnu54N0UMfYs",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQUcqSaqpCMDm5McoqRhnW5zb",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQUf15vfLN3d4vb3K22gvHScD",
+        "_id": "3EmQUe41KTbEeFuxFcnIp34wmHH"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQUcwkH4wBIUSNiP7V361ixST",
+        "_id": "3EmQUblPQIKOKf0ufrtOPcmAZVq"
+      }
+    }
+  ]
+}

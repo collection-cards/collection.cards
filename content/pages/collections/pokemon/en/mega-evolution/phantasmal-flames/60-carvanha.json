@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQlcLj7jZLRQkkf4mnWG7Wu10",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Carvanha",
+  "number": "60",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vYFXNIICTGfQsIQ3qPTZ8u5JE",
+    "_id": "3EmQlOIALqwPIyEp16blZCBeAMo"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGR3slQF2PoHfJdiVKdXa5nR",
+    "_id": "3EmQlMR1wRMDgZqhkXkEM39OEQY"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQlThws0bIiwWYT1KxTWmA4Hq",
+    "_id": "3EmQlXXL247Sy0JAOgJ4XhbYqeW"
+  },
+  "variants": [
+    {
+      "_id": "3EmQlVPMFj27zZQc88NclxqEkoa",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQlSG5vKME8ILHUHpezCDP8WX",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQlaNcEIWXQ5B0ee1uUkm2IFo",
+        "_id": "3EmQlZkDFtET8V4uiG3DaVAPjqy"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQle6GyqMpVRJcak3uIgs3wrI",
+        "_id": "3EmQlZDVrC3M80DZsp1KKReW26f"
+      }
+    }
+  ]
+}

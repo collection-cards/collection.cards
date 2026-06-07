@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQdkJa5lrUm51RSSx86uSlOzb",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Pawmo",
+  "number": "33",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "3EmMo4uWopahd2uaQlPDj89GpuF",
+    "_id": "3EmQdXGxSEAISpF1ruNPvoRZtyh"
+  },
+  "hp": 90,
+  "stage": "stage1",
+  "energy": "lightning",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGQT1q64F9b7rqIKE3RcXyxp",
+    "_id": "3EmQdVY0uHdOn1mRBVvPnbxblL3"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQddXbM5ZzDPeksYlhnhDysik",
+    "_id": "3EmQdmZqcthjp1xiRl9lXbiC3tu"
+  },
+  "variants": [
+    {
+      "_id": "3EmQdeDCRvfehfcJIh6qODUy2CH",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQdgp6hGSzfBg4vbMQjm8Ft4D",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQdqEgI4c6kmAmO4Kra9HplMt",
+        "_id": "3EmQdrcZ0c0781Jj3NUMkXASICs"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQdlJZ1rcuErrmbDRLD5kUutV",
+        "_id": "3EmQdqEYgNR8u1vrofcsNLIlpYe"
+      }
+    }
+  ]
+}

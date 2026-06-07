@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQhdf7fYilknAS1kfGN0qynNW",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Brambleghast",
+  "number": "47",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vYHybqzDsdjmH5AwoSinkDL2L",
+    "_id": "3EmQhRRY0PwZUOpSMwCd7ZbH4mH"
+  },
+  "hp": 100,
+  "stage": "stage1",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGQPYLqqNxT7DvLvelCnfjgQ",
+    "_id": "3EmQhRKu9s67KpiGA057ZJalUbu"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQhYPizYH0lN8dOlMBpy4u9qF",
+    "_id": "3EmQhgeFib9k5Y6IIP12pyIZR7u"
+  },
+  "variants": [
+    {
+      "_id": "3EmQhYXbTSE9jQjftfYdm4yV3mK",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQhYOuAalW8lyrssU6dsn2NMF",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQhgrMdew9zbaYx93YREGx3c6",
+        "_id": "3EmQhhCinHC2l2ztWCLZr4zLAtr"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQhfnCbbGHhmJ47HiNHTizyue",
+        "_id": "3EmQhg8XxnU2xGUK6iiYKx5UeNt"
+      }
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "_id": "3EmQbn6cWJ0KGzLQJN5ZusSe4bf",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Suicune",
+  "number": "26",
+  "edgeColor": "#97999b",
+  "rarity": "rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vaWnMgheZxFmcwQVMnWgjG5Rh",
+    "_id": "3EmQbNnyANXjgp8aTVfOhkW8mlo"
+  },
+  "hp": 130,
+  "stage": "basic",
+  "energy": "water",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGRFgCiWvxREjGfCoWFpjgkA",
+    "_id": "3EmQbTHzJjwr2fsccGOeCG30cH8"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQbj6ujZ7OkbY1PLRE0LcPEyn",
+    "_id": "3EmQbo6NSa40sygfSqGpvRJ75ew"
+  },
+  "variants": [
+    {
+      "_id": "3EmQbgOw2JMc03DC3FuOMsAyQwu",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQbkXmLPePmQP38E7Pk89y7K8",
+        "_id": "3EmQbkd28xEvYbd3NufVhMvV6re"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQbqVk8LgGoYYnbJclMq0KUw3",
+        "_id": "3EmQbksmGoQpSBUceoIiOrlLyWT"
+      }
+    },
+    {
+      "_id": "3EmQblgyguHFJckHWJ78hpvmXrC",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQbqAm013ALXCkZd1dGHK2oFW",
+        "_id": "3EmQbmtakh1EivkgA2m1wXfRqL4"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQbjjk3DTOJzmt9WhdXttbEVX",
+        "_id": "3EmQbnqyc3q1dddZlqtWKn9lgPw"
+      }
+    }
+  ]
+}

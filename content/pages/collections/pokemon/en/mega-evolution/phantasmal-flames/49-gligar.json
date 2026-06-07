@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQiAVLexAJnixdATLDLiHfnu5",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Gligar",
+  "number": "49",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vYMmWWk5NkFv59ifqpF8scdjV",
+    "_id": "3EmQhuTJkv3V4WROfe72hJKTzYb"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "fighting",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVsedhqUKlwf6GYmXlOcP0k",
+    "_id": "3EmQhy8zTeRBnpAQQ6EWiJG3EUk"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQi3AobhXmVADty3lggdYyN45",
+    "_id": "3EmQiCJPd6Tkpyi0zHFnn5RoFwz"
+  },
+  "variants": [
+    {
+      "_id": "3EmQi7Kz0oCcxsiOiLSVKGsv8af",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQi4NlpKx0EwDykqmgaGAQRDE",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQiFxGl32IjjfqFTvRKITessb",
+        "_id": "3EmQi8tF3HxEMQkO8uLPhLKeWQJ"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQiBrt2ugHqUlR36MfzPjIpUr",
+        "_id": "3EmQiCLKrHansgY4vklQMqgdPtG"
+      }
+    }
+  ]
+}

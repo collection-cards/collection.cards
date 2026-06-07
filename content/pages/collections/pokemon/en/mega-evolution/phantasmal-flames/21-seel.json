@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQaGG6rFtxLaV6z7msh2GQgYN",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Seel",
+  "number": "21",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vXMCPGpNs4YpYKPNnKgmsDhqU",
+    "_id": "3EmQZyY5pxHXUlf0pl9ODCjG95t"
+  },
+  "hp": 80,
+  "stage": "basic",
+  "energy": "water",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGRCsYtmvxdHEPmWi6wmwS1w",
+    "_id": "3EmQa4Xy7kURs9sZJwznt3Ejnt4"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQaHzjYYK03aQvproXT7AKV4W",
+    "_id": "3EmQaKcAwEAts2gs3qJrQp1Nk20"
+  },
+  "variants": [
+    {
+      "_id": "3EmQaIu5V7YETWR7cQUUWjZuRT5",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQaG4PXYwI5N4OOaGa1Y5itc6",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQaJnYXOIqY1TwBMA6lAZ7woy",
+        "_id": "3EmQaLMDfY0A7YFeYQQjF9AscG2"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQaGrBF53tw9MRsXBA1PfrfM0",
+        "_id": "3EmQaJOopwK8u3ldRzS8O7QYUh7"
+      }
+    }
+  ]
+}

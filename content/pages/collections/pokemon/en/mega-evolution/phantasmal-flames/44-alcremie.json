@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQgkKOWr0Mt8l29bKDfQgOvCP",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Alcremie",
+  "number": "44",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "34EEXHNLXSRVdYG3SJgZkT18RYH",
+    "_id": "3EmQgTBnR2PiNPNJEBaJYckWiGa"
+  },
+  "hp": 90,
+  "stage": "stage1",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGVtAdAQxhGI1VUJfdMrXJk5",
+    "_id": "3EmQgQBjE7aABZXv9j1FU4FjYEc"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQgkvH7fP8oRsTkGfS5OZ9j7V",
+    "_id": "3EmQghGtkcu9yxZSt45XrgzG2Kd"
+  },
+  "variants": [
+    {
+      "_id": "3EmQgl1UfyUrD0E8GKSpYPvJuwB",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQghDuXk4dOz73B0EgVW2g8ea",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQgj47IHuBKGdGLNCs9GKsH2U",
+        "_id": "3EmQgiEfZMVg6nBSuiG4X55dWM0"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQgdji3E6UlUEs0RwD62um9tw",
+        "_id": "3EmQghkuzvL5NaEUYZtbyQv71LU"
+      }
+    }
+  ]
+}

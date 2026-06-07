@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQygJmCmBi8t3cagV7VXybjb4",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Meowth",
+  "number": "106",
+  "edgeColor": "#97999b",
+  "rarity": "illustration-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vbs4hrhVWRVWppzfM3LlXgFNI",
+    "_id": "3EmQyPTqrJ5unLK25bts90dPlye"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "colorless",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGSgVrf0WhzKtuQOQ7WugLot",
+    "_id": "3EmQyNljFU4NBqPzyIWWT49w554"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQyXc9qadZHqby0wgukXgR2ce",
+    "_id": "3EmQyf0rLWSTRSoooeiylNUiQXC"
+  },
+  "variants": [
+    {
+      "_id": "3EmQyZKd1y3GG6mM6LyAPfIx2PE",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQyhunlkk32slw59DTohZ3VDJ",
+        "_id": "3EmQyehzzS2qRtx5MWgCYs7MjNA"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQyj8Dqx4DGOJXFbxnu8laDN9",
+        "_id": "3EmQye0EXwYUlcXOq6hpi5yaImO"
+      }
+    }
+  ]
+}

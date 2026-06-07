@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQin72Nna93Rkha669hoAPwx1",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Trapinch",
+  "number": "51",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vY4lW5LvgZz8iymCRDST4DvHG",
+    "_id": "3EmQiOmQxLNui9TeXT7Zp47u9qJ"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "fighting",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGTlivkz7znVF9yMY2KC5Q3Y",
+    "_id": "3EmQiR2rrgBQZm4cUocNnOiq882"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQirQ10EE09lyNAVSt4HTolAV",
+    "_id": "3EmQipnjRSSzOSlKTxXVsRZY4l4"
+  },
+  "variants": [
+    {
+      "_id": "3EmQisg27xOEC4w3iz6B2a7G8aR",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQiqdCCzZKfE4reRxP7fcDQVO",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQiqLiDwNZkMuoAh5JPOJ7hy5",
+        "_id": "3EmQioGvVAHMamAmHbHmpZs2ed1"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQirpqpLmALLgxRy3YJYeSaYV",
+        "_id": "3EmQioFEnwySNZKvwhH9YmMk3u2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQXEXJ1yAmFMu9xufjAL39hqi",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Lokix",
+  "number": "10",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vYlZFevQisL14GcNtrhc5zmus",
+    "_id": "3EmQX3tOeFBdHH7zGd1ah6oYQ46"
+  },
+  "hp": 120,
+  "stage": "stage1",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGR9NcVK3J5zTnTfTURTBgTT",
+    "_id": "3EmQWyrGh3SmxqL0eRCSaicNyrv"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQX5gTT90qkT212BL4GQlDkba",
+    "_id": "3EmQXK9sipGROZq0k4OLAWtaG1q"
+  },
+  "variants": [
+    {
+      "_id": "3EmQX8j6CqLBTMcEWPPdnZbGN6O",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQXA08FtLH3cF9A9HcIxOUpwL",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQXKgBeQDrQtuuMNcYssXiKQN",
+        "_id": "3EmQXHtJPazTrfxXZ8mng3O0GJo"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQXKKKGFU66HWxIDdTHeeMVRA",
+        "_id": "3EmQXDEwWBWnxPddJwwmvm427t2"
+      }
+    }
+  ]
+}

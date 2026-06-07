@@ -1,0 +1,50 @@
+{
+  "_id": "3EmQszbhgS6Euuwyh53XEAERtmR",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Blowtorch",
+  "number": "86",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZGqAhMVeaMz9R4gLoz8dBmSI",
+    "_id": "3EmQsoe6BGGB6hslhzfumZoRHld"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQswkzVvvwgCi2hiQGkXMFgXY",
+    "_id": "3EmQszdqvUPrd0hvL1xB8XxP77w"
+  },
+  "variants": [
+    {
+      "_id": "3EmQst4xZaLSGyC1jI0ArSzL5oP",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQsu84fmzUlk7tgZJo7VYLbIH",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQsxQ3t1Nv3ojRAPEXR0EUFMD",
+        "_id": "3EmQt0GVtmELr6SHCJkWBwKH0og"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQszHBgHXteL73pewtroY2pdG",
+        "_id": "3EmQsyKwfu6OOa7JIn37HGlro6X"
+      }
+    }
+  ]
+}

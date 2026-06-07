@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQegQumYoze2Ylif914ycfMmj",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Mismagius ex",
+  "number": "36",
+  "edgeColor": "#97999b",
+  "rarity": "double-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vWmw98oNnKQtVa4Sd9tUkwdMW",
+    "_id": "3EmQeRMgWht4tFmZx2kSGAK7roj"
+  },
+  "hp": 260,
+  "stage": "stage1",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGSRlF5OTH47SCJTynSEhaIl",
+    "_id": "3EmQeNrByBx5IANzRr5ThX1Tqt7"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQeXH4lvkJPRHyRGZYfvPs28S",
+    "_id": "3EmQehRnMSYpn2GveCFzQ7jWWyb"
+  },
+  "variants": [
+    {
+      "_id": "3EmQeWeGPXEqdk35GCPyMcs2lMV",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQeeEr9IpqXR9OroV7f1Esu1t",
+        "_id": "3EmQecp3CrSmF6JHno7irWuER0N"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQej3fbFVlbDjI3dXGPliWGBX",
+        "_id": "3EmQecz4XPG42wFg0AUrfeUuxNH"
+      }
+    }
+  ]
+}

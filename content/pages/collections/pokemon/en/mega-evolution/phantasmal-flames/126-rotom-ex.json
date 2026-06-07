@@ -1,0 +1,51 @@
+{
+  "_id": "3EmR5yp8lu67rr2Mi0FWwTKQEX8",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Rotom ex",
+  "number": "126",
+  "edgeColor": "#97999b",
+  "rarity": "special-illustration-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": true,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZa8kDBUIekvfVzKcCx1LV1nL",
+    "_id": "3EmR5WfYF6BIgFFqPvrP8mRompI"
+  },
+  "hp": 190,
+  "stage": "basic",
+  "energy": "lightning",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGSEu3bGY9PBfqNYjFWkhcE9",
+    "_id": "3EmR5cPZjw5V8tqITZIjqLCu9I1"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmR5llY52xG6aESnkPnneN9HOP",
+    "_id": "3EmR5xplK9t3QUdUmBPwvow5jtD"
+  },
+  "variants": [
+    {
+      "_id": "3EmR5pUCbMbt4n3RHh6FmmHTHx3",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmR5uoZedo6haFONI69QSgilsC",
+        "_id": "3EmR5y7mtiKs27fjnuEJk1RKR7O"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmR5ttRXuf7kGP69tZxtD4aBjK",
+        "_id": "3EmR5uYP9xGlBvGauFvbBdyPZ2A"
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "_id": "3EmQtNgVOWPJFqmppkmRqNMtOiY",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Dizzying Valley",
+  "number": "88",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZDiCauBlUuRJ1IRKwZaoYqp8",
+    "_id": "3EmQtELEyoEmK031tOjMzErgaFY"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQtQf0p504FfORNEhJFcSvgwH",
+    "_id": "3EmQtKsTasOqXLgXNSZBPN5ssY6"
+  },
+  "variants": [
+    {
+      "_id": "3EmQtKlIlamCkbB72tqK17Z52yg",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQtL1yK6lP4Q81STBrncoC4ns",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQtP9fSP6N0J2ZfRjI5ROxDRy",
+        "_id": "3EmQtRnoHjuLbew1cvjRw59PtsK"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQtNAJlsd4FmliQmSUs1PIuvy",
+        "_id": "3EmQtQkIQmqfNN7P1diFdWxT6v7"
+      }
+    }
+  ]
+}

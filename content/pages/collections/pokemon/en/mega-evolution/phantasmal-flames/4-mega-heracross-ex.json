@@ -1,0 +1,51 @@
+{
+  "_id": "3EmQVLSj2OwQ6dn1SSlklrGy9rT",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Mega Heracross ex",
+  "number": "4",
+  "edgeColor": "#97999b",
+  "rarity": "double-rare",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": true,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vWmw98oNnKQtVa4Sd9tUkwdMW",
+    "_id": "3EmQV99CiMXpPOxlzoqjmCBA2rN"
+  },
+  "hp": 280,
+  "stage": "basic",
+  "energy": "grass",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGTKhe0jYgFdmXYQPZA4yyzn",
+    "_id": "3EmQVBVJd9A0gBoRdNKkBGv5LH7"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQVH9QTDHYgLYyJ6TJ3iCYxP0",
+    "_id": "3EmQVMoS2e1SdSlei53FZTUe1sC"
+  },
+  "variants": [
+    {
+      "_id": "3EmQVFWBBJp4vVuO8pAImBjJYzR",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQVOu2d5S3TXeIWgzwv57pgat",
+        "_id": "3EmQVNjP15GXQUnWpnc6AwUQy0H"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQVQTTsB9d5mFPyPMj05Wdqsp",
+        "_id": "3EmQVKLwwUD9L3zUPXtqHgixIcW"
+      }
+    }
+  ]
+}

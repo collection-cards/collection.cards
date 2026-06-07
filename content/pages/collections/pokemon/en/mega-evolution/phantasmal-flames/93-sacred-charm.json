@@ -1,0 +1,50 @@
+{
+  "_id": "3EmQuXoqpgeM3QqZYbmGY7TSXIq",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Sacred Charm",
+  "number": "93",
+  "edgeColor": "#97999b",
+  "rarity": "uncommon",
+  "cardtype": "trainer",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vZGqAhMVeaMz9R4gLoz8dBmSI",
+    "_id": "3EmQuOZTAI1PhAoNKg0RZIIcUbY"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQuXMITeICjf2zx2mYH1lGX0s",
+    "_id": "3EmQuYKbQvmc6FMtbOh4NwoYevl"
+  },
+  "variants": [
+    {
+      "_id": "3EmQuXAK0cKBDn32WPj8URHxK4g",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQuXAzg2Mlle8AFIyuj3ohet9",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQuYzYY0Idg5hDaxO6nEVW6MH",
+        "_id": "3EmQuTQuq3fcBkczG01UD6AnApu"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQuUOGeYbF9SiVXhweTLrYd5v",
+        "_id": "3EmQuZXAH7ul2mc0M9Wrvkc98Kb"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQjm1QTglgk8dZCg921cpLHjF",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Gastly",
+  "number": "54",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33vtSoFZ0bvONM8edNtxXPsYYMG",
+    "_id": "3EmQjQrpB8L11Q097WqdG5FVPCC"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "darkness",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGRGATne4iongN02YAPZlK1J",
+    "_id": "3EmQjWMWs98Z0JSOSD4YZXIjISN"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQjlE3N9utrmlIwH30M9futmd",
+    "_id": "3EmQjfVosM11yFTZS6jeUySo9w4"
+  },
+  "variants": [
+    {
+      "_id": "3EmQjeQZ3XNcDIQYUwfgwDAjWsE",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQjjfIpG5b8FrylyYYCpVAbKl",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQji5aJLdxw7QLhcRr7I1PE2i",
+        "_id": "3EmQjkExOH0WrXUMHwVSwaZXX9r"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQjhZUXv5M86T08cGepwlgZGI",
+        "_id": "3EmQjliaTTWf11SIsV9I1icE5KB"
+      }
+    }
+  ]
+}

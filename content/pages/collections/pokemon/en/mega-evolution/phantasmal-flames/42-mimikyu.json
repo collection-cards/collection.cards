@@ -1,0 +1,58 @@
+{
+  "_id": "3EmQgMjaPBcNXZ1u4eecxQKmkSC",
+  "_type": "PokemonCard",
+  "_index": "a0",
+  "title": "Mimikyu",
+  "number": "42",
+  "edgeColor": "#97999b",
+  "rarity": "common",
+  "cardtype": "pokemon",
+  "subtype": null,
+  "isEx": false,
+  "isTrainerGallery": false,
+  "isFullArt": false,
+  "illustrator": {
+    "_type": "entry",
+    "_entry": "33varjEHrxhPqKsUIKCQt1vtBBD",
+    "_id": "3EmQg40NJr5VYRXBaMRtqoYTRmY"
+  },
+  "hp": 70,
+  "stage": "basic",
+  "energy": "psychic",
+  "pokemon": {
+    "_type": "entry",
+    "_entry": "36dmGQmsTTjYJCiqn0LRPSShl0S",
+    "_id": "3EmQg6LTrlR9MjFthejcHK44xL2"
+  },
+  "card": {
+    "_type": "image",
+    "_entry": "3EmQgH6EKnBlkv3lmtFcbkbVp2z",
+    "_id": "3EmQgK8ZCYWGSuy8Lkv5Bs8Z3fq"
+  },
+  "variants": [
+    {
+      "_id": "3EmQgNTD5yeBDO7jSblz0R8a7Hk",
+      "_index": "a0",
+      "_type": "Variant",
+      "variant": "normal",
+      "pattern": null
+    },
+    {
+      "_id": "3EmQgLxhk8SMivlZ4IScaIZ99iY",
+      "_index": "a1",
+      "_type": "Variant",
+      "variant": "reverse_holofoil",
+      "pattern": null,
+      "foil": {
+        "_type": "image",
+        "_entry": "3EmQgJcTFo9Xcor5jwkD9e4vNNv",
+        "_id": "3EmQgI3eW7K6LbRZppsQHf0tuzg"
+      },
+      "mask": {
+        "_type": "image",
+        "_entry": "3EmQgHKvUWlGwqcCUlY9uyExBHi",
+        "_id": "3EmQgHJgJ5j8AMaBtED8ncuKq61"
+      }
+    }
+  ]
+}
