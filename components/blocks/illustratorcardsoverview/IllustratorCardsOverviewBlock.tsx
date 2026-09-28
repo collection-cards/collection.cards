@@ -5,9 +5,15 @@ import CardGrid, {CardGridProps} from '@/components/cardgrid/CardGrid'
 import NoResults from '@/components/noresults/NoResults'
 import {fetchPokemonCards} from '@/server/fetchPokemonCards'
 import {Query} from 'alinea'
+import {getMessages} from '@/lib/i18n'
+import {
+  getPreferredCardLanguage,
+  getSiteLocale
+} from '@/lib/siteLocale.server'
 
 const fetchIllustratorCards = async (
-  illustratorId: string
+  illustratorId: string,
+  preferredLanguage: string
 ): Promise<CardGridProps['cards']> => {
   const illustratorCardIds = await cms.find({
     type: PokemonCard,
@@ -15,31 +21,43 @@ const fetchIllustratorCards = async (
       id: Query.id
     },
     filter: {
-      illustrator: {has: {_entry: {in: [illustratorId]}}}
+      illustrator: {has: {_entry: {in: [illustratorId]}}},
+      language: preferredLanguage
     },
     orderBy: {asc: Query.id}
   })
 
-  return await fetchPokemonCards(illustratorCardIds.map(pc => pc.id))
+  return await fetchPokemonCards(
+    illustratorCardIds.map(pc => pc.id),
+    preferredLanguage,
+    {expandVariants: false}
+  )
 }
 
 const IllustratorCardsOverviewBlock: React.FC<
   IllustratorCardsOverviewBlockSchema
 > = async ({illustratorId}) => {
-  const cardsData = await fetchIllustratorCards(illustratorId)
+  const preferredLanguage = await getPreferredCardLanguage()
+  const cardsData = await fetchIllustratorCards(
+    illustratorId,
+    preferredLanguage
+  )
+  const messages = getMessages(await getSiteLocale())
 
   if (!cardsData || cardsData.length === 0)
     return (
       <NoResults
         contribute={true}
-        title="This illustrator has no cards yet"
-        description={`No cards have been added for this illustrator.\nBe the first to contribute and help the community grow.`}
+        title={messages.illustratorNoCards}
+        description={messages.illustratorNoCardsDescription}
       />
     )
 
   return (
     <div>
-      <CardGrid cards={cardsData} />
+      <div lang={preferredLanguage}>
+        <CardGrid cards={cardsData} />
+      </div>
     </div>
   )
 }

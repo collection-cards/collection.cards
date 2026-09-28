@@ -10,40 +10,56 @@ import {CatIcon, ChevronRight, PaletteIcon, Sparkles} from 'lucide-react'
 import Link from 'next/link'
 import {createElement, useState} from 'react'
 import ComingSoon from '../comingsoon/ComingSoon'
+import {useSiteI18n} from '../sitei18n/SiteI18nProvider'
+import {withSiteLocalePath} from '@/lib/locales'
 import {Title} from '../title/Title'
 import {Button} from '../ui/button'
 import {Label} from '../ui/label'
 
 export type PokemonCardDetailsProps = {
+  collectorNumber?: string | null
   energy: Energy | null
   id: string
   illustrator?: EntryLink<undefined>
   number: string
   pattern?: keyof typeof reverseHolofoilPatterns | keyof typeof holofoilPatterns
   pokemon: PokemonCard['pokemon']
+  printingId?: string
+  regulationMark?: string | null
+  resistance?: string | null
+  retreat?: number | null
+  rulesText?: PokemonCard['rulesText']
   serie: {title: string; url: string}
   set: {title: string; url: string}
   title: string
   variant: keyof typeof variant
+  weakness?: string | null
 }
 
 export default function PokemonCardDetails({
   nextHandler,
   prevHandler,
+  collectorNumber,
   energy,
   id,
   illustrator,
   number,
   pattern,
   pokemon,
+  regulationMark,
+  resistance,
+  retreat,
+  rulesText,
   serie,
   set,
   title,
-  variant
+  variant,
+  weakness
 }: PokemonCardDetailsProps & {
   nextHandler?: () => void
   prevHandler?: () => void
 }) {
+  const {messages, locale} = useSiteI18n()
   const [direction, setDirection] = useState<number>(0)
 
   const handleNext = () => {
@@ -98,7 +114,7 @@ export default function PokemonCardDetails({
             <ol className="flex flex-wrap items-center gap-1.5 text-sm break-words">
               <li>
                 <Link
-                  href={serie.url}
+                  href={withSiteLocalePath(serie.url, locale)}
                   className="transition-colors text-sm hover:text-muted-foreground"
                 >
                   {serie.title}
@@ -113,7 +129,7 @@ export default function PokemonCardDetails({
               </li>
               <li>
                 <Link
-                  href={set.url}
+                  href={withSiteLocalePath(set.url, locale)}
                   className="transition-colors text-sm hover:text-muted-foreground"
                 >
                   {set.title}
@@ -126,7 +142,7 @@ export default function PokemonCardDetails({
               <Sparkles
                 className="inline-block mr-2 mb-1"
                 size={16}
-                aria-label="Variant"
+                aria-label={messages.variantLabel}
               />
               {variantPattern[variant]}
               {pattern && (
@@ -139,7 +155,7 @@ export default function PokemonCardDetails({
           {energy && (
             <p>
               <Label>
-                <EnergyIcon energy={energy} aria-label="Energy" />
+                <EnergyIcon energy={energy} />
                 {energyList[energy]}
               </Label>
             </p>
@@ -153,7 +169,7 @@ export default function PokemonCardDetails({
                   aria-label="Pokédex"
                 />
                 <Link
-                  href={pokemon.href}
+                  href={withSiteLocalePath(pokemon.href, locale)}
                   className="transition-colors hover:text-muted-foreground"
                 >
                   {pokemon.title}
@@ -167,10 +183,10 @@ export default function PokemonCardDetails({
                 <PaletteIcon
                   className="inline-block mr-2 mb-1"
                   size={16}
-                  aria-label="Illustrator"
+                  aria-label={messages.illustrator}
                 />
                 <Link
-                  href={illustrator.href}
+                  href={withSiteLocalePath(illustrator.href, locale)}
                   className="transition-colors hover:text-muted-foreground"
                 >
                   {illustrator.title}
@@ -178,8 +194,48 @@ export default function PokemonCardDetails({
               </Label>
             </p>
           )}
-          <ComingSoon>
-            <Button className="mt-4 cursor-pointer">Add to Collection</Button>
+          {(collectorNumber || regulationMark) && (
+            <p className="text-sm text-muted-foreground">
+              {[collectorNumber, regulationMark && `${messages.regulation} ${regulationMark}`]
+                .filter(Boolean)
+                .join(' · ')}
+            </p>
+          )}
+          {(weakness || resistance || retreat != null) && (
+            <p className="text-sm text-muted-foreground">
+              {[
+                weakness && `${messages.weakness}: ${weakness}`,
+                resistance && `${messages.resistance}: ${resistance}`,
+                retreat !== null && retreat !== undefined
+                  ? `${messages.retreat}: ${retreat}`
+                  : null
+              ]
+                .filter(Boolean)
+                .join(' · ')}
+            </p>
+          )}
+          {rulesText && rulesText.length > 0 && (
+            <div className="mt-4 flex flex-col gap-3 text-sm">
+              {rulesText.map(entry => (
+                <section key={entry._id}>
+                  {(entry.name || entry.damage) && (
+                    <p className="font-medium">
+                      {[entry.energyCost, entry.name, entry.damage]
+                        .filter(Boolean)
+                        .join(' · ')}
+                    </p>
+                  )}
+                  {entry.text && (
+                    <p className="text-muted-foreground">{entry.text}</p>
+                  )}
+                </section>
+              ))}
+            </div>
+          )}
+          <ComingSoon text={messages.comingSoon}>
+            <Button className="mt-4 cursor-pointer">
+              {messages.addToCollection}
+            </Button>
           </ComingSoon>
         </motion.div>
       </AnimatePresence>
@@ -191,7 +247,7 @@ export default function PokemonCardDetails({
           disabled={!prevHandler}
           variant={'outline'}
         >
-          Previous
+          {messages.previous}
         </Button>
         <Button
           className="m-0 cursor-pointer"
@@ -199,7 +255,7 @@ export default function PokemonCardDetails({
           disabled={!nextHandler}
           variant={'outline'}
         >
-          Next
+          {messages.next}
         </Button>
       </div>
     </div>

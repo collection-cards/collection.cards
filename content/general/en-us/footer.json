@@ -1,0 +1,149 @@
+{
+  "_id": "34XoGmT97QOdN4pT6r9C1mCdg2e",
+  "_type": "Footer",
+  "_index": "a0",
+  "title": "Footer",
+  "columns": [
+    {
+      "_id": "34Y7IYzmOQDwdiOSPmi7Aa45MdP",
+      "_index": "Zz",
+      "_type": "Column",
+      "title": "Collections",
+      "items": [
+        {
+          "_id": "34Y7kQDz4zd4tsczSkSAh7iSVUH",
+          "_index": "a0",
+          "_type": "Link",
+          "link": {
+            "_id": "357IxL993SkWqa7kIeNYqzu2CCC",
+            "_type": "entry",
+            "_entry": "354Vh20BCnqprKEGviuo8Q03EPT",
+            "title": "Pokémon"
+          }
+        }
+      ]
+    },
+    {
+      "_id": "34XypIXCoYzyyVoWFfm1x50EDUe",
+      "_index": "a0",
+      "_type": "Column",
+      "title": "Contribute",
+      "items": [
+        {
+          "_id": "34XzxtdmBXDFx1zKOa3tfzYs3Vo",
+          "_index": "a0",
+          "_type": "Icons",
+          "links": [
+            {
+              "_id": "34Xzyws0WRDpiyKUYqLpLKPFx2Q",
+              "_index": "a0",
+              "_type": "url",
+              "_url": "https://github.com/collection-cards/collection.cards",
+              "_title": "GitHub",
+              "_target": "_blank",
+              "icon": "github"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "_id": "34XyqoYqu3JfMjZW25eErdROAQJ",
+      "_index": "a1",
+      "_type": "Column",
+      "title": "Join our community",
+      "items": [
+        {
+          "_id": "34Y08jReYuxX2Jdy3IhROftZEdi",
+          "_index": "a0",
+          "_type": "Icons",
+          "links": [
+            {
+              "_id": "34Y0APS8wAGOx6h173u5lBU315A",
+              "_index": "a0",
+              "_type": "url",
+              "_url": "https://discord.gg/NSjyKFHRaf",
+              "_title": "Discord",
+              "_target": "_blank",
+              "icon": "discord"
+            },
+            {
+              "_id": "34Y0DZWPQx1E0SOjMSn4WtAqZzG",
+              "_index": "a1",
+              "_type": "url",
+              "_url": "https://www.reddit.com/r/collectioncards",
+              "_title": "Reddit",
+              "_target": "_blank",
+              "icon": "reddit"
+            }
+          ]
+        },
+        {
+          "_id": "34Y0QanwkBkp6LRlBJu5hzCuHDY",
+          "_index": "a1",
+          "_type": "Text",
+          "text": [
+            {
+              "_type": "paragraph",
+              "content": [
+                {
+                  "_type": "text",
+                  "text": "Built with "
+                },
+                {
+                  "_type": "text",
+                  "text": "Alinea",
+                  "marks": [
+                    {
+                      "_type": "link",
+                      "_id": "34Y0RETg5w6JN5oEdjNNGQpjBPQ",
+                      "_link": "url",
+                      "href": "https://alineacms.com/",
+                      "target": "_blank",
+                      "title": ""
+                    },
+                    {
+                      "_type": "bold"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "copyright": "© 2025 All rights reserved.",
+  "disclaimer": [
+    {
+      "_type": "paragraph",
+      "content": [
+        {
+          "_type": "text",
+          "text": "The literal and graphical information presented on this website about the Pokémon Trading Card Game, including card text and images, are copyright The Pokémon Company (Pokémon), Nintendo, Game Freak, Creatures, and/or Wizards of the Coast. This website is not produced by, endorsed by, supported by, or affiliated with The Pokémon Company (Pokémon), Nintendo, Game Freak, Creatures, or Wizards of the Coast."
+        }
+      ]
+    }
+  ],
+  "legal_links": [
+    {
+      "_id": "34Xuejkd3yANj7wdd2e2bDmMo7c",
+      "_index": "Zz",
+      "_type": "entry",
+      "_entry": "3JvLhG5sJRrUxopqRJO8lRIaeby"
+    },
+    {
+      "_id": "34XuekQA5VZBs3TC0mwOvt5pKg1",
+      "_index": "ZzV",
+      "_type": "entry",
+      "_entry": "3JvLhKjrpDLyJl20kUNmSiphWgI"
+    },
+    {
+      "_id": "34Xueh7xzC9429cYoz6WV78tUIX",
+      "_index": "a0",
+      "_type": "entry",
+      "_entry": "3JvLhKJZaDpcMMVlO4uSEnxyA2l"
+    }
+  ]
+}

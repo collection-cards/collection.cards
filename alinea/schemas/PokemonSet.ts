@@ -6,6 +6,14 @@ export type PokemonSet = Infer<typeof PokemonSet>;
 
 const GeneralTab = Field.tab("General", {
   fields: {
+    sourceSetKey: Field.text("Canonical set key", {
+      width: 0.25,
+      readOnly: true,
+    }),
+    language: Field.text("Language", {
+      width: 0.25,
+      readOnly: true,
+    }),
     number: Field.number("Number", { width: 0.2 }),
     ptcgoCode: Field.text("PTCGO Code", {
       width: 0.2,

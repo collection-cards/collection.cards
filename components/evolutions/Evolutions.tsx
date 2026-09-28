@@ -1,6 +1,10 @@
+'use client'
+
 import {ChevronRight} from 'lucide-react'
 import Link from 'next/link'
 import {Fragment, memo} from 'react'
+import {useSiteI18n} from '../sitei18n/SiteI18nProvider'
+import {withSiteLocalePath} from '@/lib/locales'
 
 type EvolutionsProps = {
   evolvesFrom?: {title: string; path: string}[] | null
@@ -15,6 +19,7 @@ const Evolutions: React.FC<EvolutionsProps> = ({
   evolvesAfterTo,
   currentPokemonTitle
 }) => {
+  const {locale, messages} = useSiteI18n()
   const isEvolvingFrom = evolvesFrom && evolvesFrom.length > 0
   const isEvolvingTo = evolvesTo && evolvesTo.length > 0
   const isEvolvingAfterTo = evolvesAfterTo && evolvesAfterTo.length > 0
@@ -23,7 +28,9 @@ const Evolutions: React.FC<EvolutionsProps> = ({
 
   return (
     <div className="flex flex-col gap-1 sm:ml-auto w-full sm:w-auto text-left sm:text-right">
-      <p className="font-normal text-xs text-muted-foreground">Evolution</p>
+      <p className="font-normal text-xs text-muted-foreground">
+        {messages.evolution}
+      </p>
       <ol className="flex flex-wrap items-center gap-1.5 text-sm sm:justify-end">
         {isEvolvingFrom &&
           evolvesFrom.map((from, index) => {
@@ -32,7 +39,7 @@ const Evolutions: React.FC<EvolutionsProps> = ({
               <Fragment key={index}>
                 <li className="inline-flex items-center gap-1.5">
                   <Link
-                    href={from.path}
+                    href={withSiteLocalePath(from.path, locale)}
                     className="transition-colors hover:text-muted-foreground"
                   >
                     {from.title}
@@ -70,7 +77,7 @@ const Evolutions: React.FC<EvolutionsProps> = ({
                   className="text-muted-foreground whitespace-nowrap"
                 >
                   <Link
-                    href={to.path}
+                    href={withSiteLocalePath(to.path, locale)}
                     className="transition-colors text-foreground hover:text-muted-foreground"
                   >
                     {to.title}
@@ -78,7 +85,7 @@ const Evolutions: React.FC<EvolutionsProps> = ({
                   {index < evolvesTo.length - 1
                     ? index < evolvesTo.length - 2
                       ? ', '
-                      : ' and '
+                      : ` ${messages.and} `
                     : ''}
                 </span>
               )
@@ -103,7 +110,7 @@ const Evolutions: React.FC<EvolutionsProps> = ({
                   className="text-muted-foreground whitespace-nowrap"
                 >
                   <Link
-                    href={to.path}
+                    href={withSiteLocalePath(to.path, locale)}
                     className="transition-colors text-foreground hover:text-muted-foreground"
                   >
                     {to.title}
@@ -111,7 +118,7 @@ const Evolutions: React.FC<EvolutionsProps> = ({
                   {index < evolvesAfterTo.length - 1
                     ? index < evolvesAfterTo.length - 2
                       ? ', '
-                      : ' and '
+                      : ` ${messages.and} `
                     : ''}
                 </span>
               )

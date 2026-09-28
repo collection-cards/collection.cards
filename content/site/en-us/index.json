@@ -1,0 +1,155 @@
+{
+  "_id": "3JvLhGlv8mfHcwRmvGjiCBDAx64",
+  "_type": "Home",
+  "_index": "b1L",
+  "title": "Home",
+  "blocks": [
+    {
+      "_id": "34fYDSmNTgXt2VTHudrBWYdUQkM",
+      "_index": "a0",
+      "_type": "TextBlock",
+      "text": [
+        {
+          "_type": "heading",
+          "level": 1,
+          "content": [
+            {
+              "_type": "text",
+              "text": "Coming Soon: The Ultimate Resource for TCG Collectors"
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "This website is currently under construction — but something exciting is on the way!"
+            },
+            {
+              "_type": "hardBreak"
+            },
+            {
+              "_type": "hardBreak"
+            },
+            {
+              "_type": "text",
+              "text": "Collection.cards",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": " aims to become the ultimate resource for TCG collectors. Our goal is to showcase trading cards in the most "
+            },
+            {
+              "_type": "text",
+              "text": "realistic and detailed way possible",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": ", including all "
+            },
+            {
+              "_type": "text",
+              "text": "variants, effects, and print details",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": ", so collectors can easily identify and match their cards."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "You'll also be able to "
+            },
+            {
+              "_type": "text",
+              "text": "visualize card placement",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": " inside different binder layouts — whether you use 4, 9, 12, or 16-pocket binders. Stack cards in sequence, organize them side-by-side, and see how your full collection fits together."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Powerful "
+            },
+            {
+              "_type": "text",
+              "text": "filtering and search tools",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": " will help you find exactly what you’re looking for — by energy type, rarity, variant, effect, illustrator, and more."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Best of all, "
+            },
+            {
+              "_type": "text",
+              "text": "Collection.cards will be open source",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": ", inviting contributors from around the world to help build and expand this project together."
+            },
+            {
+              "_type": "hardBreak"
+            },
+            {
+              "_type": "hardBreak"
+            },
+            {
+              "_type": "text",
+              "text": "Stay tuned — more features, previews, and updates are coming soon!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

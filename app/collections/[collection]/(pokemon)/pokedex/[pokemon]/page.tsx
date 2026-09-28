@@ -12,6 +12,11 @@ import {fetchPokemonCards} from '@/server/fetchPokemonCards'
 import {Query} from 'alinea'
 import {notFound} from 'next/navigation'
 import {Suspense} from 'react'
+import {getMessages} from '@/lib/i18n'
+import {
+  getPreferredCardLanguage,
+  getSiteLocale
+} from '@/lib/siteLocale.server'
 
 const fetchPokemonData = async (pokemonId: string) => {
   const pokemonCardIds = await cms.find({
@@ -24,7 +29,10 @@ const fetchPokemonData = async (pokemonId: string) => {
     orderBy: {asc: Query.id}
   })
 
-  return await fetchPokemonCards(pokemonCardIds.map(pc => pc.id))
+  return await fetchPokemonCards(
+    pokemonCardIds.map(pc => pc.id),
+    await getPreferredCardLanguage()
+  )
 }
 
 export async function generateStaticParams() {
@@ -111,6 +119,7 @@ export default async function PokemonPage({
   ).sort((a, b) => (a.number || 0) - (b.number || 0))
 
   const cards = await fetchPokemonData(pokemonData.id)
+  const messages = getMessages(await getSiteLocale())
 
   return (
     <Container>
@@ -132,8 +141,8 @@ export default async function PokemonPage({
       {!cards || cards.length === 0 ? (
         <NoResults
           contribute={true}
-          title={`No cards found for ${pokemonData.title}`}
-          description={`It looks like there are no cards added for this Pokémon yet.\nBe the first to contribute and help complete the Pokédex!`}
+          title={`${messages.noCardsFor} ${pokemonData.title}`}
+          description={messages.pokemonNoCardsDescription}
         />
       ) : (
         <Suspense>

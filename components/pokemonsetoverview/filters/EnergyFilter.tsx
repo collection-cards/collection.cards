@@ -1,4 +1,5 @@
 import MultiSelect from '@/components/select/MultiSelect'
+import {useSiteI18n} from '@/components/sitei18n/SiteI18nProvider'
 import {Energy, energy, getEnergyIcon} from '@/consts/energy'
 
 type EnergyFilterProps = {
@@ -11,16 +12,17 @@ const EnergyFilter: React.FC<EnergyFilterProps> = ({
   options,
   onChange,
   selected
-}) =>
-  options.length > 1 ? (
+}) => {
+  const {messages} = useSiteI18n()
+  return options.length > 1 ? (
     <MultiSelect
-      innerLabel="Filter by Energy"
-      label="Energy"
+      innerLabel={messages.filterByEnergy}
+      label={messages.energy}
       onChange={selectedOptions => {
         const selectedOption =
           selectedOptions.filter(o => o.value !== selected)[0] || null
         onChange({
-          label: selectedOption?.label || 'All energies',
+          label: selectedOption?.label || messages.allEnergies,
           value: selectedOption?.value
             ? selectedOption.value === selected
               ? null
@@ -33,9 +35,10 @@ const EnergyFilter: React.FC<EnergyFilterProps> = ({
         label: energy[option],
         value: option
       }))}
-      placeholder="All energies"
+      placeholder={messages.allEnergies}
       selected={selected ? [selected] : undefined}
     />
   ) : null
+}
 
 export default EnergyFilter

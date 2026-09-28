@@ -15,6 +15,7 @@ import {
 } from '@/components/ui/command'
 import {cn} from '@/lib/utils'
 import {Dialog} from 'radix-ui'
+import {useSiteI18n} from '@/components/sitei18n/SiteI18nProvider'
 
 export interface Option {
   icon?: React.FC<React.SVGProps<SVGSVGElement>>
@@ -153,6 +154,7 @@ const MultipleSelector = ({
   inputProps,
   innerLabel
 }: MultipleSelectorProps) => {
+  const {messages} = useSiteI18n()
   const [open, setOpen] = React.useState(false)
   const dropdownRef = React.useRef<HTMLDivElement>(null) // Added this
 
@@ -288,7 +290,7 @@ const MultipleSelector = ({
                       handleUnselect(option)
                       setOpen(false)
                     }}
-                    aria-label="Remove"
+                    aria-label={messages.remove}
                   >
                     <XIcon size={14} aria-hidden="true" />
                   </button>
@@ -319,7 +321,7 @@ const MultipleSelector = ({
               <button
                 type="button"
                 className="text-foreground/60 rounded-md transition-[color,box-shadow] outline-none"
-                aria-label="Toggle dropdown"
+                aria-label={messages.toggleDropdown}
               >
                 <ChevronDown size={16} aria-hidden="true" className="-me-1" />
               </button>
@@ -336,7 +338,7 @@ const MultipleSelector = ({
               'data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 min-w-40 overflow-hidden rounded-md border bg-popover p-1 text-popover-foreground shadow-lg',
               open && 'z-50'
             )}
-            aria-label="Select items"
+            aria-label={messages.selectItems}
             onInteractOutside={e => {
               // Prevent dialog from closing when clicking inside the input or trigger
               if (dropdownRef.current?.contains(e.target as Node)) {
@@ -345,7 +347,9 @@ const MultipleSelector = ({
             }}
             style={{'--radius': '8px'} as React.CSSProperties}
           >
-            <Dialog.Title className="sr-only">Select items</Dialog.Title>
+            <Dialog.Title className="sr-only">
+              {messages.selectItems}
+            </Dialog.Title>
             <CommandList className="bg-popover text-popover-foreground outline-hidden overflow-y-auto max-h-[inherit]">
               <>
                 <CommandItem value="-" className="hidden" />

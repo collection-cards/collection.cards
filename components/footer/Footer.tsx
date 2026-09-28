@@ -4,15 +4,19 @@ import {Discord} from '@/icons/Discord'
 import {GitHub} from '@/icons/GitHub'
 import {Logo} from '@/icons/Logo'
 import {Reddit} from '@/icons/Reddit'
+import {getMessages} from '@/lib/i18n'
+import {LocaleTag, withLocalePreferences} from '@/lib/locales'
+import {getPreferredCardLanguage} from '@/lib/siteLocale.server'
 import {cn} from '@/lib/utils'
 import {RichText} from 'alinea/ui'
 import Link from 'next/link'
 import Container from '../container/Container'
 
-const fetchFooterData = async () =>
+const fetchFooterData = async (locale: LocaleTag) =>
   await cms.first({
     workspace: 'main',
     root: 'general',
+    preferredLocale: locale,
     type: FooterSchema
   })
 
@@ -31,15 +35,17 @@ const getColumnsClassName = (numColumns: number) => {
   }
 }
 
-const Footer: React.FC = async () => {
-  const footerData = await fetchFooterData()
+const Footer: React.FC<{locale: LocaleTag}> = async ({locale}) => {
+  const footerData = await fetchFooterData(locale)
+  const messages = getMessages(locale)
+  const cardLanguage = await getPreferredCardLanguage()
   if (!footerData) return null
 
   return (
     <footer
       className="bg-background text-sm pb-8 pt-24"
       role="contentinfo"
-      aria-label="Site footer"
+      aria-label={messages.siteFooter}
     >
       <Container className="flex flex-col gap-8 items-center md:items-start">
         <div
@@ -96,7 +102,14 @@ const Footer: React.FC = async () => {
                                   key={iconLink._id}
                                   href={href}
                                   target="_blank"
-                                  aria-label="GitHub"
+                                  aria-label={
+                                    iconType === 'github'
+                                      ? 'GitHub'
+                                      : iconType === 'discord'
+                                        ? 'Discord'
+                                        : 'Reddit'
+                                  }
+                                  rel="noopener noreferrer"
                                   className="text-muted-foreground hover:text-foreground transition-colors"
                                 >
                                   <IconComponent width={24} />
@@ -109,7 +122,11 @@ const Footer: React.FC = async () => {
                         return (
                           <Link
                             key={item._id}
-                            href={item.link?.href || '#'}
+                            href={withLocalePreferences(
+                              item.link?.href || '#',
+                              locale,
+                              cardLanguage
+                            )}
                             target={
                               item.link?._type === 'url'
                                 ? item.link.target
@@ -153,13 +170,13 @@ const Footer: React.FC = async () => {
           </div>
           <nav
             className="order-1 flex flex-col items-center gap-2 text-center lg:order-2 lg:flex-row lg:items-start lg:gap-8 lg:text-left"
-            aria-label="Legal links"
+            aria-label={messages.legalLinks}
           >
             {footerData.legal_links.map(link => (
               <Link
                 key={link._id}
                 className="text-muted-foreground hover:text-foreground text-center transition-colors md:text-left whitespace-nowrap"
-                href={link.href}
+                href={withLocalePreferences(link.href, locale, cardLanguage)}
               >
                 {link.title}
               </Link>

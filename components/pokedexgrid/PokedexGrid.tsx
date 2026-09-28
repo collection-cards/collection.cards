@@ -4,6 +4,8 @@ import {useWindowVirtualizer} from '@tanstack/react-virtual'
 import Link from 'next/link'
 import {useEffect, useMemo, useRef, useState} from 'react'
 import PokedexIcon from '../pokedexicon/PokedexIcon'
+import {useSiteI18n} from '../sitei18n/SiteI18nProvider'
+import {withSiteLocalePath} from '@/lib/locales'
 
 type PokedexGridProps = {
   pokedex: {
@@ -25,8 +27,10 @@ function getColumnCount(width: number): number {
 }
 
 const PokedexGrid: React.FC<PokedexGridProps> = ({pokedex}) => {
+  const {locale} = useSiteI18n()
   const gridRef = useRef<HTMLDivElement>(null)
   const [gridWidth, setGridWidth] = useState(0)
+
 
   useEffect(() => {
     const observer = new ResizeObserver(entries => {
@@ -81,7 +85,7 @@ const PokedexGrid: React.FC<PokedexGridProps> = ({pokedex}) => {
               {pokedex.slice(rowStartIndex, rowEndIndex).map(p => (
                 <Link
                   key={p.path}
-                  href={p.url}
+                  href={withSiteLocalePath(p.url, locale)}
                   className="group flex flex-col items-center gap-4 text-center w-1/3 sm:w-1/4 md:w-1/5 lg:w-1/7"
                 >
                   <div className="flex flex-col items-center gap-4 z-1">

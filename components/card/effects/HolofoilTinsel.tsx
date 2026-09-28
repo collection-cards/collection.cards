@@ -7,7 +7,8 @@ const HolofoilTinsel: React.FC = () => {
       <div
         style={
           {
-            '--tinsel': `url(/_next/image?url=%2Fpatterns%2Ftinsel.webp&w=750&q=75)`,
+            '--tinsel':
+              'repeating-linear-gradient(0deg,transparent 0 5px,rgba(255,255,255,.75) 6px,transparent 7px 14px)',
             '--tinsel-size': '100% 14px',
             '--shine-size': '220% 600%'
           } as React.CSSProperties

@@ -32,7 +32,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
-!.env.local
+!.env.example
 
 # vercel
 .vercel
@@ -48,5 +48,7 @@ next-env.d.ts
 
 # private assets
 /icons/pokemon
+/icons/CC.tsx
 /public
-/proxy.ts
+.malie-sync.json
+.malie-sync.lock

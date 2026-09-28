@@ -2,12 +2,15 @@ import {PokemonCard} from '@/alinea/schemas/PokemonCard'
 import {cms} from '@/cms'
 import {CardGridProps} from '@/components/cardgrid/CardGrid'
 import {blurDataURL} from '@/lib/blurDataURL'
+import {selectPreferredCardEditions} from '@/lib/pokemonCardLocales'
 import {Query} from 'alinea'
 
 export const fetchPokemonCards = async (
-  pokemonCardIds: string[]
+  pokemonCardIds: string[],
+  preferredLanguage = 'en-US',
+  {expandVariants = true}: {expandVariants?: boolean} = {}
 ): Promise<CardGridProps['cards']> => {
-  const cardsData = (
+  const localizedCards = (
     await cms.find({
       type: PokemonCard,
       select: {
@@ -29,6 +32,14 @@ export const fetchPokemonCards = async (
     (a, b) => pokemonCardIds.indexOf(a._id) - pokemonCardIds.indexOf(b._id)
   )
 
+  // Locale editions are separate CMS rows but represent one physical
+  // printing. Keep one row per canonical printing and prefer the requested
+  // language, falling back deterministically to the first available edition.
+  const cardsData = selectPreferredCardEditions(
+    localizedCards,
+    preferredLanguage
+  )
+
   const cards = [] as CardGridProps['cards']
 
   cardsData.forEach(data => {
@@ -48,6 +59,7 @@ export const fetchPokemonCards = async (
       id: data._id,
       illustrator: data.illustrator,
       pokemon: data.pokemon,
+      printingId: data._id,
       src: data.card ? `/media${data.card?.src}` : undefined,
       title: data.title,
       variant: 'normal',
@@ -56,6 +68,12 @@ export const fetchPokemonCards = async (
       isFullArt: data.isFullArt,
       isTrainerGallery: data.isTrainerGallery,
       number: data.number,
+      collectorNumber: data.collectorNumber,
+      regulationMark: data.regulationMark,
+      weakness: data.weakness,
+      resistance: data.resistance,
+      retreat: data.retreat,
+      rulesText: data.rulesText,
       rarity: data.rarity,
       serie: {
         title:
@@ -74,8 +92,10 @@ export const fetchPokemonCards = async (
       }
     }
 
-    // there are no variants, add the normal card
-    if (!data.variants || data.variants.length === 0) {
+    // Overview pages such as illustrators represent card printings, not every
+    // finish. Keep a single card there so reverse-holo variants do not look
+    // like duplicate language editions.
+    if (!expandVariants || !data.variants || data.variants.length === 0) {
       cards.push(basicInfo)
       return
     }

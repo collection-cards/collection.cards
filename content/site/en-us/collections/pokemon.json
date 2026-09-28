@@ -1,0 +1,29 @@
+{
+  "_id": "3JvLhKJUqqeJroVniAUfqj1Bzj6",
+  "_type": "PokemonCollection",
+  "_index": "a0",
+  "title": "Pokémon",
+  "icon": {
+    "_id": "3EEMm7Pa8zI0dN7Fy6qVvIAj21P",
+    "_type": "image",
+    "_entry": "2zowiupcvo0SzWMM2QbruGhm7NG"
+  },
+  "blocks": [
+    {
+      "_id": "357KJHSmdj6TTE56wAVnf7Nm434",
+      "_index": "a0",
+      "_type": "TextBlock",
+      "text": [
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "The Pokémon TCG is a strategic card game where players build decks, battle opponents, and explore a wide variety of Pokémon, Trainer, and Energy cards. Each series and expansion brings new mechanics, strategies, and collectible cards for players and collectors alike."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

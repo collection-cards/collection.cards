@@ -1,0 +1,33 @@
+{
+  "_id": "3JvLhF12y43SRyBbAOqRRNNh10j",
+  "_type": "Illustrators",
+  "_index": "b1X",
+  "title": "Ilustradores",
+  "blocks": [
+    {
+      "_id": "34hxaLlTtrmsVym3r1to6qSD4Ek",
+      "_index": "a0",
+      "_type": "TextBlock",
+      "text": [
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Esta lista reúne ilustradores cujas artes aparecem em diversos jogos de cartas colecionáveis. Cada artista contribui com estilo e visão próprios para a identidade visual e as histórias do universo TCG."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Selecione o nome de um ilustrador para descobrir suas cartas e conhecer melhor sua contribuição artística."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -55,7 +55,7 @@ const HolofoilSpecialIllustrationRare: React.FC = () => {
           'filter-[brightness(1)_contrast(2)_saturate(1.2)]',
           'bg-center',
           'bg-size-[150px_150px]',
-          '[background-image:url(/_next/image?url=%2Fpatterns%2Firi-9.webp&w=750&q=75)]',
+          '[background-image:radial-gradient(circle_at_center,rgba(255,255,255,.75)_0_1px,transparent_1px_7px)]',
 
           'before:absolute',
           'before:inset-0',
@@ -64,7 +64,7 @@ const HolofoilSpecialIllustrationRare: React.FC = () => {
           'before:mask-[var(--mask)]',
           'before:mask-luminance',
           'before:mask-center',
-          'brefore:mask-cover',
+          'before:mask-cover',
           'before:opacity-[var(--pointer-from-top)]',
           'before:will-change-[opacity,background-position]',
           'before:mix-blend-overlay',
@@ -73,7 +73,7 @@ const HolofoilSpecialIllustrationRare: React.FC = () => {
           'before:bg-position-[calc(50%+(var(--pointer-from-left)*3))_calc(50%+(var(--pointer-from-top)*3))]',
           'group-hover/card:before:bg-position-[calc(50%+(var(--pointer-from-left)*4.5))_calc(50%+(var(--pointer-from-top)*4.5))]',
           'before:bg-size-[150px_150px]',
-          'before:[background-image:url(/_next/image?url=%2Fpatterns%2Firi-8.webp&w=750&q=75)]',
+          'before:[background-image:repeating-linear-gradient(45deg,transparent_0_6px,rgba(255,255,255,.65)_7px,transparent_8px_14px)]',
 
           'after:absolute',
           'after:inset-0',
@@ -88,7 +88,7 @@ const HolofoilSpecialIllustrationRare: React.FC = () => {
           'after:will-change-[opacity,background-position]',
           'after:bg-position-[calc(50%+(var(--pointer-from-left)*3*-1))_calc(50%+(var(--pointer-from-top)*3*-1))]',
           'group-hover/card:after:bg-position-[calc(50%+(var(--pointer-from-left)*4.5*-1))_calc(50%+(var(--pointer-from-top)*4.5*-1))]',
-          'after:[background-image:url(/_next/image?url=%2Fpatterns%2Firi-7.webp&w=750&q=75)]'
+          'after:[background-image:repeating-linear-gradient(-45deg,transparent_0_6px,rgba(255,255,255,.65)_7px,transparent_8px_14px)]'
         )}
       />
       <Glare

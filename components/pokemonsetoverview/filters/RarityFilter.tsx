@@ -1,4 +1,5 @@
 import MultiSelect from '@/components/select/MultiSelect'
+import {useSiteI18n} from '@/components/sitei18n/SiteI18nProvider'
 import {getRarityIcon, Rarity, rarity} from '@/consts/rarity'
 
 type RarityFilterProps = {
@@ -11,16 +12,17 @@ const RarityFilter: React.FC<RarityFilterProps> = ({
   options,
   onChange,
   selected
-}) =>
-  options.length > 1 ? (
+}) => {
+  const {messages} = useSiteI18n()
+  return options.length > 1 ? (
     <MultiSelect
-      label="Rarity"
-      innerLabel="Filter by Rarity"
+      label={messages.rarity}
+      innerLabel={messages.filterByRarity}
       onChange={selectedOptions => {
         const selectedOption =
           selectedOptions.filter(o => o.value !== selected)[0] || null
         onChange({
-          label: selectedOption?.label || 'Any rarity',
+          label: selectedOption?.label || messages.anyRarity,
           value: selectedOption?.value
             ? selectedOption.value === selected
               ? null
@@ -33,9 +35,10 @@ const RarityFilter: React.FC<RarityFilterProps> = ({
         label: `${rarity[option]}`,
         value: `${option}`
       }))}
-      placeholder="Any Rarity"
+      placeholder={messages.anyRarity}
       selected={selected !== null ? [selected] : undefined}
     />
   ) : null
+}
 
 export default RarityFilter

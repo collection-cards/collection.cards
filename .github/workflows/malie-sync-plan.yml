@@ -1,0 +1,48 @@
+name: Malie sync plan
+
+on:
+  workflow_dispatch:
+    inputs:
+      languages:
+        description: Comma-separated Malie language codes
+        required: true
+        default: en-US,pt-BR
+
+permissions:
+  contents: read
+
+concurrency:
+  group: malie-sync-plan
+  cancel-in-progress: true
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          submodules: false
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+
+      - name: Enable Corepack
+        run: corepack enable
+
+      - name: Install dependencies without asset setup
+        run: yarn install --immutable --mode=skip-build
+
+      - name: Generate synchronization plan
+        env:
+          LANGUAGES: ${{ inputs.languages || 'en-US,pt-BR' }}
+        run: yarn sync:malie --lang="$LANGUAGES" | tee malie-sync-plan.txt
+
+      - name: Upload plan
+        uses: actions/upload-artifact@v7
+        with:
+          name: malie-sync-plan
+          path: malie-sync-plan.txt
+          if-no-files-found: error
+          retention-days: 14

@@ -6,6 +6,7 @@ import {cms} from '@/cms'
 import Blocks from '@/components/blocks/Blocks'
 import Container from '@/components/container/Container'
 import {Title} from '@/components/title/Title'
+import LanguageSwitcher from '@/components/languageswitcher/LanguageSwitcher'
 import {Query} from 'alinea'
 import {notFound} from 'next/navigation'
 
@@ -18,11 +19,13 @@ const fetchSerieData = async (url: string) => {
     },
     select: {
       title: Query.title,
+      language: PokemonSerie.language,
       blocks: PokemonSerie.blocks,
       sets: Query.children({
         type: PokemonSet,
         select: {
-          id: Query.id
+          id: Query.id,
+          sourceSetKey: PokemonSet.sourceSetKey
         },
         filter: {
           _status: 'published'
@@ -31,6 +34,63 @@ const fetchSerieData = async (url: string) => {
       })
     }
   })
+}
+
+const fetchSerieLanguageOptions = async (
+  sourceSetKeys: (string | null | undefined)[],
+  currentUrl: string,
+  currentTitle: string,
+  currentLanguage?: string | null
+) => {
+  const validKeys = sourceSetKeys.filter((key): key is string => Boolean(key))
+  if (validKeys.length === 0) return []
+
+  const siblingSets = await cms.find({
+    type: PokemonSet,
+    filter: {
+      sourceSetKey: {in: validKeys},
+      _status: 'published'
+    },
+    select: {
+      parents: Query.parents({
+        type: PokemonSerie,
+        select: {
+          title: Query.title,
+          url: Query.url,
+          language: PokemonSerie.language
+        }
+      })
+    }
+  })
+
+  const seriesByLang = new Map<
+    string,
+    {href: string; language: string; title: string}
+  >()
+  if (currentLanguage) {
+    seriesByLang.set(currentLanguage, {
+      href: currentUrl,
+      language: currentLanguage,
+      title: currentTitle
+    })
+  }
+
+  for (const set of siblingSets) {
+    const parentSerie = set.parents?.[0]
+    if (
+      parentSerie?.url &&
+      parentSerie?.language &&
+      !seriesByLang.has(parentSerie.language)
+    ) {
+      seriesByLang.set(parentSerie.language, {
+        href: parentSerie.url,
+        language: parentSerie.language,
+        title: parentSerie.title
+      })
+    }
+  }
+
+  return [...seriesByLang.values()]
 }
 
 export async function generateStaticParams() {
@@ -70,10 +130,16 @@ export default async function Serie({
   params: Promise<{collection: string; series: string; serie: string}>
 }) {
   const {collection, series, serie} = await params
-  const serieData = await fetchSerieData(
-    `/collections/${collection}/${series}/${serie}`
-  )
+  const serieUrl = `/collections/${collection}/${series}/${serie}`
+  const serieData = await fetchSerieData(serieUrl)
   if (!serieData) return notFound()
+
+  const languageOptions = await fetchSerieLanguageOptions(
+    serieData.sets.map(s => s.sourceSetKey),
+    serieUrl,
+    serieData.title,
+    serieData.language || series
+  )
 
   const blocksWithOverview = serieData.blocks || []
   const generatedCollectionSetsOverviewBlock = {
@@ -101,6 +167,10 @@ export default async function Serie({
   return (
     <Container>
       <Title.H1>{serieData.title}</Title.H1>
+      <LanguageSwitcher
+        currentLanguage={serieData.language || series}
+        options={languageOptions}
+      />
       <Blocks blocks={blocksWithOverview} />
     </Container>
   )

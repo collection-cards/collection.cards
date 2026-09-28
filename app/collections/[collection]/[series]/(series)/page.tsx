@@ -7,6 +7,31 @@ import Container from '@/components/container/Container'
 import {Title} from '@/components/title/Title'
 import {Query} from 'alinea'
 import {notFound} from 'next/navigation'
+import LanguageSwitcher from '@/components/languageswitcher/LanguageSwitcher'
+import {localeFromRoute, normalizeLocale} from '@/lib/locales'
+
+const fetchLanguageOptions = async (collection: string) => {
+  const branches = await cms.find({
+    type: PokemonSeries,
+    select: {
+      href: Query.url,
+      language: PokemonSeries.language,
+      path: Query.path,
+      title: Query.title,
+      parents: Query.parents({select: {path: Query.path}})
+    },
+    filter: {_status: 'published'}
+  })
+
+  return branches
+    .filter(branch => branch.parents.some(parent => parent.path === collection))
+    .map(branch => ({
+      href: branch.href,
+      language: normalizeLocale(branch.language || branch.path),
+      title: branch.title
+    }))
+    .filter(option => option.language)
+}
 
 const fetchSeriesData = async (url: string) => {
   return await cms.first({
@@ -66,6 +91,11 @@ export default async function Series({
   )
   if (!seriesData) return notFound()
 
+  const currentLocale = localeFromRoute(series)
+  const languageOptions = currentLocale
+    ? await fetchLanguageOptions(collection)
+    : []
+
   const blocksWithOverview = seriesData.blocks || []
   const generatedCollectionSetsOverviewBlock = {
     _index: 'collection-sets-overview-block-generated',
@@ -91,7 +121,13 @@ export default async function Series({
 
   return (
     <Container>
-      <Title.H1>{seriesData.title}</Title.H1>
+      <div className="flex flex-wrap items-start justify-between gap-4 pb-5">
+        <Title.H1>{seriesData.title}</Title.H1>
+        <LanguageSwitcher
+          currentLanguage={currentLocale?.tag}
+          options={languageOptions}
+        />
+      </div>
       <Blocks blocks={blocksWithOverview} />
     </Container>
   )

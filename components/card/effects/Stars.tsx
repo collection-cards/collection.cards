@@ -22,7 +22,7 @@ const Stars = () => {
         'mask-intersect',
         '[mask-mode:alpha,luminance]',
         '[mask-image:radial-gradient(farthest-corner_circle_at_var(--pointer-x)_var(--pointer-y),transparent_30%,black_100%),var(--mask)]',
-        '[background-image:radial-gradient(farthest-corner_circle_at_var(--pointer-x)_var(--pointer-y),hsl(295,100%,10%)_20%,hsla(183,84%,85%,0.15)_100%),linear-gradient(var(--angle),var(--sunpillar)),url(/_next/image?url=%2Fpatterns%2Fbirthday-holo-dank.webp&w=750&q=75),url(/_next/image?url=%2Fpatterns%2Fbirthday-holo-dank-2.webp&w=750&q=75)]'
+        '[background-image:radial-gradient(farthest-corner_circle_at_var(--pointer-x)_var(--pointer-y),hsl(295,100%,10%)_20%,hsla(183,84%,85%,0.15)_100%),linear-gradient(var(--angle),var(--sunpillar))]'
       )}
     />
   )

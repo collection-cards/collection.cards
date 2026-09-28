@@ -1,4 +1,5 @@
 import MultiSelect from '@/components/select/MultiSelect'
+import {useSiteI18n} from '@/components/sitei18n/SiteI18nProvider'
 
 type HitPointsFilterProps = {
   options: number[]
@@ -10,16 +11,17 @@ const HitPointsFilter: React.FC<HitPointsFilterProps> = ({
   options,
   onChange,
   selected
-}) =>
-  options.length > 1 ? (
+}) => {
+  const {messages} = useSiteI18n()
+  return options.length > 1 ? (
     <MultiSelect
-      label="Hit Points"
-      innerLabel="Filter by Hit Points"
+      label={messages.hitPoints}
+      innerLabel={messages.filterByHitPoints}
       onChange={selectedOptions => {
         const selectedOption =
           selectedOptions.filter(o => o.value !== `${selected}`)[0] || null
         onChange({
-          label: selectedOption?.label || 'Any Hit Points',
+          label: selectedOption?.label || messages.anyHitPoints,
           value: selectedOption?.value
             ? Number(selectedOption.value) === selected
               ? null
@@ -31,9 +33,10 @@ const HitPointsFilter: React.FC<HitPointsFilterProps> = ({
         label: `${option} HP`,
         value: `${option}`
       }))}
-      placeholder="Any Hit Points"
+      placeholder={messages.anyHitPoints}
       selected={selected !== null ? [`${selected}`] : undefined}
     />
   ) : null
+}
 
 export default HitPointsFilter

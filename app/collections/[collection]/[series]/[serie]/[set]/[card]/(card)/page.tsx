@@ -10,8 +10,13 @@ import {Title} from '@/components/title/Title'
 import {fetchPokemonCards} from '@/server/fetchPokemonCards'
 import {Query} from 'alinea'
 import {notFound} from 'next/navigation'
+import {getSiteLocale} from '@/lib/siteLocale.server'
+import {withSiteLocalePath} from '@/lib/locales'
+import LanguageSwitcher from '@/components/languageswitcher/LanguageSwitcher'
+import type {Metadata} from 'next'
+import {cache} from 'react'
 
-const fetchCardData = async (url: string) => {
+const fetchCardData = cache(async (url: string) => {
   const data = await cms.first({
     type: PokemonCard,
     filter: {
@@ -23,9 +28,59 @@ const fetchCardData = async (url: string) => {
   if (!data) return null
 
   const cards = await fetchPokemonCards([data._id])
+  const languages = data.printingKey
+    ? await cms.find({
+        type: PokemonCard,
+        filter: {printingKey: data.printingKey, _status: 'published'},
+        select: {
+          href: Query.url,
+          language: PokemonCard.language,
+          title: Query.title
+        }
+      })
+    : []
   return {
     ...data,
-    cards
+    cards,
+    languages
+  }
+})
+
+type CardParams = {
+  collection: string
+  series: string
+  serie: string
+  set: string
+  card: string
+}
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<CardParams>
+}): Promise<Metadata> {
+  const {collection, series, serie, set, card} = await params
+  const data = await fetchCardData(
+    `/collections/${collection}/${series}/${serie}/${set}/${card}`
+  )
+  if (!data) return {}
+  const siteLocale = await getSiteLocale()
+  return {
+    title: `${data.title} #${data.number} | collection.cards`,
+    alternates: {
+      canonical: withSiteLocalePath(
+        `/collections/${collection}/${series}/${serie}/${set}/${card}`,
+        siteLocale
+      ),
+      languages: Object.fromEntries(
+        data.languages
+          .filter(option => option.language)
+          .map(option => [
+            option.language!,
+            withSiteLocalePath(option.href, siteLocale)
+          ])
+      )
+    }
   }
 }
 
@@ -81,13 +136,7 @@ export async function generateStaticParams() {
 export default async function Card({
   params
 }: {
-  params: Promise<{
-    collection: string
-    series: string
-    serie: string
-    set: string
-    card: string
-  }>
+  params: Promise<CardParams>
 }) {
   const {collection, series, serie, set, card} = await params
   const cardData = await fetchCardData(
@@ -97,10 +146,20 @@ export default async function Card({
 
   return (
     <Container>
-      <Title.H1>
-        {cardData.title} ({cardData.number})
-      </Title.H1>
-      <CardGrid cards={cardData.cards} />
+      <div lang={cardData.language || undefined}>
+        <Title.H1>
+          {cardData.title} ({cardData.number})
+        </Title.H1>
+      </div>
+      <div className="pb-8">
+        <LanguageSwitcher
+          currentLanguage={cardData.language}
+          options={cardData.languages}
+        />
+      </div>
+      <div lang={cardData.language || undefined}>
+        <CardGrid cards={cardData.cards} />
+      </div>
     </Container>
   )
 }

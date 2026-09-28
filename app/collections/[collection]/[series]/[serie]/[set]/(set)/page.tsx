@@ -11,11 +11,17 @@ import PokemonSetOverview from '@/components/pokemonsetoverview/PokemonSetOvervi
 import {Title} from '@/components/title/Title'
 import {fetchPokemonCards} from '@/server/fetchPokemonCards'
 import {Query} from 'alinea'
-import Image from 'next/image'
+import SetSymbol from '@/components/setsymbol/SetSymbol'
+import LanguageSwitcher from '@/components/languageswitcher/LanguageSwitcher'
+import {getMessages} from '@/lib/i18n'
+import {sortPokemonCardsBySubset} from '@/lib/pokemonCardOrder'
+import {getSiteLocale} from '@/lib/siteLocale.server'
+import {withSiteLocalePath} from '@/lib/locales'
 import {notFound} from 'next/navigation'
-import {Suspense} from 'react'
+import type {Metadata} from 'next'
+import {cache, Suspense} from 'react'
 
-const fetchSetData = async (url: string) => {
+const fetchSetData = cache(async (url: string) => {
   const data = await cms.first({
     type: PokemonSet,
     select: {
@@ -23,8 +29,12 @@ const fetchSetData = async (url: string) => {
       _id: Query.id,
       cards: Query.children({
         type: PokemonCard,
-        select: {id: Query.id},
-        orderBy: {asc: PokemonCard.number}
+        select: {
+          id: Query.id,
+          collectorNumber: PokemonCard.collectorNumber,
+          number: PokemonCard.number,
+          printingKey: PokemonCard.printingKey
+        }
       })
     },
     filter: {
@@ -35,12 +45,62 @@ const fetchSetData = async (url: string) => {
 
   if (!data) return null
 
-  const cardIds = data?.cards.map(card => card.id) || []
-  const cards = await fetchPokemonCards(cardIds)
+  const cardIds = sortPokemonCardsBySubset(data.cards).map(card => card.id)
+  const cards = await fetchPokemonCards(cardIds, data.language || 'en-US')
+
+  const languages = data.sourceSetKey
+    ? await cms.find({
+        type: PokemonSet,
+        filter: {sourceSetKey: data.sourceSetKey, _status: 'published'},
+        select: {
+          href: Query.url,
+          language: PokemonSet.language,
+          title: Query.title
+        }
+      })
+    : []
 
   return {
     ...data,
-    cards
+    cards,
+    languages
+  }
+})
+
+type SetParams = {
+  collection: string
+  series: string
+  serie: string
+  set: string
+}
+
+export async function generateMetadata({
+  params
+}: {
+  params: Promise<SetParams>
+}): Promise<Metadata> {
+  const {collection, series, serie, set} = await params
+  const data = await fetchSetData(
+    `/collections/${collection}/${series}/${serie}/${set}`
+  )
+  if (!data) return {}
+  const siteLocale = await getSiteLocale()
+  return {
+    title: `${data.title} | collection.cards`,
+    alternates: {
+      canonical: withSiteLocalePath(
+        `/collections/${collection}/${series}/${serie}/${set}`,
+        siteLocale
+      ),
+      languages: Object.fromEntries(
+        data.languages
+          .filter(option => option.language)
+          .map(option => [
+            option.language!,
+            withSiteLocalePath(option.href, siteLocale)
+          ])
+      )
+    }
   }
 }
 
@@ -87,47 +147,45 @@ export async function generateStaticParams() {
 export default async function Set({
   params
 }: {
-  params: Promise<{
-    collection: string
-    series: string
-    serie: string
-    set: string
-  }>
+  params: Promise<SetParams>
 }) {
   const {collection, series, serie, set} = await params
   const setData = await fetchSetData(
     `/collections/${collection}/${series}/${serie}/${set}`
   )
   if (!setData) return notFound()
-
-  const symbol = setData.symbol?.[0] || undefined
+  const siteLocale = await getSiteLocale()
+  const messages = getMessages(siteLocale)
 
   return (
     <Container>
       <div className="flex gap-4 pb-5 items-start justify-between">
-        <Title.H1>{setData.title}</Title.H1>
-        {symbol && (
-          <div className="relative w-8 h-8">
-            <Image
-              alt={setData.title}
-              src={`/media${symbol?.src}`}
-              fill={true}
-              sizes="32px"
-              style={{
-                objectFit: 'contain',
-                objectPosition: symbol?.focus
-                  ? `${symbol.focus.x * 100}% ${symbol.focus.y * 100}%`
-                  : undefined
-              }}
-            />
-          </div>
-        )}
+        <div>
+          <Title.H1>{setData.title}</Title.H1>
+          {setData.sourceSetKey && (
+            <p className="font-mono text-sm uppercase tracking-wide text-muted-foreground">
+              {messages.setId}:{' '}
+              {setData.sourceSetKey}
+            </p>
+          )}
+        </div>
+        <SetSymbol
+          code={setData.ptcgoCode}
+          symbol={setData.symbol?.[0] || undefined}
+          title={setData.title}
+        />
+      </div>
+      <div className="pb-8">
+        <LanguageSwitcher
+          currentLanguage={setData.language}
+          options={setData.languages}
+        />
       </div>
       {setData.cards.length === 0 ? (
         <NoResults
           contribute={true}
-          title="This set is just getting started"
-          description={`No cards have been added yet.\nBe the first to contribute and help the community grow.`}
+          title={messages.emptySetTitle}
+          description={messages.emptySetDescription}
         />
       ) : collection === 'pokemon' ? (
         <Suspense>

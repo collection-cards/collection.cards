@@ -4,6 +4,8 @@ import {PokemonSet} from '@/alinea/schemas/PokemonSet'
 import {cms} from '@/cms'
 import SetCard from '@/components/setcard/SetCard'
 import {formatDate} from '@/lib/formatDate'
+import {getSiteLocale} from '@/lib/siteLocale.server'
+import {withSiteLocalePath} from '@/lib/locales'
 import {Query} from 'alinea'
 import {Entry} from 'alinea/core'
 
@@ -41,6 +43,7 @@ const CollectionSetsOverviewBlock: React.FC<
     (setIds as {_entry: string}[]).map(set => set._entry)
   )
   if (!setsData || setsData.length === 0) return null
+  const siteLocale = await getSiteLocale()
 
   return (
     <div>
@@ -52,12 +55,16 @@ const CollectionSetsOverviewBlock: React.FC<
           )
           return (
             <SetCard
-              date={formatDate(set.releaseDate)}
-              key={set.path}
-              href={set.url}
+              date={formatDate(set.releaseDate, siteLocale)}
+              key={set.id}
+              href={withSiteLocalePath(set.url, siteLocale)}
               image={set.heroImage}
+              logo={set.logo}
               numberOfTotalCards={numberOfTotalCards}
+              language={set.language}
               priority={index < 5}
+              ptcgoCode={set.ptcgoCode}
+              sourceSetKey={set.sourceSetKey}
               subTitle={set.parents[set.parents.length - 1]?.title || ''}
               symbol={set.symbol?.[0] || undefined}
               text={set.cta_description}

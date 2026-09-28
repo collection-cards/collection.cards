@@ -1,0 +1,127 @@
+{
+  "_id": "3JvLhE6s15LCMoKW1HFOTmHLDBE",
+  "_type": "Collections",
+  "_index": "b1W",
+  "title": "Collections",
+  "blocks": [
+    {
+      "_id": "357JrRnuz1NQf5QqKajpnoccBu6",
+      "_index": "a0",
+      "_type": "TextBlock",
+      "text": [
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Welcome to the heart of Collection.cards — where your TCG journey begins."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Currently, our "
+            },
+            {
+              "_type": "text",
+              "text": "Pokémon collection",
+              "marks": [
+                {
+                  "_type": "link",
+                  "_id": "37XG1kZVrI27d0Mt7MxSvMROsc3",
+                  "_entry": "2zotBbGapvbzPGg0MW97FJGlCwo",
+                  "_link": "entry"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": " is live, offering detailed views of cards, variants, effects, and print details. Whether you’re a seasoned collector or just starting out, you can explore, organize, and visualize your cards like never before."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "This is only the beginning. Our goal is to expand beyond Pokémon to include other trading card games, and we rely on our global community to make it happen. Join the conversation on "
+            },
+            {
+              "_type": "text",
+              "text": "Discord",
+              "marks": [
+                {
+                  "_type": "link",
+                  "_id": "37XHI0VfECuaADjThf0yAiXP9F0",
+                  "_link": "url",
+                  "href": "https://discord.gg/NSjyKFHRaf",
+                  "target": "_blank"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": " or "
+            },
+            {
+              "_type": "text",
+              "text": "Reddit",
+              "marks": [
+                {
+                  "_type": "link",
+                  "_id": "37XHJeFToyCAPKDYUASy0im7PCi",
+                  "_link": "url",
+                  "href": "https://www.reddit.com/r/collectioncards",
+                  "target": "_blank"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": ", connect with fellow collectors, share tips, and stay updated on the latest additions."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "If you want to contribute directly, you can help grow the collection on "
+            },
+            {
+              "_type": "text",
+              "text": "GitHub",
+              "marks": [
+                {
+                  "_type": "link",
+                  "_id": "37XHMxaC86kXrCM1Z2S6JMcBV0M",
+                  "_link": "url",
+                  "href": "https://github.com/collection-cards/collection.cards",
+                  "target": "_blank"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": " — add new cards, improve details, and be part of building the ultimate TCG resource."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Dive in, explore your favorite cards, and help shape the future of Collection.cards."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

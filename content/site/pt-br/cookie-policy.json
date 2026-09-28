@@ -1,0 +1,146 @@
+{
+  "_id": "3JvLhG5sJRrUxopqRJO8lRIaeby",
+  "_type": "Page",
+  "_index": "b1XV",
+  "title": "Política de cookies",
+  "blocks": [
+    {
+      "_id": "34fLpKjyAIV6FoAqaNrUyJeXWAX",
+      "_index": "a0",
+      "_type": "TextBlock",
+      "text": [
+        {
+          "_type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "_type": "text",
+              "text": "Nós também não gostamos de cookies"
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Usamos cookies apenas quando são estritamente necessários para o funcionamento do site. Não rastreamos você, não vendemos seus dados e não usamos cookies para publicidade ou análise."
+            }
+          ]
+        },
+        {
+          "_type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "_type": "text",
+              "text": "Para que servem nossos cookies"
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Os poucos cookies que usamos são "
+            },
+            {
+              "_type": "text",
+              "text": "estritamente funcionais",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": ", por exemplo:"
+            }
+          ]
+        },
+        {
+          "_type": "bulletList",
+          "content": [
+            {
+              "_type": "listItem",
+              "content": [
+                {
+                  "_type": "paragraph",
+                  "content": [
+                    {
+                      "_type": "text",
+                      "text": "Lembrar sua sessão ou acesso para que o site funcione corretamente."
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "_type": "listItem",
+              "content": [
+                {
+                  "_type": "paragraph",
+                  "content": [
+                    {
+                      "_type": "text",
+                      "text": "Salvar preferências simples, como o tema escolhido, entre visitas."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "É só isso. Sem rastreadores ocultos, scripts de marketing ou cookies de terceiros."
+            }
+          ]
+        },
+        {
+          "_type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "_type": "text",
+              "text": "Suas escolhas"
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Como usamos apenas cookies essenciais, não há cookies opcionais para recusar. Você pode bloquear todos os cookies no navegador, mas algumas partes do site talvez deixem de funcionar corretamente."
+            }
+          ]
+        },
+        {
+          "_type": "heading",
+          "level": 2,
+          "content": [
+            {
+              "_type": "text",
+              "text": "Atualizações"
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Se algum dia adicionarmos cookies não essenciais, atualizaremos esta página e pediremos seu consentimento antes."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

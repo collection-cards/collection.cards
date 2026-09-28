@@ -1,0 +1,155 @@
+{
+  "_id": "3JvLhGlv8mfHcwRmvGjiCBDAx64",
+  "_type": "Home",
+  "_index": "b1L",
+  "title": "Início",
+  "blocks": [
+    {
+      "_id": "34fYDSmNTgXt2VTHudrBWYdUQkM",
+      "_index": "a0",
+      "_type": "TextBlock",
+      "text": [
+        {
+          "_type": "heading",
+          "level": 1,
+          "content": [
+            {
+              "_type": "text",
+              "text": "Em breve: o recurso definitivo para colecionadores de TCG"
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Este site ainda está em construção — mas algo especial está a caminho!"
+            },
+            {
+              "_type": "hardBreak"
+            },
+            {
+              "_type": "hardBreak"
+            },
+            {
+              "_type": "text",
+              "text": "Collection.cards",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": " pretende se tornar o recurso definitivo para colecionadores de TCG. Nosso objetivo é apresentar as cartas da forma mais "
+            },
+            {
+              "_type": "text",
+              "text": "realista e detalhada possível",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": ", incluindo todas as "
+            },
+            {
+              "_type": "text",
+              "text": "variantes, efeitos e detalhes de impressão",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": ", para que colecionadores identifiquem e comparem suas cartas com facilidade."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Você também poderá "
+            },
+            {
+              "_type": "text",
+              "text": "visualizar a disposição das cartas",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": " em diferentes modelos de fichário — com 4, 9, 12 ou 16 bolsos. Agrupe cartas em sequência, organize-as lado a lado e veja como toda a coleção fica reunida."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Ferramentas avançadas de "
+            },
+            {
+              "_type": "text",
+              "text": "filtro e pesquisa",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": " ajudarão você a encontrar exatamente o que procura — por tipo de energia, raridade, variante, efeito, ilustrador e muito mais."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "E o melhor: "
+            },
+            {
+              "_type": "text",
+              "text": "Collection.cards será código aberto",
+              "marks": [
+                {
+                  "_type": "bold"
+                }
+              ]
+            },
+            {
+              "_type": "text",
+              "text": ", convidando pessoas do mundo todo a construir e expandir este projeto em conjunto."
+            },
+            {
+              "_type": "hardBreak"
+            },
+            {
+              "_type": "hardBreak"
+            },
+            {
+              "_type": "text",
+              "text": "Acompanhe — novos recursos, prévias e atualizações chegarão em breve!"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

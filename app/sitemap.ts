@@ -1,6 +1,7 @@
 import {cms} from '@/cms'
 import {Query} from 'alinea'
 import type {MetadataRoute} from 'next'
+import {supportedSiteLocales, withSiteLocalePath} from '@/lib/locales'
 
 const getChangeFrequency = (
   type: string
@@ -52,25 +53,44 @@ const getPriority = (type: string): number => {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const pages = await cms.find({
-    workspace: 'main',
-    root: 'pages',
-    select: {
-      url: Query.url,
-      type: Query.type
-    },
-    filter: {
-      _root: 'pages',
-      _type: {
-        isNot: 'PokemonCard'
+  const [catalogPages, localizedPages] = await Promise.all([
+    cms.find({
+      workspace: 'main',
+      root: 'pages',
+      select: {
+        url: Query.url,
+        type: Query.type
+      },
+      filter: {
+        _root: 'pages',
+        _type: {
+          notIn: ['PokemonCard', 'Home', 'Page', 'Collections', 'Illustrators']
+        }
+      },
+      orderBy: [{asc: Query.url}]
+    }),
+    cms.find({
+      workspace: 'main',
+      root: 'site',
+      select: {
+        url: Query.url,
+        type: Query.type
       }
-    },
-    orderBy: [{asc: Query.url}]
-  })
+    })
+  ])
 
-  return pages.map(page => ({
-    url: `https://collection.cards${page.url}`,
-    changeFrequency: getChangeFrequency(page.type),
-    priority: getPriority(page.type)
-  })) as MetadataRoute.Sitemap
+  return [
+    ...localizedPages.map(page => ({
+      url: `https://collection.cards${page.url.replace(/^\/en-us(?=\/|$)/, '/en')}`,
+      changeFrequency: getChangeFrequency(page.type),
+      priority: getPriority(page.type)
+    })),
+    ...catalogPages.flatMap(page =>
+      supportedSiteLocales.map(locale => ({
+        url: `https://collection.cards${withSiteLocalePath(page.url, locale.tag)}`,
+        changeFrequency: getChangeFrequency(page.type),
+        priority: getPriority(page.type)
+      }))
+    )
+  ] as MetadataRoute.Sitemap
 }

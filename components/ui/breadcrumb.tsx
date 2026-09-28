@@ -1,11 +1,17 @@
+'use client'
+
 import {ChevronRightIcon, MoreHorizontal} from 'lucide-react'
 import {Slot} from 'radix-ui'
 import * as React from 'react'
 
 import {cn} from '@/lib/utils'
+import {useSiteI18n} from '@/components/sitei18n/SiteI18nProvider'
 
 function Breadcrumb({...props}: React.ComponentProps<'nav'>) {
-  return <nav aria-label="breadcrumb" data-slot="breadcrumb" {...props} />
+  const {messages} = useSiteI18n()
+  return (
+    <nav aria-label={messages.breadcrumb} data-slot="breadcrumb" {...props} />
+  )
 }
 
 function BreadcrumbList({className, ...props}: React.ComponentProps<'ol'>) {
@@ -84,6 +90,7 @@ function BreadcrumbEllipsis({
   className,
   ...props
 }: React.ComponentProps<'span'>) {
+  const {messages} = useSiteI18n()
   return (
     <span
       data-slot="breadcrumb-ellipsis"
@@ -93,7 +100,7 @@ function BreadcrumbEllipsis({
       {...props}
     >
       <MoreHorizontal size={16} />
-      <span className="sr-only">More</span>
+      <span className="sr-only">{messages.more}</span>
     </span>
   )
 }

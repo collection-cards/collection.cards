@@ -24,6 +24,7 @@ import Binder from '../binder/Binder'
 import {CardProps} from '../card/Card'
 import CardGrid from '../cardgrid/CardGrid'
 import {PokemonCardDetailsProps} from '../pokemoncarddetails/PokemonCardDetails'
+import {useSiteI18n} from '../sitei18n/SiteI18nProvider'
 import Tooltip from '../tooltip/Tooltip'
 import {Button} from '../ui/button'
 import {
@@ -68,13 +69,14 @@ const stackCards = (
 
   return cards.reduce(
     (acc, card) => {
-      const existingCard = cardMap[card.number]
+      const printingId = card.printingId || card.id
+      const existingCard = cardMap[printingId]
       if (existingCard) {
         if (!existingCard.variants) existingCard.variants = []
         existingCard.variants.push({...card})
       } else {
-        cardMap[card.number] = {...card, variants: []}
-        acc.push(cardMap[card.number])
+        cardMap[printingId] = {...card, variants: []}
+        acc.push(cardMap[printingId])
       }
       return acc
     },
@@ -87,6 +89,7 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
   logo,
   setId
 }) => {
+  const {messages} = useSiteI18n()
   const energyParser = parseAsStringEnum<Energy>(
     Object.keys(energy) as Energy[]
   )
@@ -283,7 +286,7 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
         <div className="flex items-center gap-2 lg:gap-4">
           <div className="flex items-center gap-1 lg:gap-2">
             <span className="hidden text-xs whitespace-nowrap text-muted-foreground xl:inline-block">
-              View Mode
+              {messages.viewMode}
             </span>
             <ToggleGroup
               size="sm"
@@ -291,10 +294,10 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
               variant="outline"
               style={{'--radius': '8px'} as React.CSSProperties}
             >
-              <Tooltip text="Grid view">
+              <Tooltip text={messages.gridView}>
                 <ToggleGroupItem
                   aria-checked={viewMode === 'grid' ? 'true' : 'false'}
-                  aria-label="Grid view"
+                  aria-label={messages.gridView}
                   className="p-1.5 cursor-pointer aria-[checked=true]:bg-accent aria-[checked=true]:text-accent-foreground"
                   onClick={() => {
                     setViewMode('grid')
@@ -306,10 +309,10 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                   <Grid />
                 </ToggleGroupItem>
               </Tooltip>
-              <Tooltip text="Binder view">
+              <Tooltip text={messages.binderView}>
                 <ToggleGroupItem
                   aria-checked={viewMode === 'binder' ? 'true' : 'false'}
-                  aria-label="Binder view"
+                  aria-label={messages.binderView}
                   className="p-1.5 cursor-pointer font-normal aria-[checked=true]:bg-accent aria-[checked=true]:text-accent-foreground"
                   onClick={() => setViewMode('binder')}
                   tabIndex={undefined}
@@ -323,7 +326,7 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
           {viewMode === 'binder' && (
             <div className="flex items-center gap-1 lg:gap-2">
               <span className="hidden text-xs whitespace-nowrap text-muted-foreground xl:inline-block">
-                Pockets
+                {messages.pockets}
               </span>
               <ToggleGroup
                 size="sm"
@@ -332,10 +335,10 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                 style={{'--radius': '8px'} as React.CSSProperties}
               >
                 {pocketSizes.map(p => (
-                  <Tooltip text={`${p}-pocket`} key={p}>
+                  <Tooltip text={`${p} ${messages.pocket}`} key={p}>
                     <ToggleGroupItem
                       aria-checked={pockets === p ? 'true' : 'false'}
-                      aria-label={`${p}-pocket`}
+                      aria-label={`${p} ${messages.pocket}`}
                       className="p-1.5 px-2.5 cursor-pointer font-normal aria-[checked=true]:bg-accent aria-[checked=true]:text-accent-foreground"
                       onClick={() => {
                         setPockets(p)
@@ -356,10 +359,16 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
             variant="outline"
             style={{'--radius': '8px'} as React.CSSProperties}
           >
-            <Tooltip text={stack ? 'Unstack variants' : 'Stack variants'}>
+            <Tooltip
+              text={
+                stack ? messages.unstackVariants : messages.stackVariants
+              }
+            >
               <ToggleGroupItem
                 aria-checked={stack}
-                aria-label={stack ? 'Unstack variants' : 'Stack variants'}
+                aria-label={
+                  stack ? messages.unstackVariants : messages.stackVariants
+                }
                 className="px-1.75 cursor-pointer "
                 onClick={() => {
                   setStack(s => !s)
@@ -373,10 +382,10 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
           </ToggleGroup>
           {setId && (
             <DropdownMenu>
-              <Tooltip text="Download binder cover">
+              <Tooltip text={messages.downloadBinderCover}>
                 <DropdownMenuTrigger asChild>
                   <Button
-                    aria-label="Download binder cover"
+                    aria-label={messages.downloadBinderCover}
                     className="px-1.75 cursor-pointer bg-transparent"
                     size="sm"
                     style={{'--radius': '8px'} as React.CSSProperties}
@@ -395,7 +404,7 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                   data-slot="select-label"
                   className="text-muted-foreground px-2 py-1.5 text-xs"
                 >
-                  Front
+                  {messages.front}
                 </div>
                 {coverSizes.map(({value, label}) => (
                   <DropdownMenuItem key={value} asChild>
@@ -412,7 +421,7 @@ const PokemonSetOverview: React.FC<PokemonSetOverviewProps> = ({
                   data-slot="select-label"
                   className="text-muted-foreground px-2 py-1.5 text-xs"
                 >
-                  Spine
+                  {messages.spine}
                 </div>
                 {Object.keys(spineSizes).map(key => {
                   const {width, height} =

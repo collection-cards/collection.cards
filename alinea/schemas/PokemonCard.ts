@@ -42,6 +42,16 @@ const Variant = Config.type('Variant', {
   }
 })
 
+const CardText = Config.type('Card text', {
+  fields: {
+    kind: Field.text('Kind', {width: 0.25, required: true}),
+    name: Field.text('Name', {width: 0.35}),
+    energyCost: Field.text('Energy cost', {width: 0.2}),
+    damage: Field.text('Damage', {width: 0.2}),
+    text: Field.text('Text', {width: 1})
+  }
+})
+
 const cardtype = Field.select('Card Type', {
   options: cardType,
   width: 0.2,
@@ -173,7 +183,17 @@ export const PokemonCard = Config.type('Pokémon Card', {
   fields: {
     title: Field.text('Title', {width: 0.5, required: true}),
     path: Field.path('Path', {width: 0.5, required: true}),
+    printingKey: Field.text('Canonical printing key', {
+      width: 0.25,
+      readOnly: true
+    }),
+    language: Field.text('Language', {
+      width: 0.25,
+      readOnly: true
+    }),
     number: Field.text('Number', {width: 0.25, required: true}),
+    collectorNumber: Field.text('Collector number', {width: 0.25}),
+    regulationMark: Field.text('Regulation mark', {width: 0.25}),
     edgeColor: Field.select('Edge color', {
       initialValue: '#97999b',
       options: edge,
@@ -186,8 +206,14 @@ export const PokemonCard = Config.type('Pokémon Card', {
     subtype,
     energy,
     stage,
+    weakness: Field.text('Weakness', {width: 0.3}),
+    resistance: Field.text('Resistance', {width: 0.3}),
+    retreat: Field.number('Retreat', {width: 0.2}),
     pokemon,
     illustrator,
+    rulesText: Field.list('Card text', {
+      schema: {CardText}
+    }),
     card: Field.image('Card', {width: 1, required: true}),
     reverseCard: Field.image('Reverse Card', {
       width: 1,

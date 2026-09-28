@@ -18,6 +18,7 @@ import NoResults from '../noresults/NoResults'
 import PokemonCardDetails, {
   PokemonCardDetailsProps
 } from '../pokemoncarddetails/PokemonCardDetails'
+import {useSiteI18n} from '../sitei18n/SiteI18nProvider'
 import CardGridRow from './CardGridRow'
 
 const gapSize = 16
@@ -71,6 +72,7 @@ const CardGrid: React.FC<CardGridProps> = ({
   pockets,
   setTotalHeight
 }) => {
+  const {messages} = useSiteI18n()
   const gridRef = useRef<HTMLDivElement>(null)
   const [gridWidth, setGridWidth] = useState(0)
   const [state, setState] = useState<State>(defaultState)
@@ -284,8 +286,8 @@ const CardGrid: React.FC<CardGridProps> = ({
         {cards.length === 0 && (
           <NoResults
             contribute={true}
-            title="No results found"
-            description={`It looks like no cards match your current filter settings. Try adjusting or removing some filters to see more results.\nDo you think some cards are missing? Contribute and help complete the collection.`}
+            title={messages.noResults}
+            description={messages.noFilterResultsDescription}
           />
         )}
         {gridWidth > 0 && (

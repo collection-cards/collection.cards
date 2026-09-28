@@ -1,4 +1,5 @@
 import MultiSelect from '@/components/select/MultiSelect'
+import {useSiteI18n} from '@/components/sitei18n/SiteI18nProvider'
 import {Energy} from '@/consts/energy'
 
 type PokemonFilterProps = {
@@ -14,16 +15,17 @@ const PokemonFilter: React.FC<PokemonFilterProps> = ({
   options,
   onChange,
   selected
-}) =>
-  options.length > 1 ? (
+}) => {
+  const {messages} = useSiteI18n()
+  return options.length > 1 ? (
     <MultiSelect
-      innerLabel="Filter by Pokémon"
+      innerLabel={messages.filterByPokemon}
       label="Pokémon"
       onChange={selectedOptions => {
         const selectedOption =
           selectedOptions.filter(o => o.value !== selected)[0] || null
         onChange({
-          label: selectedOption?.label || 'All Pokémon',
+          label: selectedOption?.label || messages.allPokemon,
           value: selectedOption?.value
             ? selectedOption.value === selected
               ? null
@@ -32,9 +34,10 @@ const PokemonFilter: React.FC<PokemonFilterProps> = ({
         })
       }}
       options={options}
-      placeholder="All Pokémon"
+      placeholder={messages.allPokemon}
       selected={selected ? [selected] : undefined}
     />
   ) : null
+}
 
 export default PokemonFilter

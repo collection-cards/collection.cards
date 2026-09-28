@@ -1,4 +1,5 @@
 import MultiSelect from '@/components/select/MultiSelect'
+import {useSiteI18n} from '@/components/sitei18n/SiteI18nProvider'
 import {
   HolofoilPattern,
   holofoilPatterns,
@@ -21,16 +22,17 @@ const VariantFilter: React.FC<VariantFilterProps> = ({
   options,
   onChange,
   selected
-}) =>
-  options.length > 1 ? (
+}) => {
+  const {messages} = useSiteI18n()
+  return options.length > 1 ? (
     <MultiSelect
-      innerLabel="Filter by Variant"
-      label="Variant"
+      innerLabel={messages.filterByVariant}
+      label={messages.variant}
       onChange={selectedOptions => {
         const selectedOption =
           selectedOptions.filter(o => o.value !== selected)[0] || null
         onChange({
-          label: selectedOption?.label || 'All energies',
+          label: selectedOption?.label || messages.allVariants,
           value: selectedOption?.value
             ? selectedOption.value === selected
               ? null
@@ -45,9 +47,10 @@ const VariantFilter: React.FC<VariantFilterProps> = ({
           holofoilPatterns[option as HolofoilPattern],
         value: option
       }))}
-      placeholder="All variants"
+      placeholder={messages.allVariants}
       selected={selected ? [selected] : undefined}
     />
   ) : null
+}
 
 export default VariantFilter

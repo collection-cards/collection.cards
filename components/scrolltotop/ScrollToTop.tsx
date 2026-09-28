@@ -4,9 +4,11 @@ import {Button} from '@/components/ui/button'
 import {cn} from '@/lib/utils'
 import {ArrowUpIcon} from 'lucide-react'
 import {useEffect, useState} from 'react'
+import {useSiteI18n} from '../sitei18n/SiteI18nProvider'
 
 export default function ScrollToTop() {
   const [scrollTopPosition, setScrollTopPosition] = useState<number>(0)
+  const {messages} = useSiteI18n()
 
   useEffect(() => {
     if (typeof window === 'undefined') return
@@ -36,7 +38,7 @@ export default function ScrollToTop() {
         onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
       >
         <ArrowUpIcon className="h-6 w-6" />
-        <span className="sr-only">Scroll to top</span>
+        <span className="sr-only">{messages.scrollToTop}</span>
       </Button>
     </div>
   )

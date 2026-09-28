@@ -1,4 +1,5 @@
 import MultiSelect from '@/components/select/MultiSelect'
+import {useSiteI18n} from '@/components/sitei18n/SiteI18nProvider'
 import {cardType, CardType} from '@/consts/cardtype'
 
 type TypeFilterProps = {
@@ -7,16 +8,17 @@ type TypeFilterProps = {
   selected: CardType | null
 }
 
-const TypeFilter: React.FC<TypeFilterProps> = ({options, onChange, selected}) =>
-  options.length > 1 ? (
+const TypeFilter: React.FC<TypeFilterProps> = ({options, onChange, selected}) => {
+  const {messages} = useSiteI18n()
+  return options.length > 1 ? (
     <MultiSelect
-      innerLabel="Filter by Type"
-      label="Type"
+      innerLabel={messages.filterByType}
+      label={messages.type}
       onChange={selectedOptions => {
         const selectedOption =
           selectedOptions.filter(o => o.value !== selected)[0] || null
         onChange({
-          label: selectedOption?.label || 'All types',
+          label: selectedOption?.label || messages.allTypes,
           value: selectedOption?.value
             ? selectedOption.value === selected
               ? null
@@ -28,9 +30,10 @@ const TypeFilter: React.FC<TypeFilterProps> = ({options, onChange, selected}) =>
         label: cardType[option],
         value: option
       }))}
-      placeholder="All types"
+      placeholder={messages.allTypes}
       selected={selected ? [selected] : undefined}
     />
   ) : null
+}
 
 export default TypeFilter

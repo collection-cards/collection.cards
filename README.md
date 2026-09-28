@@ -7,7 +7,8 @@ card images, foils and generated masks.
 ### Usage
 
 ```bash
-yarn fetch:set <malie-key> [set-path] [--lang=en-US] [--dry-run]
+yarn fetch:set <malie-key> [set-path] [--lang=en-US] [--dry-run] [--metadata-only]
+yarn fetch:set --help
 ```
 
 | Argument      | Description                                                             |
@@ -16,6 +17,7 @@ yarn fetch:set <malie-key> [set-path] [--lang=en-US] [--dry-run]
 | `[set-path]`  | Optional. Defaults to a value derived from the malie set name.          |
 | `--lang=`     | Defaults to `en-US`. Selects the malie data **and** the content branch. |
 | `--dry-run`   | Offline simulation — nothing is downloaded or committed.                |
+| `--metadata-only` | Refreshes set metadata without rebuilding card rows.              |
 
 ### Examples
 
@@ -34,6 +36,85 @@ yarn fetch:set me2 --lang=fr-FR
 A real run automatically creates every missing level in the hierarchy
 (`PokemonSeries` → `PokemonSerie` → `PokemonSet` → `PokemonCard` + `Illustrator`),
 downloads the images, generates the foil masks and commits everything through alinea.
+
+## Incremental Malie synchronization
+
+`sync:malie` compares the hashes in the live Malie index with the last locally
+applied import. It is plan-only by default, so inspecting upstream changes does
+not modify Alinea content.
+
+```bash
+# Review one Portuguese set without writing anything
+yarn sync:malie --lang=pt-BR --keys=me5-5
+
+# Apply the reviewed import (requires `yarn dev` in another terminal)
+yarn sync:malie --lang=pt-BR --keys=me5-5 --apply
+
+# Review more than one language or set
+yarn sync:malie --lang=en-US,pt-BR --keys=me1,me2
+```
+
+Successful imports are recorded locally in `.malie-sync.json`. This generated
+runtime state is ignored by Git and is written only after each set finishes,
+so a failed import remains pending for the next run. Persist that file in the
+execution environment when incremental synchronization must survive a fresh
+checkout. Use `--force` to plan or apply an export even when its hash has not
+changed.
+
+For the complete architecture, safeguards, operating procedure and recovery
+instructions, see [docs/malie-sync.md](docs/malie-sync.md).
+
+## Internationalization
+
+The interface language and the printed-card language are separate. A URL such
+as `/pt-br/collections/pokemon/en/...` uses Portuguese interface text while
+showing the English card edition. Alinea's localized `site` and `general` roots
+store editorial pages and shared layout translations; catalogue rows remain in
+the neutral `pages` root and are joined across languages by canonical set/card
+keys.
+
+The header contains the only card-language selector. On series, set and card
+pages it automatically uses canonical sibling URLs, and on illustrator pages
+it refreshes the gallery using only that exact language. Missing translations
+fall back to the selected language's catalogue, never to a mixed-language
+gallery.
+
+Applied imports run the idempotent `setup:i18n` step automatically. To refresh
+only the Alinea translation scaffolding, run:
+
+```bash
+yarn setup:i18n
+```
+
+The command only fills missing locale files and preserves later edits made in
+the Alinea dashboard. Pass `--force` only when intentionally regenerating the
+bundled seed translations.
+
+See [docs/multilingual-card-model.md](docs/multilingual-card-model.md) for the
+identity, routing and fallback rules.
+
+## Development checks
+
+Run the fast validation suite before committing:
+
+```bash
+yarn check
+```
+
+It runs ESLint, TypeScript and the subset-ordering tests. A production build is
+the final verification for changes to routes, Alinea schemas or imported
+content:
+
+```bash
+yarn build
+```
+
+The root `proxy.ts` belongs to this repository because it implements site and
+card-language routing. Imported catalogue rows, `.malie-sync.json` and card
+images are generated runtime data and are intentionally not part of feature
+commits. The current local Alinea adapter writes images below the `assets`
+submodule; production automation must publish those files to persistent asset
+storage instead of adding multi-gigabyte imports to the source repository.
 
 ### Finding the malie key
 

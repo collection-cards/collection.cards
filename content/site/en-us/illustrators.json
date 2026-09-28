@@ -1,0 +1,33 @@
+{
+  "_id": "3JvLhF12y43SRyBbAOqRRNNh10j",
+  "_type": "Illustrators",
+  "_index": "b1X",
+  "title": "Illustrators",
+  "blocks": [
+    {
+      "_id": "34hxaLlTtrmsVym3r1to6qSD4Ek",
+      "_index": "a0",
+      "_type": "TextBlock",
+      "text": [
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "This list features the illustrators whose artwork appears across a wide range of trading card games. Each artist brings a distinctive style and creative vision, shaping the visual identity and storytelling of the TCG world."
+            }
+          ]
+        },
+        {
+          "_type": "paragraph",
+          "content": [
+            {
+              "_type": "text",
+              "text": "Select an illustrator’s name to discover the cards they have created and explore the breadth of their artistic contributions."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

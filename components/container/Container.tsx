@@ -1,16 +1,17 @@
 import {cn} from '@/lib/utils'
-import {PropsWithChildren} from 'react'
+import {ComponentProps} from 'react'
 
-type ContainerProps = {
-  className?: string
-}
+type ContainerProps = ComponentProps<'div'>
 
-const Container: React.FC<PropsWithChildren<ContainerProps>> = ({
+const Container: React.FC<ContainerProps> = ({
   children,
-  className
+  className,
+  ...props
 }) => {
   return (
-    <div className={cn(`container mx-auto px-6`, className)}>{children}</div>
+    <div className={cn(`container mx-auto px-6`, className)} {...props}>
+      {children}
+    </div>
   )
 }
 

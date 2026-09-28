@@ -2,13 +2,13 @@
   "_id": "34XoGmT97QOdN4pT6r9C1mCdg2e",
   "_type": "Footer",
   "_index": "a0",
-  "title": "Footer",
+  "title": "Rodapé",
   "columns": [
     {
       "_id": "34Y7IYzmOQDwdiOSPmi7Aa45MdP",
       "_index": "Zz",
       "_type": "Column",
-      "title": "Collections",
+      "title": "Coleções",
       "items": [
         {
           "_id": "34Y7kQDz4zd4tsczSkSAh7iSVUH",
@@ -27,7 +27,7 @@
       "_id": "34XypIXCoYzyyVoWFfm1x50EDUe",
       "_index": "a0",
       "_type": "Column",
-      "title": "Contribute",
+      "title": "Contribua",
       "items": [
         {
           "_id": "34XzxtdmBXDFx1zKOa3tfzYs3Vo",
@@ -51,7 +51,7 @@
       "_id": "34XyqoYqu3JfMjZW25eErdROAQJ",
       "_index": "a1",
       "_type": "Column",
-      "title": "Join our community",
+      "title": "Participe da comunidade",
       "items": [
         {
           "_id": "34Y08jReYuxX2Jdy3IhROftZEdi",
@@ -88,7 +88,7 @@
               "content": [
                 {
                   "_type": "text",
-                  "text": "Built with "
+                  "text": "Criado com "
                 },
                 {
                   "_type": "text",
@@ -114,14 +114,14 @@
       ]
     }
   ],
-  "copyright": "© 2025 All rights reserved.",
+  "copyright": "© 2025 Todos os direitos reservados.",
   "disclaimer": [
     {
       "_type": "paragraph",
       "content": [
         {
           "_type": "text",
-          "text": "The literal and graphical information presented on this website about the Pokémon Trading Card Game, including card text and images, are copyright The Pokémon Company (Pokémon), Nintendo, Game Freak, Creatures, and/or Wizards of the Coast. This website is not produced by, endorsed by, supported by, or affiliated with The Pokémon Company (Pokémon), Nintendo, Game Freak, Creatures, or Wizards of the Coast."
+          "text": "As informações textuais e gráficas apresentadas neste site sobre o Pokémon Estampas Ilustradas, incluindo textos e imagens das cartas, pertencem à The Pokémon Company (Pokémon), Nintendo, Game Freak, Creatures e/ou Wizards of the Coast. Este site não é produzido, endossado, apoiado nem afiliado à The Pokémon Company (Pokémon), Nintendo, Game Freak, Creatures ou Wizards of the Coast."
         }
       ]
     }
@@ -131,19 +131,19 @@
       "_id": "34Xuejkd3yANj7wdd2e2bDmMo7c",
       "_index": "Zz",
       "_type": "entry",
-      "_entry": "34XovqiYQYJ8y3fBa88GyCVo5eI"
+      "_entry": "3JvLhG5sJRrUxopqRJO8lRIaeby"
     },
     {
       "_id": "34XuekQA5VZBs3TC0mwOvt5pKg1",
       "_index": "ZzV",
       "_type": "entry",
-      "_entry": "34XouXIdsKWlrlS4BHEQtsUt6hY"
+      "_entry": "3JvLhKjrpDLyJl20kUNmSiphWgI"
     },
     {
       "_id": "34Xueh7xzC9429cYoz6WV78tUIX",
       "_index": "a0",
       "_type": "entry",
-      "_entry": "34XotIjMybFyr3aQUeUAje8qDrG"
+      "_entry": "3JvLhKJZaDpcMMVlO4uSEnxyA2l"
     }
   ]
 }
